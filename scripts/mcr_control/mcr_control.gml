@@ -15,3 +15,6 @@ enum Locale{
 #macro gameWidth 640
 #macro gameHeight 360
 #macro gameZoom 2
+
+#macro gameSessionInMinute 2
+#macro gameSpeed (1080 / (gameSessionInMinute * 60))
