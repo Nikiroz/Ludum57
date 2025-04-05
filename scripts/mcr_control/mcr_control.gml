@@ -17,4 +17,5 @@ enum Locale{
 #macro gameZoom 2
 
 #macro gameSessionInMinute 2
+#macro gameDayLenght (0.9 / ((gameSessionInMinute * 0.25) * 60)) / 60
 #macro gameSpeed (1080 / (gameSessionInMinute * 60))
