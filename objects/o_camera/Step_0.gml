@@ -7,9 +7,9 @@ if(!view_enabled){
 
 var camW = camera_get_view_width(view_camera[0]);
 var camH = camera_get_view_height(view_camera[0]);
-	
+
 var _x = target.x - (camW / 2);
-var _y = target.y - (camH / 2);
+var _y = target.y - (camH / 2) - 70;
 		
 cameraX = _x;
 cameraY = _y;

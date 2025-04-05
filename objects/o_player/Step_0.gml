@@ -2,7 +2,7 @@ var left = keyboard_check(ord(leftKey));
 var right = keyboard_check(ord(rightKey));
 var jump = keyboard_check_pressed(jumpKey);
  
-var horsp = (right - left) * mcr_playerSpeed;
+horsp = (right - left) * mcr_playerSpeed;
 
 if(jump){
 	vsp  = mcr_playerJumpForce;

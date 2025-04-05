@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_bg_clouds02",
-  "eventList":[],
+  "%Name":"o_game_controller",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"o_bg_clouds02",
+  "name":"o_game_controller",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bg_clouds02",
-    "path":"sprites/s_bg_clouds02/s_bg_clouds02.yy",
+    "name":"s_controller",
+    "path":"sprites/s_controller/s_controller.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
