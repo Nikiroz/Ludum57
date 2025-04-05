@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_bg_clouds",
+  "%Name":"o_bg_clouds02",
   "eventList":[],
   "managed":true,
-  "name":"o_bg_clouds",
+  "name":"o_bg_clouds02",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bg_clouds",
-    "path":"sprites/s_bg_clouds/s_bg_clouds.yy",
+    "name":"s_bg_clouds02",
+    "path":"sprites/s_bg_clouds02/s_bg_clouds02.yy",
   },
   "spriteMaskId":null,
   "visible":true,
