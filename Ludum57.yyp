@@ -41,6 +41,7 @@
     {"id":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
     {"id":{"name":"mcr_control","path":"scripts/mcr_control/mcr_control.yy",},},
     {"id":{"name":"mcr_physic","path":"scripts/mcr_physic/mcr_physic.yy",},},
+    {"id":{"name":"shd_day_night","path":"shaders/shd_day_night/shd_day_night.yy",},},
     {"id":{"name":"s_bg_clouds01","path":"sprites/s_bg_clouds01/s_bg_clouds01.yy",},},
     {"id":{"name":"s_bg_clouds02","path":"sprites/s_bg_clouds02/s_bg_clouds02.yy",},},
     {"id":{"name":"s_bg_parallax01","path":"sprites/s_bg_parallax01/s_bg_parallax01.yy",},},

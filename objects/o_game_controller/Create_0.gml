@@ -9,5 +9,8 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 second = 0;
 minute = 0;
 hour   = 6;
+time   = 0.0;
 
 alarm[0] = 1;
+
+application_surface_draw_enable(false);
