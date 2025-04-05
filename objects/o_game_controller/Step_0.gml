@@ -18,9 +18,16 @@ if(hour < 24){
 	if(second >= 60){
 		minute++;
 		second = second - 60;
-		time += 0.1;
-		time = clamp(time, 0, 4);
+		if(hour >=6 && hour <=7){
+			time += 0.1;
+			time = clamp(time, 0, 3);
+		}
+		if(hour >= 21){
+			time -= 0.1;
+			time = clamp(time, 0, 3);
+		}
 	}
+	
 	if(minute >= 60){
 		hour++;
 		minute = minute - 60;
