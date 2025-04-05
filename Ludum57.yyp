@@ -38,6 +38,7 @@
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
     {"id":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
+    {"id":{"name":"o_sun","path":"objects/o_sun/o_sun.yy",},},
     {"id":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
     {"id":{"name":"mcr_control","path":"scripts/mcr_control/mcr_control.yy",},},
     {"id":{"name":"mcr_physic","path":"scripts/mcr_physic/mcr_physic.yy",},},
