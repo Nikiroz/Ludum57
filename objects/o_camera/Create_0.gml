@@ -1,0 +1,8 @@
+target = o_player;
+
+var _x = target.x - gameWidth / 2 + target.sprite_width * 2;
+var _y = target.y - gameHeight / 2 + target.sprite_height / 2;
+camera_set_view_pos(view_camera[0], _x, _y);
+
+cameraX = 0;
+cameraY = 0

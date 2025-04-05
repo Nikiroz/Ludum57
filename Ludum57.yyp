@@ -34,11 +34,13 @@
   },
   "name":"Ludum57",
   "resources":[
+    {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"r_testroom","path":"rooms/r_testroom/r_testroom.yy",},},
     {"id":{"name":"mcr_control","path":"scripts/mcr_control/mcr_control.yy",},},
     {"id":{"name":"mcr_physic","path":"scripts/mcr_physic/mcr_physic.yy",},},
+    {"id":{"name":"s_camera","path":"sprites/s_camera/s_camera.yy",},},
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
   ],

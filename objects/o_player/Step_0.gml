@@ -7,6 +7,7 @@ var horsp = (right - left) * mcr_playerSpeed;
 if(jump){
 	vsp  = mcr_playerJumpForce;
 }
+
 vsp += mcr_gravity;
 vsp = clamp(vsp, mcr_maxGravity);
 
