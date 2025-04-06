@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_ship_winch_basic",
-    "path":"sprites/s_ship_winch_basic/s_ship_winch_basic.yy",
+    "name":"s_ship_aquasuit",
+    "path":"sprites/s_ship_aquasuit/s_ship_aquasuit.yy",
   },
   "spriteMaskId":null,
   "visible":true,
