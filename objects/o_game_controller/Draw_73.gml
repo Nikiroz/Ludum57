@@ -1,5 +1,7 @@
 if (!global.isDebug) exit
 
+draw_set_font(fnt_debug_small)
+
 draw_set_color(c_green)
 
 with (o_collision) {
@@ -20,7 +22,9 @@ draw_set_color(c_blue)
 with (o_levelobject) {
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true)
 	
-	draw_text(bbox_right, bbox_top, $"x: {x}\ny: {y}\n{submerged ? "in water" : ""}")
+	draw_text(bbox_right + 4, bbox_top, $"x: {x}\ny: {y}\n{submerged ? "in water\n" : ""}hsp: {hsp}\nvsp: {vsp}")
 }
 
 draw_set_color(c_white)
+
+draw_reset_font()
