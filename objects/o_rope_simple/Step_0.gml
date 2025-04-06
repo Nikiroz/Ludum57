@@ -5,22 +5,23 @@ hsp *= 0.9
 vsp *= 0.9
 
 if instance_exists(parent) {
-	var _collision = collision_line(x, y, parent.x, parent.y, o_collision, true, false)
+	var _cx = (x + parent.x) * 0.5,
+		_cy = (y + parent.y) * 0.5
 	
-	if _collision {
-		var _cx, _cy;
+	//
+		var _collision = collision_line(x, y, parent.x, parent.y, o_collision, true, false)
 		
-		with _collision {
-			_cx = (bbox_left + bbox_right) * 0.5
-			_cy = (bbox_top + bbox_bottom) * 0.5
+		if _collision {
+			var _normal = collision_find_normal(_cx, _cy + 1, 3, 3, _collision)
+		
+			if _normal != undefined {
+				x -= _normal[0]
+				y -= _normal[1]
+				vsp = 0
+			}
 		}
-		
-		var _distance = point_distance(x, y, _cx, _cy)
-		
-		x += (x - _cx) / _distance
-		y += (y - _cy) / _distance
-	}
-	else if !attached && y < mcr_waterline {
-		vsp += 0.1
-	}
+		else if !attached && y < mcr_waterline {
+			vsp += 0.1
+		}
+	//
 }
