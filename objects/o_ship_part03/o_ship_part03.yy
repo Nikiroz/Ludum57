@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_shipBG",
+  "%Name":"o_ship_part03",
   "eventList":[],
   "managed":true,
-  "name":"o_shipBG",
+  "name":"o_ship_part03",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_shipBG",
-    "path":"sprites/s_shipBG/s_shipBG.yy",
+    "name":"s_ship_part03",
+    "path":"sprites/s_ship_part03/s_ship_part03.yy",
   },
   "spriteMaskId":null,
   "visible":true,
