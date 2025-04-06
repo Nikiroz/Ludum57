@@ -1,1 +1,2 @@
-move_boat(1 + sin(current_time / 200) / 3, 0)
+move_boat(boatSpeed, 0)
+boatSpeed /= 1.2;
