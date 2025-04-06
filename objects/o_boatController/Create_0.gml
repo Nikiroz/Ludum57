@@ -1,4 +1,4 @@
-
+boatWavesShift = 0;
 boatSpeed = 0;
 boatElements = [];
 

@@ -20,7 +20,7 @@ minute = 0;
 hour   = startHour;
 time   = startHour;
 
-timeScale =  0.01;
+timeScale =  0.001;
 
 if (file_exists("debug.ini")) {
 	
