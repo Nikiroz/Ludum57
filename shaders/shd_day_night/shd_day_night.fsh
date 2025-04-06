@@ -29,6 +29,7 @@ void main(){
     float transition1_time = 5.5;  // Первый переход длится 2.5 секунды
     float transition2_time = 2.5;  // Второй переход длится 2.5 секунды
     float transition3_time = 3.0;  // Затухание эффекта длится 3.0 секунды
+	float intensity = 0.4;
     
     // Общее время всех переходов
     float total_time = transition1_time + transition2_time + transition3_time;
@@ -43,11 +44,11 @@ void main(){
 	
     if (capped_time < transition1_time) {
         // Первый переход: первый цвет (красно-оранжевый) с обычным наложением
-		finalColor = vividLight(texColor.rgb, color2, 0.4);
+		finalColor = vividLight(texColor.rgb, color2, intensity);
         finalColor = mix(color1, finalColor, progress);
     } 
     else if (capped_time < transition1_time + transition2_time) {
-	    finalColor = vividLight(texColor.rgb, color2, 0.4);
+	    finalColor = vividLight(texColor.rgb, color2, intensity);
     } 
     else if (capped_time < total_time) {
 		
@@ -55,7 +56,7 @@ void main(){
         float progress = (capped_time - transition1_time - transition2_time) / transition3_time;
         
         // Уменьшаем интенсивность с течением времени в фазе затухания
-        float fadingIntensity = 0.4 * (1.0 - progress);
+        float fadingIntensity = intensity * (1.0 - progress);
         
         // Применяем Vivid Light с затухающей интенсивностью
         finalColor = vividLight(texColor.rgb, color2, fadingIntensity);
