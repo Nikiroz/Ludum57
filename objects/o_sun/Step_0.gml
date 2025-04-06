@@ -6,4 +6,4 @@ var center_y = (gameHeight / 2) + 70;
 x = center_x + cos(angle) * radius_x;
 y = center_y + sin(angle) * radius_y;
 
-show_debug_message(string(angle))
+//show_debug_message(string(angle))
