@@ -2,7 +2,7 @@
 
 // anim += 0.01
 
-waterline_y = o_game_controller.waterlineY - 26
+waterline_y = o_game_controller.waterlineY - 12
 
 var _vx = camera_get_view_x(view_camera[0]) - 1,
 	_vy = camera_get_view_y(view_camera[0]) - 1,
