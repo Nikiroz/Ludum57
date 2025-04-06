@@ -22,7 +22,7 @@ draw_set_color(c_blue)
 with (o_levelobject) {
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true)
 	
-	draw_text(bbox_right + 4, bbox_top, $"x: {x}\ny: {y}\n{submerged ? "in water\n" : ""}hsp: {hsp}\nvsp: {vsp}")
+	draw_text(bbox_right + 4, bbox_top, $"x: {x}\ny: {y}\n{is_submerged ? "in water\n" : ""}hsp: {hsp}\nvsp: {vsp}")
 }
 
 draw_set_color(c_white)

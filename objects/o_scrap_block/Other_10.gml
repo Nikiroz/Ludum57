@@ -4,7 +4,7 @@ var _direction = angle_lerp(
 hsp += ldrx(6, _direction)
 vsp += ldry(6, _direction)
 
-if (submerged) {
+if (is_submerged) {
 	hsp *= 3
 	vsp *= 3
 }

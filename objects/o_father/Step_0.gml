@@ -1,3 +1,11 @@
+hsp = 0;
+vsp = 0;
+
+event_inherited();
+
+hsp = 0;
+vsp = 0;
+
 if (boatControl)
 {
 	var left = keyboard_check(ord(leftKey)),

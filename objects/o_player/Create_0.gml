@@ -17,15 +17,10 @@ density = 4;
 
 walking = false;
 
-rope_instance = noone;
+ropeend_instance = noone;
 carried_instance = noone;
 
 input_interact = false;
-
-///@function is_climbing_rope()
-is_climbing_rope = function() {
-	return instance_exists(rope_instance);
-}
 
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
