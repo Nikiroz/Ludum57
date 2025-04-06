@@ -5,7 +5,7 @@ hsp *= 0.9
 vsp *= 0.9
 
 if instance_exists(parent) {
-	var _collision = collision_line(x, y, parent.x, parent.y, o_collision, false, false)
+	var _collision = collision_line(x, y, parent.x, parent.y, o_collision, true, false)
 	
 	if _collision {
 		var _cx, _cy;
@@ -20,7 +20,7 @@ if instance_exists(parent) {
 		x += (x - _cx) / _distance
 		y += (y - _cy) / _distance
 	}
-	else if !attached {
+	else if !attached && y < mcr_waterline {
 		vsp += 0.1
 	}
 }

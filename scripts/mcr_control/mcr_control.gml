@@ -19,6 +19,3 @@ enum Locale{
 #macro gameSessionInMinute 2
 #macro gameDayLenght (0.9 / ((gameSessionInMinute * 0.25) * 60)) / 60
 #macro gameSpeed (1080 / (gameSessionInMinute * 60))
-
-#macro ropeSegmentLength 4
-#macro ropeSegmentCount 40

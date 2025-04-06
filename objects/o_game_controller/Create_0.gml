@@ -10,8 +10,12 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 
 global.isDebug = false;
 
-startHour = 6;
 
+if (GM_build_type == "run")
+	global.isDebug = true;
+
+
+startHour = 6;
 second = 0;
 minute = 0;
 hour  = startHour;
@@ -20,6 +24,5 @@ time  = startHour;
 timeScale = 0.01;
 
 waterlineY = 245;
-
 
 application_surface_draw_enable(false);
