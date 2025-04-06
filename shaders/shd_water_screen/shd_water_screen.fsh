@@ -10,10 +10,11 @@ uniform vec2 u_view;
 uniform vec2 u_parallax;
 uniform float u_anim;
 */
+uniform sampler2D u_watermask;
+uniform vec4 u_waterdata;
 uniform sampler2D u_underwater;
 uniform vec2 u_sprite_size;
 uniform vec2 u_sprite_pos;
-uniform vec2 u_wave_data;
 uniform float u_anim;
 
 float fbm1(float _value) {
@@ -28,8 +29,18 @@ void main()
 	uv.y = min(uv.y, u_sprite_size.y - 0.01) / u_sprite_size.y;
 	vec4 base = v_vColour * texture2D(gm_BaseTexture, uv);
 	
-	float wave_y = u_wave_data.x + sin(u_anim + v_vPosition.x * 0.02) * u_wave_data.y;
-	if (v_vPosition.y > wave_y) {
+	// float wave_y = u_wave_data.x + sin(u_anim + v_vPosition.x * 0.02) * u_wave_data.y;
+	// if (v_vPosition.y > wave_y) {
+	vec2 mask_uv = (v_vPosition.xy - u_waterdata.zw);
+	mask_uv = mask_uv / u_waterdata.xy;
+	/*a 
+	vec2 deb = mask_uv;
+	// mask_uv.y = max(mask_uv.y, -0.9);
+	mask_uv.y = clamp(mask_uv.y, -1.0, 0.0);
+	*/
+	// mask_uv.x = clamp(mask_uv.x, 0.0, 1.0);
+	// mask_uv.y = clamp(mask_uv.y, -0.9, 0.1);
+	if (texture2D(u_watermask, mask_uv).r > 0.1 || v_vPosition.y > u_waterdata.w) {
 		base = v_vColour * texture2D(u_underwater, uv);
 	}
 	

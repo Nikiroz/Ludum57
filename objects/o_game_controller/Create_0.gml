@@ -1,4 +1,4 @@
-screenShot = -1;
+screenshot_sprite = -1;
 
 background_map = ds_map_create();
 background_map[? layer_get_id("l_bg_clouds01")] = 0.2;
