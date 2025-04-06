@@ -14,8 +14,8 @@ function scr_interaction_update() {
 	{
 		var _obj = interaction_object,
 		
-		if (distance_to_object(interaction_object) > interaction_object.interaction_range) {
-			interaction_object = noone
+		if (distance_to_object(_obj) > _obj.interaction_range || (sign(_obj.x - bbox_center_x) != facing)) {
+			interaction_object = noone;
 			exit
 		}
 		
@@ -27,8 +27,8 @@ function scr_interaction_update() {
 				other.interaction_progress = 0;
 				other.interaction_time_max = 0;
 				other.interaction_release = true;
-				interactor = other.id
-				event_user(0)
+				interactor = other.id;
+				event_user(0);
 			}
 		}
 		else if (_interacting && _time_max) {
@@ -44,12 +44,13 @@ function scr_interaction_update() {
 		}
 		
 		var _distance_max = infinity, _result = noone,
-			_x = bbox_center_x, _y = bbox_center_y;
+			_x = bbox_center_x, _y = bbox_center_y,
+			_facing = facing;
 		
 		with (o_interactible) {
 			var _distance = distance_to_point(_x, _y)
 			
-			if (_distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
+			if (sign(x - _x) != _facing || _distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
 			
 			if (_distance < _distance_max) {
 				_distance_max = _distance
@@ -71,4 +72,12 @@ function scr_interactible_check_selected(_instance) {
 function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {
 	draw_sprite_outline(scr_interactible_check_selected(id) ? _outline_flags : 0,
 		sprite_index, image_index, x , y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+}
+
+/// @function scr_interactible_configure
+/// @param [interaction_delay=0]
+/// @param [distance=20]
+function scr_interactible_configure(_delay = 0, _distance = 20) {
+	interaction_time_max = _delay
+	interaction_range = _distance
 }

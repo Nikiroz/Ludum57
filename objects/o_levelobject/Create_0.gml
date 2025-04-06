@@ -17,3 +17,5 @@ is_grounded = false;
 ground_instance = noone;
 
 stable = false;
+
+motion_enabled = true;

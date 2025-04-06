@@ -2,9 +2,9 @@ if (is_boated) exit;
 
 event_inherited();
 
-if (instance_exists(interaction_object)) {
-	draw_arrow(bbox_center_x, bbox_center_y, interaction_object.x, interaction_object.y, 4)
-}
+//if (instance_exists(interaction_object)) {
+//	draw_arrow(bbox_center_x, bbox_center_y, interaction_object.x, interaction_object.y, 4)
+//}
 
 if (interaction_progress > 0) {
 	if (interaction_time_max > 0) {

@@ -8,12 +8,12 @@ if instance_exists(parent) {
 			_direction = point_direction(
 				parent.x, parent.y, x, y)
 		
-		if parent.object_index == o_rope_simple {
+		if (parent.object_index == o_rope_simple) {
 			parent.hsp += ldrx(_diff * 0.5, _direction)
 			parent.vsp += ldry(_diff * 0.5, _direction)
 		}
 		
-		if !attached {
+		if (!attached) {
 			hsp -= ldrx(_diff * 0.5, _direction)
 			vsp -= ldry(_diff * 0.5, _direction)
 		}
