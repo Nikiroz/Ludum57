@@ -23,3 +23,12 @@ waterlineY = 245;
 application_surface_draw_enable(false);
 
 draw_set_font(fnt_debug)
+
+if (file_exists("debug.ini")) {
+	
+	ini_open("debug.ini")
+	
+	global.isDebug = ini_read_real("Data", "Debug", false);
+	
+	ini_close()
+}
