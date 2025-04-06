@@ -3,6 +3,7 @@ var right = keyboard_check(ord(rightKey));
 var jump = keyboard_check_pressed(jumpKey);
  
 horsp += (right - left) * mcr_playerSpeed;
+status.isWalk = (left || right);
 
 if(jump){
 	vsp = mcr_playerJumpForce;
@@ -38,3 +39,17 @@ if (instance_exists(rope_instance)) {
 		y = _ty
 	}
 }
+	
+#region Стейтмашина
+	
+if (!status.isFreeze) {
+    if (status.isWalk) {
+		sprite_index = s_player_walk;
+	} else {
+		if (sprite_index == s_player_walk){
+			sprite_index = s_player_idle;
+		}
+	}
+}
+
+#endregion

@@ -16,6 +16,7 @@ repeat(ds_map_size(background_map)){
 }
 
 #endregion
+
 #region Time
 
 if(hour < 24){
