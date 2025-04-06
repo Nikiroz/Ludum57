@@ -10,9 +10,6 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 
 global.isDebug = false;
 
-if (GM_build_type == "run")
-	global.isDebug = true;
-
 second = 0;
 minute = 0;
 hour   = 6;
