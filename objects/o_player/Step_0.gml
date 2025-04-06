@@ -1,10 +1,12 @@
-event_inherited();
-
 var left = keyboard_check(ord(leftKey)),
 	right = keyboard_check(ord(rightKey)),
 	jump = keyboard_check_pressed(jumpKey);
 
 hsp += (right - left) * mcr_playerSpeed;
+
+event_inherited();
+
+//print("player:", hsp)
 
 status.isWalk = (left || right);
 

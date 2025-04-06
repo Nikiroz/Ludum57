@@ -1,9 +1,6 @@
 //x += hsp;
 //y += vsp;
 
-var _collide = move_and_collide(hsp, vsp, o_collision, 4),
-	_collide_count = array_length(_collide);
-
 var _gravity_factor = 1;
 
 submerged = (bbox_center_y > mcr_waterline);
@@ -22,6 +19,11 @@ if (vsp < _gravity_max) {
 	}
 }
 
+var _collide = move_and_collide(hsp, vsp, o_collision, 4),
+	_collide_count = array_length(_collide);
+
+print("MOVE:", hsp, vsp, _collide_count)
+
 if (_collide_count) {
 	var _cx = bbox_center_x,
 		_cy = bbox_center_y
@@ -29,7 +31,8 @@ if (_collide_count) {
 	for(var i = 0; i < _collide_count; i ++) {
 		var _inst = _collide[i],
 			_nx = (hsp ? bbox_right : bbox_left) + hsp,
-			_ny = (vsp ? bbox_bottom : bbox_top) + vsp
+			_ny = (vsp ? bbox_bottom : bbox_top) + vsp,
+			_stepped_up = false
 		
 		if (hsp != 0 && place_meeting(_nx, bbox_bottom, _inst)) {
 			var _step_size = 5, _offset = 0
@@ -47,23 +50,13 @@ if (_collide_count) {
 				_ny += _offset
 				y += _offset
 			}
-			
-			//print(position_meeting(_nx, bbox_bottom, _inst))
-			
-			//while(position_meeting(_nx, bbox_bottom, _inst)) {
-			//	var _normal = position_find_normal(x, bbox_bottom, bbox_width, 5, _inst)
-				
-			//	if (_normal == undefined) break
-				
-			//	print(_normal)
-				
-			//	x += _normal[0]
-			//	y += _normal[1]
-			//}
+			else _stepped_up = true
 		}
 		
-		while (hsp != 0 && place_meeting(_nx, y, _inst)) {
-			hsp = approach(hsp, 0, 1);
+		if (!_stepped_up) {
+			while (hsp != 0 && place_meeting(_nx, y, _inst)) {
+				hsp = approach(hsp, 0, 1);
+			}
 		}
 		
 		while (vsp != 0 && place_meeting(x, _ny, _inst)) {
@@ -76,7 +69,5 @@ if (_collide_count) {
 }
 
 hsp *= 0.33;
-//vsp *= 0.9;
 
-if (abs(hsp) < 0.05) hsp = 0;
-//if (abs(vsp) < 0.05) vsp = 0;
+//if (abs(hsp) < 0.05) hsp = 0;
