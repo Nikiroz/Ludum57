@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_father",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_ship_aquasuit",
+  "eventList":[],
   "managed":true,
-  "name":"o_father",
+  "name":"o_ship_aquasuit",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_father",
-    "path":"sprites/s_father/s_father.yy",
+    "name":"s_ship_winch_basic",
+    "path":"sprites/s_ship_winch_basic/s_ship_winch_basic.yy",
   },
   "spriteMaskId":null,
   "visible":true,

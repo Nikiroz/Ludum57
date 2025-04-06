@@ -1,9 +1,11 @@
-boatElements = []
 
-isMoving = true
+boatSpeed = 0;
+boatElements = [];
 
-hsp = 0
-vsp = 0
+isMoving = true;
+
+hsp = 0;
+vsp = 0;
 
 var _layer = layer_get_id("Boat"),
 	_elements = layer_get_all_elements(_layer);

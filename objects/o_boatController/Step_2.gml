@@ -1,7 +1,9 @@
 if (isMoving) {
-	hsp += 1 + sin(o_game_controller.time * 0.2) / 3
+	hsp += boatSpeed;
 }
 
-hsp *= 0.8;
-
 if (hsp > 0) self.move_boat(hsp, vsp);
+
+boatSpeed /= 1.2;
+
+hsp *= 0.8;

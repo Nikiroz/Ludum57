@@ -10,7 +10,7 @@
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
-  "For3D":false,
+  "For3D":true,
   "frames":[
     {"$GMSpriteFrame":"","%Name":"efbac8cb-c06c-4b46-acc5-215d1fe65681","name":"efbac8cb-c06c-4b46-acc5-215d1fe65681","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"da12d49c-cd8e-4d88-a28b-ea2932edab30","name":"da12d49c-cd8e-4d88-a28b-ea2932edab30","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -262,7 +262,7 @@
   ],
   "name":"s_watermask",
   "nineSlice":null,
-  "origin":0,
+  "origin":9,
   "parent":{
     "name":"Background",
     "path":"folders/Sprites/Background.yy",
@@ -1032,7 +1032,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":189,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
