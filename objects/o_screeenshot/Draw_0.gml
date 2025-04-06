@@ -1,0 +1,1 @@
+draw_sprite_ext(global.screenshot_sprite, 0, 0, 0, 1 / gameZoom, 1 / gameZoom, 0, c_white, 1);

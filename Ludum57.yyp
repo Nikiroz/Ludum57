@@ -63,6 +63,7 @@
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_rope_simple","path":"objects/o_rope_simple/o_rope_simple.yy",},},
     {"id":{"name":"o_rope_source","path":"objects/o_rope_source/o_rope_source.yy",},},
+    {"id":{"name":"o_screeenshot","path":"objects/o_screeenshot/o_screeenshot.yy",},},
     {"id":{"name":"o_ship_fan_basic","path":"objects/o_ship_fan_basic/o_ship_fan_basic.yy",},},
     {"id":{"name":"o_ship_part01","path":"objects/o_ship_part01/o_ship_part01.yy",},},
     {"id":{"name":"o_ship_part02","path":"objects/o_ship_part02/o_ship_part02.yy",},},
@@ -72,6 +73,7 @@
     {"id":{"name":"o_water","path":"objects/o_water/o_water.yy",},},
     {"id":{"name":"obj_water_screen","path":"objects/obj_water_screen/obj_water_screen.yy",},},
     {"id":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
+    {"id":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
     {"id":{"name":"collision_find_normal","path":"scripts/collision_find_normal/collision_find_normal.yy",},},
@@ -143,6 +145,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
+    {"roomId":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

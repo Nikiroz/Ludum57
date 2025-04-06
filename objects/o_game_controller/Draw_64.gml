@@ -8,7 +8,3 @@ if(global.isDebug) {
         game_restart();
     }
 }
-
-if(global.isPause && sprite_exists(screenshot_sprite)) {
-	draw_sprite_ext(screenshot_sprite, 0, 0, 0, 1, 1, 0, c_white, 1);
-}
