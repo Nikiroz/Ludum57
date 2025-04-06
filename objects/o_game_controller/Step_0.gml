@@ -1,19 +1,5 @@
 #region Pause handling
 
-if (keyboard_check_pressed(vk_f1)) {
-	global.isPause = !global.isPause;
-	
-	if (global.isPause) {
-		instance_deactivate_all(true)
-		instance_activate_object(o_menu)
-	}
-	else {
-		instance_activate_all()
-	}
-	
-	event_user(0);
-}
-
 if (global.isPause) exit;
 
 #endregion
@@ -37,13 +23,11 @@ repeat(ds_map_size(background_map)){
 
 #endregion
 
-
 var _skyPhase = 2 * cos(hour / 4);
 	
 var lay_id = layer_get_id("l_bg_stars");
 var back_id = layer_background_get_id(lay_id);
 layer_background_alpha(back_id, _skyPhase);
-
 
 #region Time
 
