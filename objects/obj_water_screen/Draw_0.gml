@@ -2,7 +2,7 @@
 
 anim += 0.05
 
-waterline_y = o_game_controller.waterlineY - 12
+waterline_y = mcr_waterline - 12
 wave_amp = 12
 wave_y = draw_y
 if (is_wave) {

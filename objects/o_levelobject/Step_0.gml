@@ -22,12 +22,14 @@ if (vsp < _gravity_max) {
 var _collide = move_and_collide(hsp, vsp, o_collision, 4),
 	_collide_count = array_length(_collide);
 
-print("MOVE:", hsp, vsp, _collide_count)
+var _ground = instance_place(x, bbox_bottom + 1, o_collision)
 
-if (_collide_count) {
-	var _cx = bbox_center_x,
-		_cy = bbox_center_y
-	
+if (_ground != noone && !array_contains(_collide, _ground)) {
+	array_push(_collide, _ground)
+	_collide_count ++
+}
+
+//{
 	for(var i = 0; i < _collide_count; i ++) {
 		var _inst = _collide[i],
 			_nx = (hsp ? bbox_right : bbox_left) + hsp,
@@ -63,10 +65,21 @@ if (_collide_count) {
 			vsp = approach(vsp, 0, 1);
 		}
 		
+		while (place_meeting(x, y, _inst)) {
+			var _normal = collision_find_normal(x, bbox_bottom, bbox_width, 3, _inst)
+			
+			if (_normal == undefined) {
+				y --; continue
+			}
+			
+			x -= _normal[0]
+			y -= _normal[1]
+		}
+		
 		if (hsp == 0 && vsp == 0)
 			break
 	}
-}
+//}
 
 hsp *= 0.33;
 

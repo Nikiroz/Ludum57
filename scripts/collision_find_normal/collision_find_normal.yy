@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"position_find_normal",
+  "%Name":"collision_find_normal",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"position_find_normal",
+  "name":"collision_find_normal",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
