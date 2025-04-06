@@ -42,10 +42,9 @@ void main(){
 	
 	vec3 finalColor;
 	
-    if (capped_time < transition1_time) {
-        // Первый переход: первый цвет (красно-оранжевый) с обычным наложением
-		finalColor = vividLight(texColor.rgb, color2, intensity);
-        finalColor = mix(color1, finalColor, progress);
+	if (capped_time < transition1_time) {      
+		vec3 layer1 = vividLight(texColor.rgb, color2, intensity);
+		finalColor = mix(layer1, color1, 1.0 - progress);
     } 
     else if (capped_time < transition1_time + transition2_time) {
 	    finalColor = vividLight(texColor.rgb, color2, intensity);
