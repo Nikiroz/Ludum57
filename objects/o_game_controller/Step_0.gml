@@ -17,31 +17,21 @@ repeat(ds_map_size(background_map)){
 
 #endregion
 
+
+var _skyPhase = 2 * cos(hour / 4);
+	
+var lay_id = layer_get_id("l_bg_stars");
+var back_id = layer_background_get_id(lay_id);
+layer_background_alpha(back_id, _skyPhase);
+
+
+	
+
+
+
 #region Time
 
-if(hour < 24){
-	if(second >= 60){
-		minute++;
-		second = second - 60;
-		if(hour >=6 && hour <=7){
-			time += 0.1;
-			time = clamp(time, 0, 3);
-		}
-		if(hour >= 19){
-			time -= 0.1;
-			time = clamp(time, 0, 3);
-		}
-	}
-	
-	if(minute >= 60){
-		hour++;
-		minute = minute - 60;
-	}
-} else {
-	alarm[0] = -1;
-	second = 0;
-	minute = 0;
-	hour   = 0;
-}
+time += 0.05;//gameSpeed / 1000
+hour = time mod 24;
 
 #endregion
