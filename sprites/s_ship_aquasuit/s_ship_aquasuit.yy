@@ -2,8 +2,8 @@
   "$GMSprite":"",
   "%Name":"s_ship_aquasuit",
   "bboxMode":0,
-  "bbox_bottom":19,
-  "bbox_left":1,
+  "bbox_bottom":16,
+  "bbox_left":2,
   "bbox_right":28,
   "bbox_top":1,
   "collisionKind":1,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"b1c9a4b3-c27c-41b9-8081-36e5db16fbc4","name":"b1c9a4b3-c27c-41b9-8081-36e5db16fbc4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"173b92fe-b1de-457e-8686-8196ed480d10","name":"173b92fe-b1de-457e-8686-8196ed480d10","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":21,
+  "height":18,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b0ba153c-1f0b-4294-9e41-c292905bb6b6","blendMode":0,"displayName":"default","isLocked":false,"name":"b0ba153c-1f0b-4294-9e41-c292905bb6b6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"cec8fe3d-027e-4a7f-81e3-a4fda3597bae","blendMode":0,"displayName":"default","isLocked":false,"name":"cec8fe3d-027e-4a7f-81e3-a4fda3597bae","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_ship_aquasuit",
   "nineSlice":null,
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b1c9a4b3-c27c-41b9-8081-36e5db16fbc4","path":"sprites/s_ship_aquasuit/s_ship_aquasuit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"80253efa-a68f-4cc1-af6c-36a8bbb94e97","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"173b92fe-b1de-457e-8686-8196ed480d10","path":"sprites/s_ship_aquasuit/s_ship_aquasuit.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eec58063-1b79-49f4-a48a-b2f0f74e43ca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":15,
-    "yorigin":10,
+    "yorigin":9,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":31,
+  "width":30,
 }
