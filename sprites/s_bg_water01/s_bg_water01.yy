@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"s_bg_water01",
   "bboxMode":0,
-  "bbox_bottom":153,
+  "bbox_bottom":121,
   "bbox_left":0,
-  "bbox_right":639,
+  "bbox_right":659,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"51545a74-d1b7-414b-9fd8-418390a3b82e","name":"51545a74-d1b7-414b-9fd8-418390a3b82e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c254bd40-b8ff-4a25-936b-0b2fed3dd480","name":"c254bd40-b8ff-4a25-936b-0b2fed3dd480","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":154,
+  "height":122,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"c1158a26-6335-4ec9-adcd-cc26ff6d5b3b","blendMode":0,"displayName":"default","isLocked":false,"name":"c1158a26-6335-4ec9-adcd-cc26ff6d5b3b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a958e0a9-3f0d-451b-a4bf-0611c7784a51","blendMode":0,"displayName":"default","isLocked":false,"name":"a958e0a9-3f0d-451b-a4bf-0611c7784a51","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_bg_water01",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Background",
+    "path":"folders/Sprites/Background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"51545a74-d1b7-414b-9fd8-418390a3b82e","path":"sprites/s_bg_water01/s_bg_water01.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b31c8647-19b8-458c-a600-034f9389d72f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c254bd40-b8ff-4a25-936b-0b2fed3dd480","path":"sprites/s_bg_water01/s_bg_water01.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bde2ad27-d150-4d13-897f-f36a3e6cac7f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":640,
+  "width":660,
 }

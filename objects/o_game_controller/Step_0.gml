@@ -17,6 +17,7 @@ repeat(ds_map_size(background_map)){
 
 #endregion
 
+
 var _skyPhase = 2 * cos(hour / 4);
 	
 var lay_id = layer_get_id("l_bg_stars");
@@ -25,6 +26,7 @@ layer_background_alpha(back_id, _skyPhase);
 
 
 	
+
 
 
 #region Time
