@@ -4,25 +4,67 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-const vec3 color1 = vec3(1.0, 0.0, 0.0);
-const vec3 color2 = vec3(0.0, 1.0, 0.0); 
-const vec3 color3 = vec3(0.0, 0.0, 1.0);
-const vec3 color4 = vec3(1.0, 1.0, 1.0);
-
 uniform float time;
 
+vec3 vividLight(vec3 base, vec3 blend, float intensity) {
+    vec3 vividResult = vec3(
+        blend.r < 0.5 ? base.r - (1.0 - 2.0 * blend.r) * base.r * (1.0 - base.r) : (blend.r > 0.5) ? base.r + (2.0 * (blend.r - 0.5)) * (1.0 - base.r) : base.r,
+        blend.g < 0.5 ? base.g - (1.0 - 2.0 * blend.g) * base.g * (1.0 - base.g) : (blend.g > 0.5) ? base.g + (2.0 * (blend.g - 0.5)) * (1.0 - base.g) : base.g,
+        blend.b < 0.5 ? base.b - (1.0 - 2.0 * blend.b) * base.b * (1.0 - base.b) : (blend.b > 0.5) ? base.b + (2.0 * (blend.b - 0.5)) * (1.0 - base.b) : base.b
+    );
+    
+    // Смешиваем базовое изображение и результат Vivid Light в зависимости от интенсивности
+    return mix(base, vividResult, intensity);
+}
+
 void main(){	
-	vec4 pixel = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
-	float t = mod(time, 4.0);
+
+    vec4 texColor = texture2D(gm_BaseTexture, v_vTexcoord);
+      
+    // Определяем два разных цвета для переходов
+	vec3 color1 = vec3(0.18, 0.19, 0.26);   // Тёмно-синий для второго перехода
+    vec3 color2 = vec3(0.9, 0.3, 0.2);      // Красно-оранжевый для первого перехода
+
+    // Задаем время для каждого перехода (в секундах)
+    float transition1_time = 5.5;  // Первый переход длится 2.5 секунды
+    float transition2_time = 2.5;  // Второй переход длится 2.5 секунды
+    float transition3_time = 3.0;  // Затухание эффекта длится 3.0 секунды
+    
+    // Общее время всех переходов
+    float total_time = transition1_time + transition2_time + transition3_time;
+    
+    // Ограничиваем время для остановки на оригинальном изображении
+    float capped_time = min(time, total_time);
+    // Нормализуем время, чтобы оно шло от 0 до 1
+    float progress = min(time / transition1_time, 1.0);  // Ограничиваем прогресс от 0 до 1
+    // Определяем текущий переход и прогресс
+	
 	vec3 finalColor;
-	if (t < 1.0) {
-	    finalColor = mix(color1, color2, t);
-	} else if (t < 2.0) {
-	    finalColor = mix(color2, color3, t - 1.0);
-	} else if (t < 3.0) {
-	    finalColor = mix(color3, color4, t - 2.0);
-	} else {
-	    finalColor = mix(color4, color4, t - 3.0);;
-	}
-    gl_FragColor = vec4(pixel.rgb * finalColor.rgb, pixel.a);
+	
+    if (capped_time < transition1_time) {
+        // Первый переход: первый цвет (красно-оранжевый) с обычным наложением
+		finalColor = vividLight(texColor.rgb, color2, 0.4);
+        finalColor = mix(color1, finalColor, progress);
+    } 
+    else if (capped_time < transition1_time + transition2_time) {
+	    finalColor = vividLight(texColor.rgb, color2, 0.4);
+    } 
+    else if (capped_time < total_time) {
+		
+        // Третий переход: затухание эффекта наложения до оригинального изображения
+        float progress = (capped_time - transition1_time - transition2_time) / transition3_time;
+        
+        // Уменьшаем интенсивность с течением времени в фазе затухания
+        float fadingIntensity = 0.4 * (1.0 - progress);
+        
+        // Применяем Vivid Light с затухающей интенсивностью
+        finalColor = vividLight(texColor.rgb, color2, fadingIntensity);
+    } 
+    else {
+        // После завершения всех переходов - оригинальное изображение
+        finalColor = texColor.rgb;
+    }
+  
+    gl_FragColor = vec4(finalColor.rgb, texColor.a * v_vColour.a);
+	
 }

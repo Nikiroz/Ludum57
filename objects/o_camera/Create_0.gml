@@ -6,6 +6,5 @@ camera_set_view_pos(view_camera[0], _x, _y);
 
 bg = layer_get_id("Background");
 
-
 cameraX = 0;
-cameraY = 0
+cameraY = 0;
