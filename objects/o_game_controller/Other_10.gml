@@ -1,8 +1,12 @@
 /// @description Capture screenshot
 
-if (sprite_exists(screenshot_sprite))
-	sprite_delete(screenshot_sprite)
 
+if (sprite_exists(global.screenshot_sprite))
+	sprite_delete(global.screenshot_sprite)
+
+global.screenshot_sprite = sprite_create_from_surface(_surface, 0, 0, view_wport[0], view_hport[0], 0, 0, 0, 0); 
+
+/*
 var _width = view_wport[0],
 	_height = view_hport[0],
 
@@ -30,10 +34,11 @@ gpu_set_blendmode(bm_normal)
 //    event_perform(ev_draw, ev_gui)
 //}
 
-surface_reset_target()
+surface_reset_target()*/
 
-screenshot_sprite = sprite_create_from_surface(
-	_surface, 0, 0, _width, _height, 0, 0, 0, 0); 
 
-surface_free(_surface)
+
+//sprite_create_from_surface(_surface, 0, 0, _width, _height, 0, 0, 0, 0); 
+
+//surface_free(_surface)
 

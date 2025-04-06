@@ -1,4 +1,4 @@
-event_inherited();
+//event_inherited();
 
 if (instance_exists(interaction_object)) {
 	draw_arrow(bbox_center_x, bbox_center_y, interaction_object.x, interaction_object.y, 4)
