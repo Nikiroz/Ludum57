@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"o_boatController",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_boatController",
   "overriddenProperties":[],
