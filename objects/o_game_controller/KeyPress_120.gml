@@ -1,0 +1,1 @@
+global.isDebug = !global.isDebug;

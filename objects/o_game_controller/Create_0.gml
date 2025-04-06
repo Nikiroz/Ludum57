@@ -7,6 +7,8 @@ background_map[? layer_get_id("l_bg_parallax02")] = 0;
 background_map[? layer_get_id("l_bg_parallax04")] = 0;
 background_map[? layer_get_id("l_bg_water01")] = -0.5;
 
+global.isDebug = false;
+
 second = 0;
 minute = 0;
 hour   = 6;
