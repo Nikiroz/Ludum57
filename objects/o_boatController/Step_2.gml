@@ -1,0 +1,1 @@
+move_boat(1 + sin(current_time / 200) / 3, 0)
