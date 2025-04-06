@@ -10,15 +10,15 @@ var _camH = camera_get_view_height(view_camera[0]);
 
 var localCameraOffset;
 
-if(target.y < 750){
-	localCameraOffset = 0;
+if(target.y < mcr_waterline){
+	localCameraOffset = -20;
 } else {
-	localCameraOffset = -70; 
+	localCameraOffset = -80; 
 }
 
 offsetTargetY = lerp(offsetTargetY, localCameraOffset, 0.1);
 var _x = target.x - (_camW / 2);
-var _y = target.y - (_camH / 2) - offsetTargetY;
+var _y = target.y - (_camH / 2) + offsetTargetY;
 		
 cameraX = round(lerp(cameraX, _x, 0.1));
 cameraY = round(lerp(cameraY, _y, 0.1));
