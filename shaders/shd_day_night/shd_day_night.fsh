@@ -22,14 +22,14 @@ void main(){
     vec4 texColor = texture2D(gm_BaseTexture, v_vTexcoord);
       
     // Определяем два разных цвета для переходов
-	vec3 color1 = vec3(0.18, 0.19, 0.26);   // Тёмно-синий для второго перехода
+	vec3 color1 = vec3(0.18, 0.19, 0.26) / 3.0;   // Тёмно-синий для второго перехода
     vec3 color2 = vec3(0.9, 0.3, 0.2);      // Красно-оранжевый для первого перехода
 
     // Задаем время для каждого перехода (в секундах)
     float transition1_time = 5.5;  // Первый переход длится 2.5 секунды
     float transition2_time = 2.5;  // Второй переход длится 2.5 секунды
     float transition3_time = 3.0;  // Затухание эффекта длится 3.0 секунды
-	float intensity = 0.4;
+	float intensity = 0.2;
     
     // Общее время всех переходов
     float total_time = transition1_time + transition2_time + transition3_time;
