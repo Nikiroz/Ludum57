@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_father",
-    "path":"sprites/s_father/s_father.yy",
+    "name":"s_father_idle",
+    "path":"sprites/s_father_idle/s_father_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
