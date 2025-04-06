@@ -7,7 +7,7 @@ _cx += _xspd
 var _b = ds_map_find_first(background_map);
 
 repeat(ds_map_size(background_map)){
-	if(layer_get_name(_b) == "l_bg_clouds01" || layer_get_name(_b) == "l_bg_clouds02"){
+	if(layer_get_name(_b) == "l_bg_clouds01" || layer_get_name(_b) == "l_bg_clouds02" || layer_get_name(_b) == "l_bg_stars"){
 		layer_x(_b,  camera_get_view_x(view_camera[0]));
 	} else {
 		layer_x(_b, background_map[? _b] * _cx);

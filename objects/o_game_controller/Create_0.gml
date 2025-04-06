@@ -16,8 +16,10 @@ minute = 0;
 hour  = startHour;
 time  = startHour;
 
-timeScale = 0.01;
+timeScale = 0.05;
 
 waterlineY = 245;
 
 application_surface_draw_enable(false);
+
+draw_set_font(fnt_debug)
