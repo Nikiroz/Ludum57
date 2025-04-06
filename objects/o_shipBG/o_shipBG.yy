@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_shipBG",
-    "path":"sprites/s_shipBG/s_shipBG.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
