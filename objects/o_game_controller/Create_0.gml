@@ -19,6 +19,7 @@ second = 0;
 minute = 0;
 hour   = startHour;
 time   = startHour;
+global.saveTime = 0;
 
 timeScale =  0.001;
 

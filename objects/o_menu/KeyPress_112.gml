@@ -1,2 +1,2 @@
 global.isPause = false;
-alarm[0] = 30;
+room_goto(r_Game);
