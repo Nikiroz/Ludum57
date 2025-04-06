@@ -1,5 +1,4 @@
 target = o_player;
-waterlineY = o_game_controller.waterlineY;
 
 var _x = target.x - gameWidth / 2 + target.sprite_width * 2;
 var _y = target.y - gameHeight / 2 + target.sprite_height / 2;
