@@ -27,7 +27,7 @@ for (var i=0; i<array_length(_elements); i++)
     }
 }
 
-move_boat = function(_x, _y) {
+move_boat = function(_x) {
 	var _element_count = array_length(boatElements)
 	
 	for (var i = 0; i < _element_count; i ++) {
@@ -36,8 +36,8 @@ move_boat = function(_x, _y) {
 		if ((instance_is(_inst, o_levelobject) || _inst.object_index == o_rope_simple) && !_inst.is_boated) continue
 		
 		_inst.x += _x;
-		
-		//if (_inst.object_index != o_player)
-			_inst.y += _y;
+
 	}
+
+	
 }

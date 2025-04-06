@@ -1,7 +1,14 @@
-var left = keyboard_check(ord(leftKey)),
-	right = keyboard_check(ord(rightKey)),
-	jump = keyboard_check_pressed(jumpKey),
+var left = 0,
+	right = 0,
+	jump = 0,
+	_hmove = 0;
+
+if !(status.isFreeze) {
+	left = keyboard_check(ord(leftKey));
+	right = keyboard_check(ord(rightKey));
+	jump = keyboard_check_pressed(jumpKey);
 	_hmove = right - left;
+}
 
 if (_hmove != 0) {
 	hsp += _hmove * mcr_playerSpeed;
@@ -17,6 +24,7 @@ if(jump){
 		vsp *= 0.33;
 	}
 }
+
 
 event_inherited();
 

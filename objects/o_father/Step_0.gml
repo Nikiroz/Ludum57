@@ -5,6 +5,6 @@ if (boatControl)
 		
 	with (o_boatController)
 	{
-		boatSpeed += (right - left) / 3;
+		boatSpeed = lerp(boatSpeed, (right - left), 0.1);
 	}
 }
