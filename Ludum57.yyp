@@ -76,6 +76,7 @@
     {"id":{"name":"s_player_idle_headturn","path":"sprites/s_player_idle_headturn/s_player_idle_headturn.yy",},},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},},
     {"id":{"name":"s_player_walk","path":"sprites/s_player_walk/s_player_walk.yy",},},
+    {"id":{"name":"s_shipBG","path":"sprites/s_shipBG/s_shipBG.yy",},},
     {"id":{"name":"s_sun_mask","path":"sprites/s_sun_mask/s_sun_mask.yy",},},
     {"id":{"name":"s_sun","path":"sprites/s_sun/s_sun.yy",},},
   ],
