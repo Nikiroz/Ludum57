@@ -6,7 +6,7 @@ water_friction = mcr_waterFriction;
 air_friction = mcr_airFriction;
 ground_friction = 0.33;
 
-submerged = false;
+is_submerged = false;
 
 facing = facing_right;
 
@@ -16,3 +16,4 @@ is_grounded = false;
 
 ground_instance = noone;
 
+stable = false;

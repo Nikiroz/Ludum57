@@ -1,4 +1,4 @@
-if keyboard_check_pressed(ord(actionKey))
+with (interactor)
 {
 	status.isFreeze = !status.isFreeze;
 	other.boatControl = !other.boatControl

@@ -33,27 +33,26 @@ if(jump){
 
 event_inherited();
 
-if (instance_exists(rope_instance)) {
-	var _max_distance = (instance_number(o_rope_simple) * ropeSegmentLength) * 6
+if (instance_exists(ropeend_instance)) {
+	//var _max_distance = (instance_number(o_rope_simple) * ropeSegmentLength) * 6
+	var _tx = other.x, _ty = other.bbox_bottom - 20
 	
-	with (rope_instance) {
-		var _tx = other.x, _ty = other.bbox_bottom - 20
-		
+	with (ropeend_instance.rope) {
 		if (stress > length) {
 			var _diff = stress - length
 			other.hsp += ((x + parent.x) * 0.5 - _tx) * 0.2
 			other.vsp += ((y + parent.y) * 0.5 - _ty) * 0.2
 		}
-		
-		x = _tx
-		y = _ty
 	}
 	
+	ropeend_instance.x = _tx
+	ropeend_instance.y = _ty
+	
 	if (input_interact) {
-		with (rope_instance)
+		with (ropeend_instance)
 			attached = false;
 		
-		rope_instance = noone;
+		ropeend_instance = noone;
 		
 		input_interact = false;
 	}

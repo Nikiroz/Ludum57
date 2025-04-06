@@ -8,7 +8,10 @@ function scr_interaction_update() {
 	}
 	else interaction_release = false;
 	
-	if (instance_exists(interaction_object) && (!interaction_object.interaction_time_max || _interacting)) {
+	if (instance_exists(interaction_object)
+	&& (!interaction_object.interaction_time_max || _interacting)
+	&& interaction_object.stable)
+	{
 		var _obj = interaction_object,
 		
 		if (distance_to_object(interaction_object) > interaction_object.interaction_range) {
@@ -46,7 +49,7 @@ function scr_interaction_update() {
 		with (o_interactible) {
 			var _distance = distance_to_point(_x, _y)
 			
-			if (_distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false)) continue
+			if (_distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
 			
 			if (_distance < _distance_max) {
 				_distance_max = _distance
@@ -56,4 +59,16 @@ function scr_interaction_update() {
 		
 		interaction_object = _result
 	}
+}
+
+function scr_interactible_check_selected(_instance) {
+	
+	return (instance_is(_instance, o_interactible)
+		&& o_player.interaction_object == _instance
+		&& !o_player.interaction_release)
+}
+
+function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {
+	draw_sprite_outline(scr_interactible_check_selected(id) ? _outline_flags : 0,
+		sprite_index, image_index, x , y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
 }
