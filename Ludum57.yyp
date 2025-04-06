@@ -134,6 +134,7 @@
     {"id":{"name":"s_shipBG","path":"sprites/s_shipBG/s_shipBG.yy",},},
     {"id":{"name":"s_sun_mask","path":"sprites/s_sun_mask/s_sun_mask.yy",},},
     {"id":{"name":"s_sun","path":"sprites/s_sun/s_sun.yy",},},
+    {"id":{"name":"s_watermask","path":"sprites/s_watermask/s_watermask.yy",},},
     {"id":{"name":"spr_white_pixel","path":"sprites/spr_white_pixel/spr_white_pixel.yy",},},
   ],
   "resourceType":"GMProject",
