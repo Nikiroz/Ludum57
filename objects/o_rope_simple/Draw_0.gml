@@ -1,3 +1,5 @@
+var _distance = 0
+
 if instance_exists(parent) {
 	var _distance = point_distance(x, y, parent.x, parent.y)
 	
@@ -19,8 +21,17 @@ if instance_exists(parent) {
 	
 	draw_line_width(x, y, parent.x, parent.y, 3)
 	
-	if parent.object_index == o_rope_simple {
-		accumulated_distance = parent.accumulated_distance + _distance
-	}
-	else accumulated_distance = _distance
+	stress = (_distance / length)
+	
+	//if parent.object_index == o_rope_simple {
+	//	accumulated_distance = parent.accumulated_distance + (_distance / length)
+	//}
+	//else accumulated_distance = (_distance / length)
 }
+
+//draw_set_color(c_red)
+
+//draw_set_font(fnt_debug_small)
+//draw_text(x, y, stress)
+
+//draw_set_color(c_white)

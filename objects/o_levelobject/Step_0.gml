@@ -24,10 +24,22 @@ var _collide = move_and_collide(hsp, vsp, o_collision, 4),
 
 var _ground = instance_place(x, bbox_bottom + 1, o_collision)
 
-if (_ground != noone && !array_contains(_collide, _ground)) {
-	array_push(_collide, _ground)
-	_collide_count ++
+if (_ground != noone) {
+	var _was_boated = false;
+	
+	is_boated = instance_is(_ground, o_collision_ship);
+	
+	if (!is_boated && _was_boated) {
+		hsp += o_boatController.hsp
+		vsp += o_boatController.vsp
+	}
+	
+	if (!array_contains(_collide, _ground)) {
+		array_push(_collide, _ground)
+		_collide_count ++
+	}
 }
+else is_boated = false;
 
 //{
 	for(var i = 0; i < _collide_count; i ++) {

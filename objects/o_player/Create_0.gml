@@ -15,6 +15,8 @@ status = {
 
 draw_set_font(fnt_debug);
 
+walking = false;
+
 rope_instance = noone;
 carried_instance = noone;
 
