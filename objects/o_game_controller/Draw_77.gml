@@ -12,6 +12,5 @@ if (!global.isDebug) {
 	shader_set_uniform_f(shader_get_uniform(shd_day_night, "time"), _shadingTime * 4);
 }
 
-draw_surface(application_surface, 0, 0);
-
+draw_surface(application_surface, 0 , 0);
 shader_reset();
