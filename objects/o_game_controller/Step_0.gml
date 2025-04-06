@@ -29,6 +29,10 @@ var lay_id = layer_get_id("l_bg_stars");
 var back_id = layer_background_get_id(lay_id);
 layer_background_alpha(back_id, _skyPhase);
 
+with (o_lights) {
+	image_alpha = _skyPhase;
+}
+
 #region Time
 
 time += timeScale;//gameSpeed / 1000

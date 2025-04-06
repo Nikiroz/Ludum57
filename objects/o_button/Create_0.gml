@@ -1,0 +1,13 @@
+width = 280;
+height = 80;
+text = "Button";
+sprite = s_button_blank;
+labelSprite = noone;
+click = false;
+textColor = c_white;
+hover = 0;
+runScript = noone;
+scriptArg = [];
+//langText = getText(text);
+isPlayHover = false;
+hasEntered = false;

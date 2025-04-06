@@ -16,3 +16,4 @@ if (boatControl)
 		boatSpeed = lerp(boatSpeed, (right - left), 0.1);
 	}
 }
+else with (o_boatController) boatSpeed = lerp(boatSpeed, 0, 0.1);

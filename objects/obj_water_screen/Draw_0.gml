@@ -1,6 +1,6 @@
 /// @desc Draw
 
-anim += 0.05
+anim += 0.2
 mask_frame += 0.2
 mask_frame = mask_frame mod sprite_get_number(sprite_mask)
 
@@ -78,7 +78,7 @@ shader_set_uniform_f(
 )
 
 draw_sprite_pos(
-	sprite, 0,
+	sprite, anim,
 	_vx, _vy,
 	_vx2, _vy,
 	_vx2, _vy2,
