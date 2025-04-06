@@ -50,6 +50,7 @@
     {"id":{"name":"o_bg_landmark05","path":"objects/o_bg_landmark05/o_bg_landmark05.yy",},},
     {"id":{"name":"o_bg_landmark06","path":"objects/o_bg_landmark06/o_bg_landmark06.yy",},},
     {"id":{"name":"o_boatController","path":"objects/o_boatController/o_boatController.yy",},},
+    {"id":{"name":"o_boatPart","path":"objects/o_boatPart/o_boatPart.yy",},},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
     {"id":{"name":"o_collision_ship","path":"objects/o_collision_ship/o_collision_ship.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
