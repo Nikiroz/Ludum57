@@ -8,7 +8,7 @@ if (hour > 15)
 else if (hour < 5)
 	_shadingTime = _minShading
 	
-shader_set_uniform_f(shader_get_uniform(shd_day_night, "time"), _shadingTime * 4);
+shader_set_uniform_f(shader_get_uniform(shd_day_night, "time"), 5 * 4);
 draw_surface(application_surface, 0 , 0);
 shader_reset();
 
