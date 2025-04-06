@@ -36,7 +36,7 @@ if instance_exists(parent) {
 			vsp = 0
 		}
 		
-		is_boated = true
+		parent.y += (y - parent.y) * 0.2
 	}
 	else if !attached && y < mcr_waterline {
 		is_boated = false

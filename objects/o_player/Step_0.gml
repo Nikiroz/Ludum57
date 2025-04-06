@@ -45,7 +45,10 @@ event_inherited();
 
 scr_interaction_update();
 
-
+if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
+	x = mouse_x;
+	y = mouse_y;
+}
 
 #region Стейтмашина
 

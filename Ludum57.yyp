@@ -108,6 +108,7 @@
     {"id":{"name":"print","path":"scripts/print/print.yy",},},
     {"id":{"name":"Rendermode","path":"scripts/Rendermode/Rendermode.yy",},},
     {"id":{"name":"scr_instance_check_boated","path":"scripts/scr_instance_check_boated/scr_instance_check_boated.yy",},},
+    {"id":{"name":"scr_render_ropes","path":"scripts/scr_render_ropes/scr_render_ropes.yy",},},
     {"id":{"name":"shd_day_night","path":"shaders/shd_day_night/shd_day_night.yy",},},
     {"id":{"name":"shd_water_screen","path":"shaders/shd_water_screen/shd_water_screen.yy",},},
     {"id":{"name":"shd_water","path":"shaders/shd_water/shd_water.yy",},},

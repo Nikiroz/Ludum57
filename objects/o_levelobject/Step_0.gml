@@ -57,8 +57,8 @@ if (motion_enabled) {
 			if (hsp != 0 && place_meeting(_nx, bbox_bottom, _inst)) {
 				var _step_size = 5, _offset = 0
 				
-				for(var i = 0; i <= _step_size; i ++) {
-					if (!position_meeting(_nx, bbox_bottom - i, _inst)) break
+				for(var j = 0; j <= _step_size; j ++) {
+					if (!position_meeting(_nx, bbox_bottom - j, _inst)) break
 					
 					_offset ++
 					
@@ -66,7 +66,7 @@ if (motion_enabled) {
 					y --
 				}
 				
-				if (i >= _step_size) {
+				if (j >= _step_size) {
 					_ny += _offset
 					y += _offset
 				}
