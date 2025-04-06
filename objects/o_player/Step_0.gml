@@ -10,8 +10,17 @@ if !(status.isFreeze) {
 	_hmove = right - left;
 }
 
+input_interact = keyboard_check_pressed(ord(actionKey))
+
 if (_hmove != 0) {
-	hsp += _hmove * mcr_playerSpeed;
+	if (abs(hsp) < mcr_playerSpeed) {
+		hsp += _hmove * mcr_playerSpeed;
+		
+		if (abs(hsp) > mcr_playerSpeed) {
+			hsp = sign(hsp) * mcr_playerSpeed;
+		}
+	}
+	
 	facing = _hmove;
 	walking = true;
 }
@@ -19,10 +28,6 @@ else walking = false;
 
 if(jump){
 	vsp = mcr_playerJumpForce;
-	
-	if (bbox_bottom > mcr_waterline) {
-		vsp *= 0.33;
-	}
 }
 
 
@@ -43,7 +48,25 @@ if (instance_exists(rope_instance)) {
 		x = _tx
 		y = _ty
 	}
+	
+	if (input_interact) {
+		with (rope_instance)
+			attached = false;
+		
+		rope_instance = noone;
+		
+		input_interact = false;
+	}
 }
+
+scr_interaction_update();
+
+
+
+
+
+
+
 
 #region Стейтмашина
 

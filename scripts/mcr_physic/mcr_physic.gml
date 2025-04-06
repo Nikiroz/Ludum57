@@ -3,6 +3,8 @@
 #macro mcr_playerSpeed 0.7
 #macro mcr_playerJumpForce -5
 #macro mcr_shipSpeed 1
+#macro mcr_airFriction 0.975
+#macro mcr_waterFriction 0.8
 
 #macro ldrx lengthdir_x
 #macro ldry lengthdir_y

@@ -22,9 +22,6 @@ time   = startHour;
 
 timeScale =  0.001;
 
-
-draw_set_font(fnt_debug)
-
 if (file_exists("debug.ini")) {
 	
 	ini_open("debug.ini")
