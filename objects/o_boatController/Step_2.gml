@@ -30,7 +30,9 @@ for (var i = 0; i < _count; i ++) {
 		{
 			event_perform(ev_draw, ev_draw_normal);
 		}
-		else if (sprite_index >= 0) {
+		else if (sprite_exists(sprite_index)) {
+			
+			//print(object_get_name(object_index))
 			
 			draw_sprite_ext(sprite_index, image_index, x, y,
 				image_xscale, image_yscale, image_angle, image_blend, image_alpha);

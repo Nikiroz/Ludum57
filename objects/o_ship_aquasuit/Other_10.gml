@@ -8,8 +8,6 @@ with (interactor) {
 	aquasuit_equipped = true;
 	event_user(0);
 	
-	print("ALO")
-	
 	with (o_rope_end) {
 		if (target == _suit) {
 			target = other.id;
