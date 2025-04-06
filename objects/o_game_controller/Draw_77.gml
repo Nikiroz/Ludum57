@@ -6,7 +6,7 @@ if (!global.isDebug) {
 	
 	var _shadingTime = (max(hour - 6, _minShading));
 	if (hour > 14)
-		_shadingTime = (max(19 - hour, _minShading));
+		_shadingTime = (max(18 - hour, _minShading));
 	else if (hour < 5)
 		_shadingTime = _minShading
 	
