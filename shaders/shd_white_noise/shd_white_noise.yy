@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_white_noise",
+  "name":"shd_white_noise",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
