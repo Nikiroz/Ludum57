@@ -1,5 +1,6 @@
 target = o_player;
 waterlineY = mcr_waterline;
+offsetTargetX = 0;
 offsetTargetY = 0;
 
 depth = -1000;

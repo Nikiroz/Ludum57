@@ -1,19 +1,18 @@
 //x += hsp;
 //y += vsp;
 
-var _collide = move_and_collide(hsp, vsp, o_collision, 4, 0, 0, mcr_playerSpeed),
+var _collide = move_and_collide(hsp, vsp, o_collision, 4),
 	_collide_count = array_length(_collide);
 
 var _gravity_factor = 1;
 
-//if (bbox_top < mcr_waterline) {
-//	_gravity_factor = 0.1;
-	
-//	hsp *= water_friction;
-//	vsp *= water_friction;
-//}
+submerged = (bbox_center_y > mcr_waterline);
 
-var _gravity_max = mcr_terminalVelocity * _gravity_factor
+if (submerged) {
+	vsp *= 0.85;
+}
+
+var _gravity_max = mcr_terminalVelocity * _gravity_factor;
 
 if (vsp < _gravity_max) {
 	vsp += mcr_gravity * _gravity_factor;
@@ -28,14 +27,47 @@ if (_collide_count) {
 		_cy = bbox_center_y
 	
 	for(var i = 0; i < _collide_count; i ++) {
-		var _inst = _collide[i]
+		var _inst = _collide[i],
+			_nx = (hsp ? bbox_right : bbox_left) + hsp,
+			_ny = (vsp ? bbox_bottom : bbox_top) + vsp
 		
-		if ((_inst.bbox_top > _cy && vsp < 0) || (_inst.bbox_bottom < _cy && vsp > 0)) {
-			vsp = 0
+		if (hsp != 0 && place_meeting(_nx, bbox_bottom, _inst)) {
+			var _step_size = 5, _offset = 0
+			
+			for(var i = 0; i <= _step_size; i ++) {
+				if (!position_meeting(_nx, bbox_bottom - i, _inst)) break
+				
+				_offset ++
+				
+				_ny --
+				y --
+			}
+			
+			if (i >= _step_size) {
+				_ny += _offset
+				y += _offset
+			}
+			
+			//print(position_meeting(_nx, bbox_bottom, _inst))
+			
+			//while(position_meeting(_nx, bbox_bottom, _inst)) {
+			//	var _normal = position_find_normal(x, bbox_bottom, bbox_width, 5, _inst)
+				
+			//	if (_normal == undefined) break
+				
+			//	print(_normal)
+				
+			//	x += _normal[0]
+			//	y += _normal[1]
+			//}
 		}
 		
-		if ((_inst.bbox_left > _cx && hsp < 0) || (_inst.bbox_right < _cx && hsp > 0)) {
-			hsp = 0
+		while (hsp != 0 && place_meeting(_nx, y, _inst)) {
+			hsp = approach(hsp, 0, 1);
+		}
+		
+		while (vsp != 0 && place_meeting(x, _ny, _inst)) {
+			vsp = approach(vsp, 0, 1);
 		}
 		
 		if (hsp == 0 && vsp == 0)

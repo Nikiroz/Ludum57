@@ -10,16 +10,13 @@ status.isWalk = (left || right);
 
 if(jump){
 	vsp = mcr_playerJumpForce;
-}
-if(sign(hsp) != 0){
-	image_xscale = sign(hsp);
+	
+	if (bbox_bottom > mcr_waterline) {
+		vsp *= 0.33;
+	}
 }
 
-//if (array_length(move_and_collide(hsp, vsp, o_collision, 4, 0, 0, mcr_playerSpeed))) != 0 {
-//	vsp = 0;
-//}
-
-//hsp *= 0.33;
+if (hsp != 0) facing = sign(hsp)
 
 if (instance_exists(rope_instance)) {
 	//var _max_distance = (instance_number(o_rope_simple) * ropeSegmentLength) * 4
