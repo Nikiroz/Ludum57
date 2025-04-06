@@ -6,13 +6,15 @@ var _gravity_factor = 1;
 is_submerged = (bbox_center_y > mcr_waterline);
 
 if (motion_enabled) {
-	var _gravity_max = mcr_terminalVelocity * _gravity_factor;
-	
-	if (vsp < _gravity_max) {
-		vsp += mcr_gravity * _gravity_factor;
+	if (gravity_enabled) {
+		var _gravity_max = mcr_terminalVelocity * _gravity_factor;
 		
-		if (vsp > _gravity_max) {
-			vsp = _gravity_max;
+		if (vsp < _gravity_max) {
+			vsp += mcr_gravity * _gravity_factor;
+		
+			if (vsp > _gravity_max) {
+				vsp = _gravity_max;
+			}
 		}
 	}
 	
@@ -21,7 +23,7 @@ if (motion_enabled) {
 	
 	var _ground = instance_place(x, bbox_bottom + 1, o_collision)
 	
-	if (_ground != noone) {
+	if (gravity_enabled && _ground != noone) {
 		var _was_boated = false;
 		
 		is_grounded = true;

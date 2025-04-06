@@ -32,3 +32,9 @@ if (file_exists("debug.ini")) {
 	ini_close();
 	
 }
+
+if (global.isDebug) {
+	
+	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
+	
+}

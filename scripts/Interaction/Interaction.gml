@@ -8,7 +8,7 @@ function scr_interaction_update() {
 	}
 	else interaction_release = false;
 	
-	if (instance_exists(interaction_object)
+	if (instance_exists(interaction_object) && stable
 	&& (!interaction_object.interaction_time_max || _interacting)
 	&& interaction_object.stable)
 	{

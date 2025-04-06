@@ -30,7 +30,6 @@ for (var i=0; i<array_length(_elements); i++)
 			_object = _inst.object_index;
 		
 		if (_object == o_boatController
-			|| _object == o_rope_source
 			|| _object == o_rope_simple
 			|| _object == o_rope_end)
 		{
