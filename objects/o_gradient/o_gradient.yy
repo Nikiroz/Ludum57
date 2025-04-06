@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gradient",
-    "path":"sprites/spr_gradient/spr_gradient.yy",
+    "name":"s_gradient",
+    "path":"sprites/s_gradient/s_gradient.yy",
   },
   "spriteMaskId":null,
   "visible":true,
