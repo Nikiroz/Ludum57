@@ -1,7 +1,6 @@
 hsp = 0;
 vsp = 0;
 
-density = 1;
 water_friction = mcr_waterFriction;
 air_friction = mcr_airFriction;
 ground_friction = 0.33;
@@ -19,3 +18,4 @@ ground_instance = noone;
 stable = false;
 
 motion_enabled = true;
+gravity_enabled = true;

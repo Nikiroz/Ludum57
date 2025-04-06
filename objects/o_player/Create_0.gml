@@ -1,26 +1,33 @@
 event_inherited();
 
-status = {
-	oxygen :       100,              //Кислород
-	hp :           100,              //Здоровье
-	speed :        2,                //Скорость перемещения
-	cable :        ropeSegmentCount, //Длина кабеля
-	lightter :     false,            //Наличие фонаря
-	impulceForce : 1,	             //Сила откидывания предметов
-	inCostume :    false,            //В костюме или нет
-	inWater :      false,            //В воде или нет
-	isFreeze :     false,            //Забираем управление когда надо
-	isWalk :       false,            //Управление когда надо
-}
-
-density = 4;
-
+// состояния
 walking = false;
+input_enabled = true;
+walking_enabled = true;
+motion_enabled = true;
+boat_control = false;
+
+// экипировка
+aquasuit_equipped = false;
+lighter_available = false;
+
+
+// базовые хар-ки
+event_user(0);
+hp = max_hp;
+
+
+// ввод и прочее
+input_interact = false;
+
+interaction_object = noone;
+interaction_progress = 0;
+interaction_time_max = 0;
+interaction_active = false;
+interaction_release = false;
 
 ropeend_instance = noone;
 carried_instance = noone;
-
-input_interact = false;
 
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
@@ -30,8 +37,17 @@ has_carried_item = function(_object = undefined) {
 	return instance_is(carried_instance, _object)
 }
 
-interaction_object = noone;
-interaction_progress = 0;
-interaction_time_max = 0;
-interaction_active = false;
-interaction_release = false;
+
+//
+
+/// @function sprite_change(sprite)
+sprite_change = function(_sprite) {
+	sprite_index = _sprite;
+	image_index = 0;
+}
+
+/// @function animation_reset()
+animation_reset = function() {
+	image_index = 0;
+	event_perform(ev_other, ev_animation_end);
+}

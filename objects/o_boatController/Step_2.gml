@@ -19,17 +19,16 @@ for (var i = _count - 1; i >= 0; i --) {
 	}
 }
 
+//
+rendermode_set(Rendermode.Boat);
+
 for (var i = 0; i < _count; i ++) {
 	with (boatElements[i]) {
 		if (!(scr_instance_check_boated(id) && visible)) continue;
 		
 		if (instance_is(self, o_levelobject))
 		{
-			is_boated = false;
-			
 			event_perform(ev_draw, ev_draw_normal);
-			
-			is_boated = true;
 		}
 		else if (sprite_index >= 0) {
 			
@@ -38,6 +37,9 @@ for (var i = 0; i < _count; i ++) {
 		}
 	}
 }
+
+//
+rendermode_reset();
 
 for (var i = _count - 1; i >= 0; i --) {
 	with (boatElements[i]) {

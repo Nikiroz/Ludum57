@@ -15,8 +15,12 @@ for(var i = 0; i < ropeSegmentCount; i ++) {
 }
 
 with (_last) {
-	with (instance_create_layer(x, y, _layer, o_rope_end))
-		rope_instance = _last;
+	with (o_ship_aquasuit) {
+		with (instance_create_layer(x, y, _layer, o_rope_end)) {
+			rope_instance = _last;
+			target = other.id;
+		}
+	}
 	
 	attached = true;
 }

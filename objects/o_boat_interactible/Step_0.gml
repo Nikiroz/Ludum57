@@ -1,3 +1,3 @@
 event_inherited();
 
-boatControl = false;
+is_boated = true;

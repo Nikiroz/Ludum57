@@ -2,7 +2,6 @@
   "$GMObject":"",
   "%Name":"o_rope_end",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
@@ -14,8 +13,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"o_interactible",
-    "path":"objects/o_interactible/o_interactible.yy",
+    "name":"o_levelobject",
+    "path":"objects/o_levelobject/o_levelobject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,6 +34,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"s_circle16",
+    "path":"sprites/s_circle16/s_circle16.yy",
+  },
   "visible":true,
 }

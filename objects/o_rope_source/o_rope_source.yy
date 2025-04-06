@@ -41,5 +41,5 @@
     "name":"s_circle16",
     "path":"sprites/s_circle16/s_circle16.yy",
   },
-  "visible":true,
+  "visible":false,
 }

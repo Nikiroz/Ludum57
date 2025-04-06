@@ -16,8 +16,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"o_interactible",
-    "path":"objects/o_interactible/o_interactible.yy",
+    "name":"o_boat_interactible",
+    "path":"objects/o_boat_interactible/o_boat_interactible.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
