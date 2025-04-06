@@ -18,6 +18,12 @@ for (var i=0; i<array_length(boatElements); i++)
 				draw_levelobject(sprite_index, image_index, x - _xshift, y - _yshift,
 					image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 			}
+			else if (_inst.object_index == o_ship_light)
+			{
+				gpu_set_blendmode(bm_add);
+				draw_sprite_ext(sprite_index, image_index, x - _xshift, y - _yshift, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+				gpu_set_blendmode(bm_normal);
+			}
 			else if (sprite_index >= 0)
 				draw_sprite_ext(sprite_index, image_index, x - _xshift, y - _yshift, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
