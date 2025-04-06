@@ -19,8 +19,11 @@ if instance_exists(parent) {
 				y -= _normal[1]
 				vsp = 0
 			}
+			
+			is_boated = true
 		}
 		else if !attached && y < mcr_waterline {
+			is_boated = false
 			vsp += 0.1
 		}
 	//

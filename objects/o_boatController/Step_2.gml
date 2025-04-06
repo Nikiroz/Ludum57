@@ -1,1 +1,9 @@
-move_boat(1 + sin(current_time / 200) / 3, 0)
+if (isMoving) {
+	hsp += boatSpeed;
+}
+
+if (hsp > 0) self.move_boat(hsp, vsp);
+
+boatSpeed /= 1.2;
+
+hsp *= 0.8;

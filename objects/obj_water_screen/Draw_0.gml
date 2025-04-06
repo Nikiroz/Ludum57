@@ -1,6 +1,8 @@
 /// @desc Draw
 
 anim += 0.05
+mask_frame += 0.2
+mask_frame = mask_frame mod sprite_get_number(sprite_mask)
 
 waterline_y = mcr_waterline - 12
 wave_amp = 12
@@ -14,7 +16,7 @@ if (is_wave) {
 		}
 	}
 }
-wave_y += wave_amp
+wave_y += 48//sprite_get_yoffset(sprite_mask) / 6
 
 var _vx = camera_get_view_x(view_camera[0]) - 1,
 	_vy = camera_get_view_y(view_camera[0]) - 1,
@@ -34,6 +36,10 @@ _vy = max(
 // _vy2 = _vy + _height
 
 texture_set_stage(
+	u_watermask,
+	sprite_get_texture(sprite_mask, mask_frame)
+)
+texture_set_stage(
 	u_underwater,
 	sprite_get_texture(sprite_underwater, 0)
 )
@@ -45,16 +51,27 @@ shader_set_uniform_f_array(
 	]
 )
 shader_set_uniform_f_array(
+	u_waterdata,
+	[
+		sprite_get_width(sprite_mask),
+		sprite_get_height(sprite_mask),
+		0,
+		wave_y + 16
+	]
+)
+shader_set_uniform_f_array(
 	u_sprite_pos,
 	[
 		_vx,
 		_vy
 	]
 )
+/*
 shader_set_uniform_f_array(
 	u_wave_data,
 	[wave_y, wave_amp]
 )
+*/
 shader_set_uniform_f(
 	u_anim,
 	anim
