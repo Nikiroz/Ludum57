@@ -17,8 +17,6 @@ if (instance_exists(_rope)) {
 else exit
 
 with (target) {
-	print(object_get_name(object_index))
-	
 	var _tx = x, _ty = bbox_bottom - 20,
 		_is_player = (object_index == o_player);
 	
