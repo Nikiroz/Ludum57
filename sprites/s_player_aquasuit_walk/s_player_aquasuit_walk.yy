@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"s_player_aquasuit_walk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":46,
-  "bbox_left":1,
-  "bbox_right":26,
+  "bbox_left":3,
+  "bbox_right":21,
   "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
