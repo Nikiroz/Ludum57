@@ -3,7 +3,7 @@
 
 var _gravity_factor = 1;
 
-submerged = (bbox_center_y > mcr_waterline);
+is_submerged = (bbox_center_y > mcr_waterline);
 
 var _gravity_max = mcr_terminalVelocity * _gravity_factor;
 
@@ -29,8 +29,8 @@ if (_ground != noone) {
 	is_boated = instance_is(_ground, o_collision_ship);
 	
 	if (!is_boated && _was_boated) {
-		hsp += o_boatController.hsp
-		vsp += o_boatController.vsp
+		hsp += o_boatController.hsp;
+		vsp += o_boatController.vsp;
 	}
 	
 	if (!array_contains(_collide, _ground)) {
@@ -101,9 +101,11 @@ if (is_grounded) {
 }
 else hsp *= air_friction;
 
-if (submerged) {
+if (is_submerged) {
 	vsp *= water_friction;
 	hsp *= water_friction;
 }
 
 //if (abs(hsp) < 0.05) hsp = 0;
+
+stable = (is_grounded || is_submerged);

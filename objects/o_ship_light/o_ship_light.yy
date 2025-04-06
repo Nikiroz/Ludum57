@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"o_ship_light",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_ship_light",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"o_boatPart",
-    "path":"objects/o_boatPart/o_boatPart.yy",
+    "name":"o_lights",
+    "path":"objects/o_lights/o_lights.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

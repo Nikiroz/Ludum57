@@ -14,7 +14,9 @@ for(var i = 0; i < ropeSegmentCount; i ++) {
 	_last = _inst
 }
 
-//with o_player {
-//	rope_instance = _last
-//	_last.attached = true
-//}
+with (_last) {
+	with (instance_create_layer(x, y, _layer, o_rope_end))
+		rope_instance = _last;
+	
+	attached = true;
+}
