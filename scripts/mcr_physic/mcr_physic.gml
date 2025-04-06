@@ -7,8 +7,11 @@
 #macro ldrx lengthdir_x
 #macro ldry lengthdir_y
 
-#macro bbox_center_x ((bbox_top + bbox_bottom) * 0.5)
-#macro bbox_center_y ((bbox_left + bbox_right) * 0.5)
+#macro bbox_center_x ((bbox_left + bbox_right) * 0.5)
+#macro bbox_center_y ((bbox_top + bbox_bottom) * 0.5)
 
 #macro bbox_width (bbox_right - bbox_top)
 #macro bbox_height (bbox_bottom - bbox_top)
+
+#macro facing_left -1
+#macro facing_right 1

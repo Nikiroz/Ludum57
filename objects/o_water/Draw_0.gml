@@ -1,3 +1,4 @@
+if (global.isDebug) exit;
 
 shader_set(shd_water);
 var u_time = shader_get_uniform(shd_water, "time");

@@ -23,3 +23,5 @@ timeScale = 0.15;
 time   = 0.0;
 
 application_surface_draw_enable(false);
+
+draw_set_font(fnt_debug)
