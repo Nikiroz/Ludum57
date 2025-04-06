@@ -25,10 +25,6 @@ var back_id = layer_background_get_id(lay_id);
 layer_background_alpha(back_id, _skyPhase);
 
 
-	
-
-
-
 #region Time
 
 time += timeScale;//gameSpeed / 1000

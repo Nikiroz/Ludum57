@@ -19,7 +19,7 @@ minute = 0;
 hour   = startHour;
 time   = startHour;
 
-timeScale =  0.05;
+timeScale =  0.005; 
 
 application_surface_draw_enable(false);
 
