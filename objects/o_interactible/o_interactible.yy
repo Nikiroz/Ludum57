@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"o_ship_oxygentank_basic",
+  "%Name":"o_interactible",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_ship_oxygentank_basic",
+  "name":"o_interactible",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"o_boatPart",
-    "path":"objects/o_boatPart/o_boatPart.yy",
+    "name":"o_levelobject",
+    "path":"objects/o_levelobject/o_levelobject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_ship_oxygentank_basic",
-    "path":"sprites/s_ship_oxygentank_basic/s_ship_oxygentank_basic.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

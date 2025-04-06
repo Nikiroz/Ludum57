@@ -1,9 +1,35 @@
-if (isMoving) {
-	hsp += boatSpeed;
-}
+/// @description отрисовка сурфейса
+surface_set_target(other.boatSurface)
+draw_clear_alpha(c_white, 0)
+for (var i=0; i<array_length(boatElements); i++)
+	{
+		var _inst = boatElements[i];
+		
+		with (_inst)
+		{
+			if !visible 
+				continue;
 
-if (hsp > 0) self.move_boat(hsp, vsp);
+			var _xshift = camera_get_view_x(view_camera[0]),
+				_yshift = camera_get_view_y(view_camera[0]);
 
-boatSpeed /= 1.2;
+			if (_inst.object_index == o_player)
+			{
+				draw_levelobject(sprite_index, image_index, x - _xshift, y - _yshift,
+					image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+			}
+			else if (_inst.object_index == o_ship_light)
+			{
+				gpu_set_blendmode(bm_add);
+				draw_sprite_ext(sprite_index, image_index, x - _xshift, y - _yshift, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+				gpu_set_blendmode(bm_normal);
+			}
+			else if (sprite_index >= 0)
+				draw_sprite_ext(sprite_index, image_index, x - _xshift, y - _yshift, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-hsp *= 0.8;
+
+			
+		}
+		
+	}
+surface_reset_target()

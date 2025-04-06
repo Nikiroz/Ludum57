@@ -13,12 +13,14 @@ status = {
 	isWalk :       false,            //Управление когда надо
 }
 
-draw_set_font(fnt_debug);
+density = 4;
 
 walking = false;
 
 rope_instance = noone;
 carried_instance = noone;
+
+input_interact = false;
 
 ///@function is_climbing_rope()
 is_climbing_rope = function() {
@@ -32,3 +34,9 @@ has_carried_item = function(_object = undefined) {
 	
 	return instance_is(carried_instance, _object)
 }
+
+interaction_object = noone;
+interaction_progress = 0;
+interaction_time_max = 0;
+interaction_active = false;
+interaction_release = false;
