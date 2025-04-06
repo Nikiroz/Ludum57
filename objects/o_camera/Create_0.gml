@@ -1,5 +1,5 @@
 target = o_player;
-waterlineY = o_game_controller.waterlineY;
+waterlineY = mcr_waterline;
 offsetTargetY = 0;
 
 var _x = target.x - gameWidth / 2 + target.sprite_width * 2;
