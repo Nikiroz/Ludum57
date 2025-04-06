@@ -1,4 +1,4 @@
-screenShot = -1;
+screenshot_sprite = -1;
 
 background_map = ds_map_create();
 background_map[? layer_get_id("l_bg_clouds01")] = 0.2;
@@ -13,13 +13,18 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 global.isDebug = false;
 global.isPause = false;
 
-startHour = 10//6;
+startHour = 8//6;
 second = 0;
 minute = 0;
 hour   = startHour;
 time   = startHour;
 
-timeScale = 0//0.05;
+
+timeScale =  0.001;
+
+waterlineY = 245;
+
+
 
 application_surface_draw_enable(false);
 
