@@ -1,8 +1,5 @@
 event_inherited();
 
-vsp = 0;
-hsp = 0;
-
 status = {
 	oxygen :       100,              //Кислород
 	hp :           100,              //Здоровье
@@ -19,7 +16,17 @@ status = {
 draw_set_font(fnt_debug);
 
 rope_instance = noone;
+carried_instance = noone;
 
+///@function is_climbing_rope()
 is_climbing_rope = function() {
 	return instance_exists(rope_instance);
+}
+
+///@function has_carried_item([check_object=undefined])
+has_carried_item = function(_object = undefined) {
+	if (is_undefined(_object))
+		return instance_exists(carried_instance)
+	
+	return instance_is(carried_instance, _object)
 }
