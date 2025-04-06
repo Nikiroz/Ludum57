@@ -1,3 +1,8 @@
+if(global.isDebug){
+	draw_surface(application_surface, 0 , 0);
+	exit;
+}
+
 shader_set(shd_day_night);
 
 var _minShading = 0.4
