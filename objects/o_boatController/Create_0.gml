@@ -1,4 +1,7 @@
+
+boatSpeed = 0;
 boatElements = []
+
 
 var _layer = layer_get_id("Boat"),
 	_elements = layer_get_all_elements(_layer);
