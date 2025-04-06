@@ -7,7 +7,9 @@ horsp += (right - left) * mcr_playerSpeed;
 if(jump){
 	vsp = mcr_playerJumpForce;
 }
-
+if(sign(horsp) != 0){
+	image_xscale = sign(horsp);
+}
 vsp += mcr_gravity;
 vsp = clamp(vsp, mcr_maxGravity);
 

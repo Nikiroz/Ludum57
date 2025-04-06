@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_player_idle_headturn",
-    "path":"sprites/s_player_idle_headturn/s_player_idle_headturn.yy",
+    "name":"s_player_idle",
+    "path":"sprites/s_player_idle/s_player_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
