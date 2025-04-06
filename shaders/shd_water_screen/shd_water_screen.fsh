@@ -10,8 +10,11 @@ uniform vec2 u_view;
 uniform vec2 u_parallax;
 uniform float u_anim;
 */
+uniform sampler2D u_underwater;
 uniform vec2 u_sprite_size;
 uniform vec2 u_sprite_pos;
+uniform vec2 u_wave_data;
+uniform float u_anim;
 
 float fbm1(float _value) {
 	return sin(_value) * 0.5 + sin(_value * 1.66) * 0.25 + sin(_value * 3.22) * 0.125;
@@ -24,6 +27,12 @@ void main()
 	uv.y -= u_sprite_pos.y;
 	uv.y = min(uv.y, u_sprite_size.y - 0.01) / u_sprite_size.y;
 	vec4 base = v_vColour * texture2D(gm_BaseTexture, uv);
+	
+	float wave_y = u_wave_data.x + sin(u_anim + v_vPosition.x * 0.02) * u_wave_data.y;
+	if (v_vPosition.y > wave_y) {
+		base = v_vColour * texture2D(u_underwater, uv);
+	}
+	
 	gl_FragColor = base;
 	/*
 	vec2 uv = v_vPosition.xy;

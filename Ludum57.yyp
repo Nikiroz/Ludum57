@@ -41,16 +41,13 @@
     {"id":{"name":"fnt_debug_small","path":"fonts/fnt_debug_small/fnt_debug_small.yy",},},
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"c_fog","path":"objects/c_fog/c_fog.yy",},},
-
     {"id":{"name":"o_bg_landmark01","path":"objects/o_bg_landmark01/o_bg_landmark01.yy",},},
     {"id":{"name":"o_bg_landmark02","path":"objects/o_bg_landmark02/o_bg_landmark02.yy",},},
     {"id":{"name":"o_bg_landmark03","path":"objects/o_bg_landmark03/o_bg_landmark03.yy",},},
     {"id":{"name":"o_bg_landmark04","path":"objects/o_bg_landmark04/o_bg_landmark04.yy",},},
     {"id":{"name":"o_bg_landmark05","path":"objects/o_bg_landmark05/o_bg_landmark05.yy",},},
     {"id":{"name":"o_bg_landmark06","path":"objects/o_bg_landmark06/o_bg_landmark06.yy",},},
-
     {"id":{"name":"o_boatController","path":"objects/o_boatController/o_boatController.yy",},},
-
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
     {"id":{"name":"o_collision_ship","path":"objects/o_collision_ship/o_collision_ship.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
@@ -98,6 +95,10 @@
     {"id":{"name":"s_bg_parallax03_smoke","path":"sprites/s_bg_parallax03_smoke/s_bg_parallax03_smoke.yy",},},
     {"id":{"name":"s_bg_seagulls","path":"sprites/s_bg_seagulls/s_bg_seagulls.yy",},},
     {"id":{"name":"s_bg_stars","path":"sprites/s_bg_stars/s_bg_stars.yy",},},
+    {"id":{"name":"s_bg_underwater01","path":"sprites/s_bg_underwater01/s_bg_underwater01.yy",},},
+    {"id":{"name":"s_bg_underwater02","path":"sprites/s_bg_underwater02/s_bg_underwater02.yy",},},
+    {"id":{"name":"s_bg_underwater03","path":"sprites/s_bg_underwater03/s_bg_underwater03.yy",},},
+    {"id":{"name":"s_bg_underwater04","path":"sprites/s_bg_underwater04/s_bg_underwater04.yy",},},
     {"id":{"name":"s_bg_water01","path":"sprites/s_bg_water01/s_bg_water01.yy",},},
     {"id":{"name":"s_bg_water02","path":"sprites/s_bg_water02/s_bg_water02.yy",},},
     {"id":{"name":"s_bg_water03","path":"sprites/s_bg_water03/s_bg_water03.yy",},},

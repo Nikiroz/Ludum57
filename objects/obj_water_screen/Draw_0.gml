@@ -1,8 +1,20 @@
 /// @desc Draw
 
-// anim += 0.01
+anim += 0.05
 
 waterline_y = o_game_controller.waterlineY - 12
+wave_amp = 12
+wave_y = draw_y
+if (is_wave) {
+	draw_y = draw_y
+} else {
+	with (obj_water_screen) {
+		if (is_wave) {
+			other.wave_y = draw_y
+		}
+	}
+}
+wave_y += wave_amp
 
 var _vx = camera_get_view_x(view_camera[0]) - 1,
 	_vy = camera_get_view_y(view_camera[0]) - 1,
@@ -21,6 +33,10 @@ _vy = max(
 )
 // _vy2 = _vy + _height
 
+texture_set_stage(
+	u_underwater,
+	sprite_get_texture(sprite_underwater, 0)
+)
 shader_set_uniform_f_array(
 	u_sprite_size,
 	[
@@ -35,6 +51,14 @@ shader_set_uniform_f_array(
 		_vy
 	]
 )
+shader_set_uniform_f_array(
+	u_wave_data,
+	[wave_y, wave_amp]
+)
+shader_set_uniform_f(
+	u_anim,
+	anim
+)
 
 draw_sprite_pos(
 	sprite, 0,
@@ -44,6 +68,8 @@ draw_sprite_pos(
 	_vx, _vy2,
 	1
 )
+draw_x = _vx
+draw_y = _vy
 
 shader_reset()
 
