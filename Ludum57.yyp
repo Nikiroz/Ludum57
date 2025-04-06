@@ -138,6 +138,8 @@
     {"id":{"name":"s_menu","path":"sprites/s_menu/s_menu.yy",},},
     {"id":{"name":"s_player_aquasuit_idle","path":"sprites/s_player_aquasuit_idle/s_player_aquasuit_idle.yy",},},
     {"id":{"name":"s_player_aquasuit_walk","path":"sprites/s_player_aquasuit_walk/s_player_aquasuit_walk.yy",},},
+    {"id":{"name":"s_player_drive_hand","path":"sprites/s_player_drive_hand/s_player_drive_hand.yy",},},
+    {"id":{"name":"s_player_drive","path":"sprites/s_player_drive/s_player_drive.yy",},},
     {"id":{"name":"s_player_idle_headturn","path":"sprites/s_player_idle_headturn/s_player_idle_headturn.yy",},},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},},
     {"id":{"name":"s_player_walk","path":"sprites/s_player_walk/s_player_walk.yy",},},
