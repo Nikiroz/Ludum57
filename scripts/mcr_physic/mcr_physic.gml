@@ -3,3 +3,6 @@
 #macro mcr_playerSpeed 2
 #macro mcr_playerJumpForce -5
 #macro mcr_shipSpeed 1
+
+#macro ldrx lengthdir_x
+#macro ldry lengthdir_y
