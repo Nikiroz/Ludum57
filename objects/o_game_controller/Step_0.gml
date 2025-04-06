@@ -31,7 +31,7 @@ layer_background_alpha(back_id, _skyPhase);
 
 #region Time
 
-time += 0.05;//gameSpeed / 1000
+time += timeScale;//gameSpeed / 1000
 hour = time mod 24;
 
 #endregion

@@ -29,7 +29,7 @@ void main(){
     float transition1_time = 5.5;  // Первый переход длится 2.5 секунды
     float transition2_time = 2.5;  // Второй переход длится 2.5 секунды
     float transition3_time = 3.0;  // Затухание эффекта длится 3.0 секунды
-	float intensity = 0.4;
+	float intensity = 0.3;
     
     // Общее время всех переходов
     float total_time = transition1_time + transition2_time + transition3_time;
