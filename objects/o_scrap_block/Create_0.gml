@@ -1,0 +1,10 @@
+event_inherited();
+
+
+float_level = ystart;
+
+float_wave = random(6.2);
+
+interaction_time_max = 20;
+
+density = 2;

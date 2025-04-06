@@ -25,10 +25,9 @@ timeScale =  0.001;
 waterlineY = 245;
 
 
+draw_set_font(fnt_debug);
 
 application_surface_draw_enable(false);
-
-draw_set_font(fnt_debug)
 
 if (file_exists("debug.ini")) {
 	
