@@ -1,4 +1,7 @@
 /// @description Взаимодействие 2
+
+if (boatControl) exit;
+
 var _scavenge_amount = 0;
 
 with (o_loot) {

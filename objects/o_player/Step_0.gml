@@ -93,8 +93,6 @@ else {
 
 event_inherited();
 
-scr_interaction_update();
-
 if (climb_aboard_confirmation) {
 	vsp = (mcr_waterline - bbox_top - 6) * 0.2;
 }
@@ -199,3 +197,5 @@ if (has_carried_item()) {
 #endregion
 
 scr_levelobject_updae_dive_splashes();
+
+scr_interaction_update();
