@@ -1,22 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"o_scrap_block",
+  "%Name":"o_loot",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_scrap_block",
+  "name":"o_loot",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"loot",
+    "path":"folders/Objects/loot.yy",
   },
   "parentObjectId":{
-    "name":"o_interactible",
-    "path":"objects/o_interactible/o_interactible.yy",
+    "name":"o_levelobject",
+    "path":"objects/o_levelobject/o_levelobject.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_scrap_block_test",
-    "path":"sprites/s_scrap_block_test/s_scrap_block_test.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

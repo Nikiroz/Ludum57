@@ -21,7 +21,7 @@ hp = max_hp;
 input_interact = false;
 
 interaction_object = noone;
-interaction_progress = 0;
+interaction_time = 0;
 interaction_time_max = 0;
 interaction_active = false;
 interaction_release = false;

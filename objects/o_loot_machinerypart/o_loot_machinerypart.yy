@@ -6,10 +6,13 @@
   "name":"o_loot_machinerypart",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"loot",
+    "path":"folders/Objects/loot.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_loot",
+    "path":"objects/o_loot/o_loot.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -22,9 +22,9 @@ function scr_interaction_update() {
 		var _time_max = _obj.interaction_time_max,
 			_complete = false;
 		
-		if (interaction_progress >= _time_max && (_time_max ? _interacting : _interact)) {
+		if (interaction_time >= _time_max && (_time_max ? _interacting : _interact)) {
 			with (_obj) {
-				other.interaction_progress = 0;
+				other.interaction_time = 0;
 				other.interaction_time_max = 0;
 				other.interaction_release = true;
 				interactor = other.id;
@@ -32,15 +32,15 @@ function scr_interaction_update() {
 			}
 		}
 		else if (_interacting && _time_max) {
-			interaction_progress ++
+			interaction_time ++
 		}
 	}
 	else {
-		if (interaction_progress > 0) {
-			interaction_progress = lerp(interaction_progress, 0, 0.2);
+		if (interaction_time > 0) {
+			interaction_time = lerp(interaction_time, 0, 0.2);
 			
-			if (interaction_progress < 1)
-				interaction_progress = 0;
+			if (interaction_time < 1)
+				interaction_time = 0;
 		}
 		
 		var _distance_max = infinity, _result = noone,
@@ -59,6 +59,24 @@ function scr_interaction_update() {
 		}
 		
 		interaction_object = _result
+	}
+	
+	var _obj = interaction_object, _any = false;
+	
+	if (instance_exists(_obj)) {
+		interaction_time_max = _obj.interaction_time_max;
+		
+		with (o_interaction_text) {
+			if (target == _obj) {
+				_any = true;
+				break;
+			}
+		}
+		
+		if (!_any) {
+			with (instance_create_depth(x, y, -100, o_interaction_text))
+				target = _obj;
+		}
 	}
 }
 
@@ -80,4 +98,9 @@ function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {
 function scr_interactible_configure(_delay = 0, _distance = 20) {
 	interaction_time_max = _delay
 	interaction_range = _distance
+}
+
+function scr_interactible_set_text(_hint = "N/A", _progress = "N/A {0}%") {
+	interaction_text_hint = _hint;
+	interaction_text_progress = _progress;
 }

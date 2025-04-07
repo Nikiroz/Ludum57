@@ -19,5 +19,7 @@ with (interactor)
 		else {
 			sprite_index = s_father_drive_end;
 		}
+		
+		event_user(1);
 	}
 }

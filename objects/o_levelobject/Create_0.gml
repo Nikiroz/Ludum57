@@ -1,7 +1,7 @@
 hsp = 0;
 vsp = 0;
 
-water_friction = mcr_waterFriction;
+water_friction = mcr_waterResistance;
 air_friction = mcr_airFriction;
 ground_friction = 0.33;
 

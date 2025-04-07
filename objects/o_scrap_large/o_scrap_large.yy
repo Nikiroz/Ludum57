@@ -6,10 +6,13 @@
   "name":"o_scrap_large",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"scraps",
+    "path":"folders/Objects/scraps.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_scrap",
+    "path":"objects/o_scrap/o_scrap.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
