@@ -12,8 +12,8 @@
   "duration":9.732396,
   "name":"snd_seagull_2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Seagul",
+    "path":"folders/Sounds/Seagul.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
