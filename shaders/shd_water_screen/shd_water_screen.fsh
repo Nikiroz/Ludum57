@@ -15,6 +15,7 @@ uniform vec4 u_waterdata;
 uniform sampler2D u_underwater;
 uniform vec2 u_sprite_size;
 uniform vec2 u_sprite_pos;
+uniform vec2 u_sprite_underwater_size;
 uniform float u_anim;
 
 float fbm1(float _value) {
@@ -42,6 +43,9 @@ void main()
 	// mask_uv.y = clamp(mask_uv.y, -0.9, 0.1);
 	if (texture2D(u_watermask, mask_uv).r > 0.1 || v_vPosition.y > u_waterdata.w) {
 		base = v_vColour * texture2D(u_underwater, uv);
+		if (v_vPosition.y > u_waterdata.w + u_sprite_underwater_size.y) {
+			base.a = 0.0;
+		}
 	}
 	
 	gl_FragColor = base;
