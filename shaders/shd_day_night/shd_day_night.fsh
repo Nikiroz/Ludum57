@@ -45,12 +45,14 @@ void main(){
 	);
 	colorMorning = mix(
 		colorMorning,
-		vec3((colorMorning.r + colorMorning.g + colorMorning.b) / 3.0),
+		//vec3((colorMorning.r + colorMorning.g + colorMorning.b) / 3.0),
+		texColor.rgb,
 		waterlineDelta
 	);
 	colorEvening = mix(
 		colorEvening,
-		vec3((colorEvening.r + colorEvening.g + colorEvening.b) / 3.0),
+		//vec3((colorEvening.r + colorEvening.g + colorEvening.b) / 3.0),
+		texColor.rgb,
 		waterlineDelta
 	);
 	
@@ -64,7 +66,7 @@ void main(){
 		finalColor = mix(texColor.rgb, colorNight, intensityNight);	
 	}else if(hour >= sunriseStart && hour <= sunriseStart + sunriseDuration){
 		
-		float timeNorm = clamp((hour - sunriseStart) / sunsetDuration, 0.0, 1.0);
+		float timeNorm = clamp((hour - sunriseStart) / sunriseDuration, 0.0, 1.0);
 		float progress = sin(timeNorm * 3.14159);
 		finalColor = vividLight(texColor.rgb, colorMorning, clamp(progress, 0.0, intensityMorning));
 		
