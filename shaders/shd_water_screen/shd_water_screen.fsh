@@ -45,7 +45,7 @@ void main()
 	// mask_uv.y = clamp(mask_uv.y, -0.9, 0.1);
 	if (texture2D(u_watermask, mask_uv).r > 0.1 || v_vPosition.y > u_waterdata.w) {
 		uv.x = uv.x / u_sprite_underwater_size.x;
-		uv.y -= u_sprite_pos.y + (u_view.y) * u_underwater_parallax.y * 10.0 + u_underwater_offset.y + u_sprite_underwater_size.y / 2.0 - 12.0;
+		uv.y -= u_sprite_pos.y + (u_view.y) * u_underwater_parallax.y + u_underwater_offset.y + u_sprite_underwater_size.y / 2.0 - 12.0;
 		uv.y = min(uv.y, u_sprite_underwater_size.y - 0.01) / u_sprite_underwater_size.y;
 		uv.y = clamp(uv.y, 0.0, 1.0);
 		base = v_vColour * texture2D(u_underwater, uv);
