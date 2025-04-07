@@ -1,3 +1,51 @@
+if (sprite_index == s_player_aquasuit_enter) {
+	if (image_index < 32) {
+		hsp = 0;
+		vsp = 0;
+	}
+	else {
+		if (!aquasuit_equipped) {
+			set_aquasuit_state(true);
+		}
+		
+		is_boated = false;
+		
+		if (anim_aquasuit_equip < 5) {
+			x -= 5;
+			y -= 3;
+		}
+		else if (anim_aquasuit_equip < 7) {
+			x -= 5;
+			y += 0.5;
+		}
+		else {
+			x -= 0.5;
+			y += 3;
+		}
+		
+		if (bbox_top < mcr_waterline)
+			image_index = 34;
+		
+		anim_aquasuit_equip ++;
+	}
+	
+	scr_levelobject_updae_dive_splashes();
+	
+	exit;
+}
+else if (sprite_index == s_player_aquasuit_enter_dive) {
+	if (bbox_top < mcr_waterline) {
+		y += 3;
+	}
+	else {
+		y += 1;
+	}
+	
+	hsp = 0;
+	vsp = 0;
+	exit;
+}
+
 if (is_dead) exit;
 
 var _left = false,
@@ -44,8 +92,6 @@ else {
 }
 
 event_inherited();
-
-scr_interaction_update();
 
 if (climb_aboard_confirmation) {
 	vsp = (mcr_waterline - bbox_top - 6) * 0.2;
@@ -150,22 +196,6 @@ if (has_carried_item()) {
 
 #endregion
 
-#region Анимации
+scr_levelobject_updae_dive_splashes();
 
-if (bbox_bottom > mcr_waterline) {
-	if (!in_water) {
-		instance_create_depth(x, y, depth - 1, o_water_divein)
-		if(!audio_is_playing(snd_surfacing)){
-			audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
-		}
-	} else {
-		if (bbox_top < mcr_waterline) {
-			instance_single_get(x, y, depth - 1, o_water_diveout)
-		}
-	}
-	in_water = true
-} else {
-	in_water = false
-}
-
-#endregion
+scr_interaction_update();

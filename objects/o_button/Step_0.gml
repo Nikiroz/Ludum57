@@ -20,7 +20,7 @@ if (!_hover && hasEntered){
 
 if(click){
 	if(_hover && mouse_check_button_pressed(mb_left)){
-		//audio_play_sound(snd_ui_click, 10, false);
+		audio_play_sound(snd_ui_click, 10, false);
 	} 	
 } 
 
@@ -29,5 +29,5 @@ if(_hover && mouse_check_button_released(mb_left) && runScript != noone){
 }
 
 if(_hover && mouse_check_button_pressed(mb_left)){
-	//audio_play_sound(snd_ui_click, 10, false);
+	audio_play_sound(snd_ui_click, 10, false);
 } 

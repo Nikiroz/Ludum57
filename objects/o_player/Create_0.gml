@@ -31,6 +31,8 @@ lighter_available = false;
 
 ungrounded_time = 0;
 
+anim_aquasuit_equip = 0;
+
 // базовые хар-ки
 event_user(0);
 oxygen = oxygen_capacity;
@@ -110,8 +112,6 @@ set_aquasuit_state = function(_state) {
 	if (!_state) {
 		oxygen_meter_active = false;
 	}
-	
-	animation_reset();
 }
 
 /// @function get_contextual_sprite(sprite)
@@ -147,9 +147,9 @@ animation_reset = function() {
 put_to_death = function() {
 	is_dead = true;
 	
-	
 	if(audio_is_playing(snd_low_oxygen_choking_d)){
 		audio_stop_sound(snd_low_oxygen_choking_d);
+		instance_create_layer(0, 0, layer_get_id("UI"), o_menu)
 	}
 	audio_play_sound(snd_dead, 100, false, global.soundVolume);
 	
