@@ -9,15 +9,13 @@ if (sprite_index == s_player_aquasuit_ascend) {
 			y -= 3;
 			x += 1;
 		}
-		else {
-			with (o_ship_aquasuit) {
-				other.x = lerp(other.x, x + 7, 0.1);
-				other.y = lerp(other.y, bbox_bottom + 8, 0.1);
-			}
-		}
+		else lock_next_to_aquasuit();
 	}
 	
 	is_boated = (image_index >= 12);
+	
+	with (carried_instance)
+		is_boated = other.is_boated;
 	
 	scr_levelobject_updae_dive_splashes();
 	
@@ -32,6 +30,8 @@ else if (sprite_index == s_player_aquasuit_exit_drop_item) {
 else if (sprite_index == s_player_aquasuit_exit) {
 	hsp = 0;
 	vsp = 0;
+	
+	lock_next_to_aquasuit();
 	
 	if (image_index >= 14 && aquasuit_equipped) {
 		set_aquasuit_state(false);

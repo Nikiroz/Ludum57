@@ -132,6 +132,13 @@ get_contextual_sprite = function(_sprite) {
 	return _sprite;
 }
 
+lock_next_to_aquasuit = function() {
+	with (o_ship_aquasuit) {
+		other.x = lerp(other.x, x + 7, 0.1);
+		other.y = lerp(other.y, bbox_bottom + 8, 0.1);
+	}
+}
+
 //
 
 /// @function sprite_change(sprite)

@@ -21,8 +21,8 @@ with (target) {
 		_is_player = (object_index == o_player);
 	
 	if (_is_player && instance_exists(o_rope_source) && input_pull_up) {
-		sprite_index = s_player_aquasuit_rope_end;
-		image_index = 0;
+		//sprite_index = s_player_aquasuit_rope_end;
+		//image_index = 0;
 		
 		if (bbox_top > mcr_waterline) {
 			speed_add(point_direction(x, y, o_rope_source.x, o_rope_source.y), 1);

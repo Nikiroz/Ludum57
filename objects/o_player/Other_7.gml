@@ -9,10 +9,10 @@ if (sprite_index == s_player_aquasuit_ascend) {
 		sprite_index = s_player_aquasuit_exit_drop_item;
 		
 		with (carried_instance) {
-			hsp = 3 + random(2);
+			hsp = 3 + random(3);
 			vsp = 2 + random(1);
 			
-			x = other.x;
+			x = other.x + 15;
 			y = other.y - 20;
 		}
 		
@@ -20,12 +20,19 @@ if (sprite_index == s_player_aquasuit_ascend) {
 		set_carried_item(noone);
 	}
 	else {
-		sprite_index = s_player_aquasuit_exit;
+		//sprite_index = s_player_aquasuit_exit;
+		sprite_index = s_player_aquasuit_idle;
 	}
 }
 else if (sprite_index == s_player_aquasuit_exit_drop_item) {
-	sprite_index = s_player_aquasuit_exit;
+	sprite_index = s_player_aquasuit_idle;
+	facing = facing_left;
+	is_grounded = true;
+	stable = true;
 }
+//else if (sprite_index == s_player_aquasuit_exit_drop_item) {
+//	sprite_index = s_player_aquasuit_exit;
+//}
 else if (sprite_index == s_player_aquasuit_enter) {
 	sprite_index = s_player_aquasuit_enter_dive;
 }

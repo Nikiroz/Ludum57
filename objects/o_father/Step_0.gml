@@ -2,6 +2,8 @@ event_inherited();
 
 is_boated = true;
 
+interaction2_active = o_player.aquasuit_equipped;
+
 if (boatControl)
 {
 	var left = keyboard_check(ord(leftKey)),
