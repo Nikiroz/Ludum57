@@ -8,10 +8,8 @@ function scr_interaction_update() {
 	}
 	else interaction_release = false;
 	
-	if (instance_exists(interaction_object) && stable
-	&& (!interaction_object.interaction_time_max || _interacting)
-	&& interaction_object.stable && is_grounded)
-	{
+	if (instance_exists(interaction_object) && (stable || !interaction_object.interaction_time_max)
+	&& (!interaction_object.interaction_time_max || _interacting)) {
 		var _obj = interaction_object,
 		
 		if (distance_to_object(_obj) > _obj.interaction_range || (sign(_obj.x - bbox_center_x) != facing)) {

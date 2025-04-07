@@ -12,8 +12,9 @@ if(global.isDebug) {
 
 
 var _scavenge_amount = 0;
+
 with (o_loot) {
-	if (is_boated) 
+	if (is_boated)
 	{
 		switch (part_size)
 		{
@@ -27,8 +28,8 @@ with (o_loot) {
 				_scavenge_amount += 8;
 		    break;
 		}
-		
 	}
 }
 
+draw_reset_font();
 draw_text(10, 10, "Loot: " + string(_scavenge_amount) + "$");

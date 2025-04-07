@@ -70,9 +70,38 @@ set_carried_item = function(_instance = noone) {
 	}
 }
 
-set_climb_aboard = function(_active) {
+/// @function set_climb_confirmation_active(active)
+set_climb_confirmation_active = function(_active) {
 	climb_aboard_confirmation = _active;
 	input_enabled = !_active;
+}
+
+/// @function set_aquasuit_state(state)
+set_aquasuit_state = function(_state) {
+	if (aquasuit_equipped == _state) exit;
+	
+	var _player = id;
+	
+	aquasuit_equipped = _state;
+	
+	with (o_ship_aquasuit) {
+		var _suit = id;
+		
+		is_equipped = _state;
+		
+		with (o_rope_end) {
+			if (target == (_state ? _suit : _player)) {
+				target = (_state ? _player : _suit);
+				break;
+			}
+		}
+	}
+	
+	if (!_state) {
+		oxygen_meter_active = false;
+	}
+	
+	animation_reset();
 }
 
 //
