@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_sound",
+    "path":"sprites/s_sound/s_sound.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
