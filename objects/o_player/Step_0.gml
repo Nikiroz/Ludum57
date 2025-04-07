@@ -176,7 +176,7 @@ if (!climb_aboard_confirmation && is_submerged) {
 	}
 	
 	if (oxygen > 0) {
-		oxygen -=50;
+		oxygen --;
 		
 		if (!aquasuit_equipped) oxygen -= 9;
 		
