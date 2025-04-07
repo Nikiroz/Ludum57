@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"o_rope_upgrade",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_bottomparts10",
+  "eventList":[],
   "managed":true,
-  "name":"o_rope_upgrade",
+  "name":"o_bottomparts10",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"BottomParts",
+    "path":"folders/Objects/BottomParts.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_collision",
-    "path":"sprites/s_collision/s_collision.yy",
+    "name":"s_bg_bottomparts10",
+    "path":"sprites/s_bg_bottomparts10/s_bg_bottomparts10.yy",
   },
   "spriteMaskId":null,
   "visible":true,
