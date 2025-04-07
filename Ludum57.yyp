@@ -106,6 +106,7 @@
     {"id":{"name":"o_rope_end","path":"objects/o_rope_end/o_rope_end.yy",},},
     {"id":{"name":"o_rope_simple","path":"objects/o_rope_simple/o_rope_simple.yy",},},
     {"id":{"name":"o_rope_source","path":"objects/o_rope_source/o_rope_source.yy",},},
+    {"id":{"name":"o_ropeRenderer","path":"objects/o_ropeRenderer/o_ropeRenderer.yy",},},
     {"id":{"name":"o_scrap_large","path":"objects/o_scrap_large/o_scrap_large.yy",},},
     {"id":{"name":"o_scrap_medium","path":"objects/o_scrap_medium/o_scrap_medium.yy",},},
     {"id":{"name":"o_scrap_small","path":"objects/o_scrap_small/o_scrap_small.yy",},},
