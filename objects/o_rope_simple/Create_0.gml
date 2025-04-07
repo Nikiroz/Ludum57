@@ -1,5 +1,7 @@
-parent = noone
 length = ropeSegmentLength
+
+parent = noone
+child = noone
 
 hsp = 0
 vsp = 0

@@ -1,4 +1,4 @@
-scr_draw_ropes();
+scr_render_ropes();
 
 var _x = camera_get_view_x(view_camera[0]),
 	_y = camera_get_view_y(view_camera[0]);

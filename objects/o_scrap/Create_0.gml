@@ -1,5 +1,7 @@
 event_inherited();
 
+disassembled = false;
+
 gravity_enabled = false;
 
 var _size;
@@ -22,4 +24,4 @@ scr_interactible_configure(
 size = _size;
 
 scr_interactible_set_text(
-	"Salvage", "Salvaging {0}%");
+	"Scavenge", "Scavenging {0}%");

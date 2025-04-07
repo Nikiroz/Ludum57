@@ -17,14 +17,14 @@ with (o_collision) {
 	}
 }
 
-draw_set_color(c_blue)
+draw_set_color(c_aqua)
 
 with (o_levelobject) {
 	if (object_index == o_rope_end && instance_is(target, o_player)) continue
 	
 	draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true)
 	
-	draw_text(bbox_right + 4, bbox_top, $"x: {x}\ny: {y}\n{is_submerged ? "in water\n" : ""}hsp: {hsp}\nvsp: {vsp}")
+	draw_text(bbox_right + 4, bbox_top, $"x: {x}\ny: {y}\nhsp: {hsp}\nvsp: {vsp}{is_submerged ? "\nin water" : ""}{is_grounded ? "\non ground" : ""}{is_boated ? "\non boat" : ""}")
 }
 
 draw_set_color(c_white)
