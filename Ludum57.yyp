@@ -116,7 +116,6 @@
     {"id":{"name":"o_menu_dead","path":"objects/o_menu_dead/o_menu_dead.yy",},},
     {"id":{"name":"o_menu_pause","path":"objects/o_menu_pause/o_menu_pause.yy",},},
     {"id":{"name":"o_menu_button_parent","path":"objects/o_menu_button_parent/o_menu_button_parent.yy",},},
-    {"id":{"name":"o_menu","path":"objects/o_menu/o_menu.yy",},},
     {"id":{"name":"o_moon","path":"objects/o_moon/o_moon.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_room_change_button","path":"objects/o_room_change_button/o_room_change_button.yy",},},
