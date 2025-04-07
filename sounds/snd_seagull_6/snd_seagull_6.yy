@@ -13,7 +13,7 @@
   "name":"snd_seagull_6",
   "parent":{
     "name":"Seagul",
-    "path":"folders/Sounds/Seagul.yy",
+    "path":"folders/Sounds/Ambience/Seagul.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

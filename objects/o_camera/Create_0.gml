@@ -4,8 +4,10 @@ offsetTargetX = 0;
 offsetTargetY = 0;
 
 depth = -1000;
+
 var _x = target.x - gameWidth / 2 + target.sprite_width * 2;
-var _y = target.y - gameHeight / 2 + target.sprite_height / 2 + offsetTargetY;
+var _y = target.y - gameHeight / 2 + target.sprite_height / 2 + 56;
+
 camera_set_view_pos(view_camera[0], _x, _y);
 
 display_set_gui_size(gameWidth, gameHeight);

@@ -5,7 +5,7 @@ if(!global.isPause){
 	
 	with(o_sound_static){
 		if(soundLoop != -1){
-			if(!audio_is_playing(soundLoop)){
+			if(audio_is_playing(soundLoop)){
 				audio_sound_gain(soundLoop, gain, 0);
 			}
 		}
