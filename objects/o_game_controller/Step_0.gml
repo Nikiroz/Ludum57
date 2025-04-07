@@ -25,9 +25,9 @@ repeat(ds_map_size(background_map)){
 
 var _skyPhase = 2 * cos(hour / 4);
 	
-var lay_id = layer_get_id("l_bg_stars");
+var lay_id  = layer_get_id("l_bg_stars");
 var back_id = layer_background_get_id(lay_id);
-layer_background_alpha(back_id, _skyPhase);
+layer_background_alpha(back_id,1)// _skyPhase); //багует бленд луны и солнца
 
 with (o_lights) {
 	image_alpha = _skyPhase;

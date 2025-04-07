@@ -4,7 +4,8 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
-uniform float time;
+uniform float hour;
+
 
 vec3 vividLight(vec3 base, vec3 blend, float intensity) {
     vec3 vividResult = vec3(
@@ -21,50 +22,55 @@ void main(){
 
     vec4 texColor = texture2D(gm_BaseTexture, v_vTexcoord);
       
-    // Определяем два разных цвета для переходов
-	vec3 color1 = vec3(0.03, 0.14, 0.21); // 3.0;   // Тёмно-синий для второго перехода
-    vec3 color2 = vec3(0.9, 0.3, 0.2);      // Красно-оранжевый для первого перехода
-
-    // Задаем время для каждого перехода (в секундах)
-    float transition1_time = 5.5;  // Первый переход длится 2.5 секунды
-    float transition2_time = 2.5;  // Второй переход длится 2.5 секунды
-    float transition3_time = 3.0;  // Затухание эффекта длится 3.0 секунды
-	float intensity = 0.2;
-    
-    // Общее время всех переходов
-    float total_time = transition1_time + transition2_time + transition3_time;
-    
-    // Ограничиваем время для остановки на оригинальном изображении
-    float capped_time = min(time, total_time);
-    // Нормализуем время, чтобы оно шло от 0 до 1
-    float progress = min(time / transition1_time, 1.0);  // Ограничиваем прогресс от 0 до 1
-    // Определяем текущий переход и прогресс
+	float sunriseStart = 6.00;  
+	float sunsetStart = 19.00;  
+	float sunriseDuration = 0.3;
+	float sunsetDuration = 0.3;  
+		
+	vec3 colorNight   = vec3(0.01, 0.09, 0.15); // Ночь
+    vec3 colorMorning = vec3(1, 0.5, 0.52);	// Утро
+    vec3 colorEvening = vec3(0.56, 0.34, 0);	// Вечер
+	
+	float intensityNight = 0.8;
+	float intensityEvening = 0.9;
+	float intensityMorning = 0.9;
 	
 	vec3 finalColor;
 	
-	if (capped_time < transition1_time) {      
-		vec3 layer1 = vividLight(texColor.rgb, color2, intensity);
-		finalColor = mix(layer1, color1, 1.0 - progress);
-    } 
-    else if (capped_time < transition1_time + transition2_time) {
-	    finalColor = vividLight(texColor.rgb, color2, intensity);
-    } 
-    else if (capped_time < total_time) {
+	if (hour < sunriseStart) {
+		finalColor = mix(texColor.rgb, colorNight, intensityNight);	
+	}else if(hour >= sunriseStart && hour <= sunriseStart + sunriseDuration){
 		
-        // Третий переход: затухание эффекта наложения до оригинального изображения
-        float progress = (capped_time - transition1_time - transition2_time) / transition3_time;
-        
-        // Уменьшаем интенсивность с течением времени в фазе затухания
-        float fadingIntensity = intensity * (1.0 - progress);
-        
-        // Применяем Vivid Light с затухающей интенсивностью
-        finalColor = vividLight(texColor.rgb, color2, fadingIntensity);
-    } 
-    else {
-        // После завершения всех переходов - оригинальное изображение
-        finalColor = texColor.rgb;
-    }
-  
+		float timeNorm = clamp((hour - sunriseStart) / sunsetDuration, 0.0, 1.0);
+		float progress = sin(timeNorm * 3.14159);
+		finalColor = vividLight(texColor.rgb, colorMorning, clamp(progress, 0.0, intensityMorning));
+		
+		float halfTransition = sunriseDuration / 2.0;
+		float halfTime = sunriseStart + halfTransition;
+		
+		float timeNorm2 = clamp((hour - halfTime) / (sunriseDuration / 2.0), 0.0, 1.0);
+		float progress2 = clamp(timeNorm2, 0.0, intensityNight);
+		finalColor = mix(finalColor.rgb, colorNight, intensityNight - progress2);
+		
+	}else if (hour > sunsetStart) {
+	 
+	    float timeNorm = clamp((hour - sunsetStart) / sunsetDuration, 0.0, 1.0);
+		float progress = sin(timeNorm * 3.14159);
+	    finalColor = vividLight(texColor.rgb, colorEvening, clamp(progress, 0.0, intensityEvening));
+		
+	    float halfTransition = sunsetDuration / 2.0;
+		float halfTime = sunsetStart + halfTransition;
+		
+		if (hour > halfTime) {
+			float tr = (hour - halfTime) / halfTransition;
+		    float progress = clamp(tr, 0.0, intensityNight);
+		    finalColor = mix(finalColor, colorNight, progress);
+		}
+		
+	} else {
+	    finalColor = texColor.rgb;
+	}
+	  
     gl_FragColor = vec4(finalColor.rgb, texColor.a * v_vColour.a);
 	
 }
