@@ -1,7 +1,8 @@
 /// @desc Draw
 
-var _x1 = camera_get_view_x(view_camera[0]),
-	_y1 = max(camera_get_view_y(view_camera[0]), mcr_waterline),
+var _border = mcr_waterline + 64,
+	_x1 = camera_get_view_x(view_camera[0]),
+	_y1 = max(camera_get_view_y(view_camera[0]), _border),
 	_x2 = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]),
 	_y2 = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]);
 
@@ -11,7 +12,7 @@ if (_y1 >= _y2) {
 
 shader_set(shd_underwater_dark)
 
-shader_set_uniform_f_array(u_gradient, [mcr_waterline, room_height / 4])
+shader_set_uniform_f_array(u_gradient, [_border, room_height / 4])
 shader_set_uniform_f_array(u_playerpos, [o_player.x, o_player.y - 24])
 shader_set_uniform_f(u_radius, 256)
 shader_set_uniform_f_array(u_color, [22, 27, 24])

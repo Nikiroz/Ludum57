@@ -24,6 +24,10 @@ with (target) {
 		if (bbox_top > mcr_waterline) {
 			speed_add(point_direction(x, y, o_rope_source.x, o_rope_source.y), 1);
 			speed_limit(rope_pull_speed);
+			
+			with (o_ship_winch_basic) {
+				motion += 0.2;
+			}
 		}
 		else if (!climb_aboard_confirmation) {
 			self.set_climb_confirmation_active(true);

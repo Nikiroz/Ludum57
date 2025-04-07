@@ -57,7 +57,8 @@ for (var i = 0; i < godray_count; i ++) {
 			s_bg_godrays05,
 			s_bg_godrays06
 		),
-		x: (i / godray_count) * room_width + random(64) * choose(-1, 1) + x * 5
+		x: (i / godray_count) * room_width + random(64) * choose(-1, 1) + x * 5,
+		alpha: 0.2
 	}
 }
 
