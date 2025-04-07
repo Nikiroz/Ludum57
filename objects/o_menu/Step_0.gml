@@ -1,1 +1,1 @@
-popup = lerp(popup, global.isPause, 0.1);
+popup = lerp(popup, 0.6, 0.05);
