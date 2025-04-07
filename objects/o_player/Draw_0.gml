@@ -15,7 +15,7 @@ shader_set_uniform_f_array(u_texel, [
 draw_levelobject(_sprite, image_index, x, y,
 	image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
-shader_reset()
+shader_reset();
 
 //if (instance_exists(interaction_object)) {
 //	draw_arrow(bbox_center_x, bbox_center_y, interaction_object.x, interaction_object.y, 4)

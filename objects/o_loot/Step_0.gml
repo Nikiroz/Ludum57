@@ -55,6 +55,7 @@ if (!is_boated) {
 		speed_limit(2);
 	}
 }
+else interaction_visible = false;
 
 //
 if (is_submerged) {

@@ -32,6 +32,8 @@ lighter_available = false;
 ungrounded_time = 0;
 
 anim_aquasuit_equip = 0;
+anim_aquasuit_ascend = 0;
+anim_aquasuit_exit = 0;
 
 // базовые хар-ки
 event_user(0);
@@ -130,6 +132,13 @@ get_contextual_sprite = function(_sprite) {
 	return _sprite;
 }
 
+lock_next_to_aquasuit = function() {
+	with (o_ship_aquasuit) {
+		other.x = lerp(other.x, x + 7, 0.1);
+		other.y = lerp(other.y, bbox_bottom + 8, 0.1);
+	}
+}
+
 //
 
 /// @function sprite_change(sprite)
@@ -149,7 +158,7 @@ put_to_death = function() {
 	
 	if(audio_is_playing(snd_low_oxygen_choking_d)){
 		audio_stop_sound(snd_low_oxygen_choking_d);
-		instance_create_layer(0, 0, layer_get_id("UI"), o_menu)
+		instance_create_layer(0, 0, layer_get_id("UI"), o_menu_dead)
 	}
 	audio_play_sound(snd_dead, 100, false, global.soundVolume);
 	

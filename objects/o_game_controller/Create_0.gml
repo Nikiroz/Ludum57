@@ -30,7 +30,7 @@ global.saveTime = 0;
 
 timeScale = 0.001;
 soundVolume = 0.8;
-musicVolume = 0.2;
+musicVolume = 0.10;
 
 global.soundVolume = soundVolume;
 global.musicVolume = musicVolume;

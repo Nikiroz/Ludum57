@@ -19,8 +19,6 @@ if (oxygen_meter_active) {
 	draw_set_color(c_white);
 }
 
-scr_text(40, 40, $"{climb_aboard_confirmation} {confirmation_time}")
-
 if (climb_aboard_confirmation || confirmation_time > 0) {
 	if (!climb_aboard_confirmation) {
 		confirmation_time --;
@@ -60,12 +58,10 @@ if (climb_aboard_confirmation || confirmation_time > 0) {
 			}
 			// climb aboard
 			else if (i == 1) {
-				with (o_ship_aquasuit) {
-					other.x = x;
-					other.y = y;
-				}
-				
-				set_aquasuit_state(false);
+				facing = facing_right;
+				anim_aquasuit_ascend = 0;
+				sprite_index = s_player_aquasuit_ascend;
+				image_index = 0;
 			}
 			
 			set_climb_confirmation_active(false);

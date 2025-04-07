@@ -1,6 +1,6 @@
 /// @description Взаимодействие 2
 
-if (boatControl) exit;
+if (boatControl || !interaction2_active) exit;
 
 var _scavenge_amount = 0;
 
