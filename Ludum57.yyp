@@ -129,6 +129,7 @@
     {"id":{"name":"o_ship_part01","path":"objects/o_ship_part01/o_ship_part01.yy",},},
     {"id":{"name":"o_ship_part02","path":"objects/o_ship_part02/o_ship_part02.yy",},},
     {"id":{"name":"o_ship_part03","path":"objects/o_ship_part03/o_ship_part03.yy",},},
+    {"id":{"name":"o_ship_smoke","path":"objects/o_ship_smoke/o_ship_smoke.yy",},},
     {"id":{"name":"o_ship_waves_movement","path":"objects/o_ship_waves_movement/o_ship_waves_movement.yy",},},
     {"id":{"name":"o_ship_waves_stripe","path":"objects/o_ship_waves_stripe/o_ship_waves_stripe.yy",},},
     {"id":{"name":"o_ship_waves","path":"objects/o_ship_waves/o_ship_waves.yy",},},
