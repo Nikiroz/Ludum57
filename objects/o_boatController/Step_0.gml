@@ -1,6 +1,5 @@
 if (isMoving) {
 	hsp = boatSpeed;
-
 }
 
 if (abs(hsp) > 0){ 
