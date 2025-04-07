@@ -93,4 +93,4 @@ else {
 	vsp += 0.1;
 }
 
-rotation += hsp * 2 + vsp
+rotation += hsp * 2 + approach(vsp, 0, 0.25);
