@@ -117,15 +117,16 @@ else {
 if (instance_is(interaction_object, o_scrap) && interaction_time > 0) {
 	if (!(sprite_index == s_player_aquasuit_scavenge_start ||
 	sprite_index == s_player_aquasuit_scavenge_loop)) {
-		
 		sprite_index = s_player_aquasuit_scavenge_start;
 		image_index = 0;
 	}
+	
 }
 else if (sprite_index != s_player_aquasuit_rope_end) {
 	var _swimming = (ungrounded_time > 5);
 	
 	// остановка анимации сбора
+	
 	if ((sprite_index == s_player_aquasuit_scavenge_start
 	|| sprite_index == s_player_aquasuit_scavenge_loop)) {
 		

@@ -1,8 +1,9 @@
 if (sprite_index == s_player_aquasuit_scavenge_end) {
+	if(audio_is_playing(snd_scrap_metal_dismantling_loop)){
+		audio_stop_sound(snd_scrap_metal_dismantling_loop);
+	}
 	walking_enabled = true;
 }
-
-//
 
 if (sprite_index == s_player_aquasuit_enter) {
 	sprite_index = s_player_aquasuit_enter_dive;
@@ -22,11 +23,15 @@ else if (sprite_index == s_player_drive_loop)
 	hand_sprite = s_player_drive_hand_loop;
 }
 else if (sprite_index == s_player_aquasuit_scavenge_start) {
+	if(!audio_is_playing(snd_scrap_metal_dismantling_loop)){
+		audio_play_sound(snd_scrap_metal_dismantling_loop, 1, true, global.soundVolume);
+	};
 	sprite_index = s_player_aquasuit_scavenge_loop;
 	walking_enabled = false;
 }
 else if (sprite_index == s_player_aquasuit_scavenge_loop) {
 	sprite_index = s_player_aquasuit_scavenge_loop;
+	
 }
 else if (sprite_index == s_player_drive_end)
 {
