@@ -13,3 +13,7 @@ if (to_end) {
 		image_speed = 1
 	}
 }
+
+with (o_ship_waves) {
+	other.depth = depth
+}
