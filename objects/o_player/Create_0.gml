@@ -158,7 +158,7 @@ put_to_death = function() {
 	
 	if(audio_is_playing(snd_low_oxygen_choking_d)){
 		audio_stop_sound(snd_low_oxygen_choking_d);
-		instance_create_layer(0, 0, layer_get_id("UI"), o_menu)
+		instance_create_layer(0, 0, layer_get_id("UI"), o_menu_dead)
 	}
 	audio_play_sound(snd_dead, 100, false, global.soundVolume);
 	

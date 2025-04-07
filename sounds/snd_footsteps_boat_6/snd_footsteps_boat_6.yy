@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.526667,
+  "duration":0.380354,
   "name":"snd_footsteps_boat_6",
   "parent":{
     "name":"Footsteps",

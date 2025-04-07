@@ -17,7 +17,6 @@ vec3 vividLight(vec3 base, vec3 blend, float intensity) {
         blend.b < 0.5 ? base.b - (1.0 - 2.0 * blend.b) * base.b * (1.0 - base.b) : (blend.b > 0.5) ? base.b + (2.0 * (blend.b - 0.5)) * (1.0 - base.b) : base.b
     );
     
-    // Смешиваем базовое изображение и результат Vivid Light в зависимости от интенсивности
     return mix(base, vividResult, intensity);
 }
 
