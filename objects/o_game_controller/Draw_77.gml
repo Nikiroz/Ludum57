@@ -13,7 +13,7 @@ if(surface_exists(_surface)){
 	*/
 	shader_set_uniform_f(shader_get_uniform(shd_day_night, "hour"), hour);
 	
-	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
+	//gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface(application_surface, 0, 0);
 	shader_reset();
 	
@@ -23,7 +23,9 @@ if(surface_exists(_surface)){
 	}
 	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
-
+	
+	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface(_surface, 0, 0);
+	gpu_set_blendmode(bm_normal);
 
 } 

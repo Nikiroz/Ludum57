@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"o_sound_seaguls",
+  "%Name":"o_soundController",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_sound_seaguls",
+  "name":"o_soundController",
   "overriddenProperties":[],
   "parent":{
     "name":"Sounds",
     "path":"folders/Objects/Sounds.yy",
   },
-  "parentObjectId":{
-    "name":"o_sound",
-    "path":"objects/o_sound/o_sound.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_sound",
-    "path":"sprites/s_sound/s_sound.yy",
+    "name":"s_sound_controller",
+    "path":"sprites/s_sound_controller/s_sound_controller.yy",
   },
   "spriteMaskId":null,
   "visible":true,
