@@ -4,7 +4,7 @@ if (global.isPause) exit;
 
 #endregion
 
-#region Paralax
+#region Parallax
 
 var _cx = camera_get_view_x(view_camera[0]);
 var _xspd = 5 * (keyboard_check(ord(leftKey)) - keyboard_check(ord(rightKey)));
@@ -53,6 +53,32 @@ if (irandom(100) < 1 && camera_get_view_y(view_camera[0]) <= _fog_max_y) {
 		"Instances",
 		choose(o_fog01, o_fog02)
 	);
+}
+
+#endregion
+
+#region Underwater
+
+if (layer_exists("Bottom")) {
+	part_system_depth(ps_bubbles, layer_get_depth("Bottom") + 1)
+}
+
+if (random(100) < 50) {
+	var _bx1 = camera_get_view_x(view_camera[0]),
+		_bx2 = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]),
+		_by1 = camera_get_view_y(view_camera[0]),
+		_by2 = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]);
+	
+	_by1 = max(mcr_waterline, _by1)
+	if (_by1 < _by2) {
+		part_particles_create(
+			ps_bubbles,
+			random_range(_bx1, _bx2),
+			random_range(_by1, _by2),
+			pt_bubbles_array[irandom(pt_bubbles_count - 1)],
+			1
+		)
+	}
 }
 
 #endregion
