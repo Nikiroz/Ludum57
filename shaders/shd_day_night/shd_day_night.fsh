@@ -34,9 +34,15 @@ void main(){
     vec3 colorMorning = vec3(1, 0.5, 0.52);	// Утро
     vec3 colorEvening = vec3(0.56, 0.34, 0);	// Вечер
 	
-	if(v_vTexcoord.y * view_size.y + view_pos.y > wave_y){
-		colorNight = vec3(0.0, 0.0, 0.0);
-	}
+	float realY = (v_vTexcoord.y * view_size.y + view_pos.y);
+	float waterlineDelta = max(0.0, realY - (wave_y - 32.0));
+	waterlineDelta = min(1.0, waterlineDelta / (64.0));
+	// waterlineDelta = min(1.0, waterlineDelta / 32.0);
+	colorNight = mix(
+		colorNight,
+		vec3((colorNight.r + colorNight.g + colorNight.b) / 3.0),
+		waterlineDelta
+	);
 	
 	float intensityNight = 0.8;
 	float intensityEvening = 0.9;
