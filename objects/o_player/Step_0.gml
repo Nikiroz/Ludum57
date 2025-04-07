@@ -47,7 +47,7 @@ event_inherited();
 
 scr_interaction_update();
 
-
+x = round(x);
 
 
 if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
@@ -102,6 +102,7 @@ else {
 		}
 		else {
 			sprite_index = s_player_walk;
+			is_boated = true;
 		}
 	}
 	else if (sprite_index == s_player_walk
@@ -140,3 +141,5 @@ if (has_carried_item()) {
 }
 
 #endregion
+
+

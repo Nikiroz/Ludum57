@@ -5,6 +5,7 @@ with (interactor)
 	
 	if (!walking_enabled) {
 		sprite_index = s_player_drive_start;
+		facing = 1;
 	}
 	else {
 		sprite_index = s_player_drive_end;
