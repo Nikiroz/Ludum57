@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_bottomparts05",
+  "%Name":"o_bottomparts07",
   "eventList":[],
   "managed":true,
-  "name":"o_bottomparts05",
+  "name":"o_bottomparts07",
   "overriddenProperties":[],
   "parent":{
     "name":"BottomParts",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bg_bottomparts05",
-    "path":"sprites/s_bg_bottomparts05/s_bg_bottomparts05.yy",
+    "name":"s_bg_bottomparts07",
+    "path":"sprites/s_bg_bottomparts07/s_bg_bottomparts07.yy",
   },
   "spriteMaskId":null,
   "visible":true,
