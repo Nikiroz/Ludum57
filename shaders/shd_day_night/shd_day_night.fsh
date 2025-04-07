@@ -3,9 +3,12 @@
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
+varying vec3 v_vPosition;
 
 uniform float hour;
 uniform float wave_y;
+uniform vec2 view_pos;
+uniform vec2 view_size;
 
 vec3 vividLight(vec3 base, vec3 blend, float intensity) {
     vec3 vividResult = vec3(
@@ -30,6 +33,10 @@ void main(){
 	vec3 colorNight   = vec3(0.01, 0.09, 0.15); // Ночь
     vec3 colorMorning = vec3(1, 0.5, 0.52);	// Утро
     vec3 colorEvening = vec3(0.56, 0.34, 0);	// Вечер
+	
+	if(v_vTexcoord.y * view_size.y + view_pos.y > wave_y){
+		colorNight = vec3(0.0, 0.0, 0.0);
+	}
 	
 	float intensityNight = 0.8;
 	float intensityEvening = 0.9;

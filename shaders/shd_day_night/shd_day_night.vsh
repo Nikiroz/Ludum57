@@ -8,6 +8,7 @@ attribute vec2 in_TextureCoord;              // (u,v)
 
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
+varying vec3 v_vPosition;
 
 void main()
 {
@@ -16,4 +17,6 @@ void main()
     
     v_vColour = in_Colour;
     v_vTexcoord = in_TextureCoord;
+	
+	v_vPosition = (gm_Matrices[MATRIX_WORLD] * object_space_pos).xyz;
 }
