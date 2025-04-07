@@ -92,6 +92,7 @@ else {
 	
 	vsp += 0.1;
 }
+
 if (!is_boated) {
 	rotation += hsp * 2 + vsp
 }
