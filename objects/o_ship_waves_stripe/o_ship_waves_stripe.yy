@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"c_fog",
+  "%Name":"o_ship_waves_stripe",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"c_fog",
+  "name":"o_ship_waves_stripe",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weather",
-    "path":"folders/Objects/Weather.yy",
+    "name":"Water",
+    "path":"folders/Objects/Water.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_water_waves",
+    "path":"objects/o_water_waves/o_water_waves.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

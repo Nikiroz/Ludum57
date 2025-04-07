@@ -18,8 +18,9 @@ if(surface_exists(_surface)){
 	shader_reset();
 	
 	gpu_set_blendmode(bm_add);
-	with (o_lights) {
-		draw_sprite_ext(sprite_index, image_index, (x - camera_get_view_x(view_camera[0])) * 2, (y - camera_get_view_y(view_camera[0]) * 2) * 2 + 30, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+	with (o_ship_light) {
+		var _angle = o_boatController.boatAngle;
+		draw_sprite_ext(sprite_index, image_index, (x - camera_get_view_x(view_camera[0])) * 2 + _angle * 5, (y - camera_get_view_y(view_camera[0]) * 2) * 2 + 36 - _angle * 11, image_xscale, image_yscale, _angle, image_blend, image_alpha)
 	}
 	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
