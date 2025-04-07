@@ -50,6 +50,7 @@ void main()
 		uv.y = clamp(uv.y, 0.0, 1.0);
 		base = v_vColour * texture2D(u_underwater, uv);
 		// if (v_vPosition.y > u_sprite_pos.y + u_sprite_underwater_size.y) {
+		base.a *= 1.0 - uv.y;
 		if (uv.y >= 0.99) {
 			base.a = 0.0;
 		}
