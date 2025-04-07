@@ -6,6 +6,7 @@ underwater_color = [30, 36, 33]
 underwater_color[0] /= 255
 underwater_color[1] /= 255
 underwater_color[2] /= 255
+in_water = false /// Для анимации плюханья игрока
 
 // состояния
 walking = false;

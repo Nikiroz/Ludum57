@@ -142,4 +142,19 @@ if (has_carried_item()) {
 
 #endregion
 
+#region Анимации
 
+if (bbox_bottom > mcr_waterline) {
+	if (!in_water) {
+		instance_create_depth(x, y, depth - 1, o_water_divein)
+	} else {
+		if (bbox_top < mcr_waterline) {
+			instance_single_get(x, y, depth - 1, o_water_diveout)
+		}
+	}
+	in_water = true
+} else {
+	in_water = false
+}
+
+#endregion
