@@ -8,7 +8,6 @@ underwater_color = [30, 36, 33]
 underwater_color[0] /= 255
 underwater_color[1] /= 255
 underwater_color[2] /= 255
-in_water = false /// Для анимации плюханья игрока
 
 // состояния
 walking = false;
@@ -24,6 +23,8 @@ aquasuit_equipped = false;
 lighter_available = false;
 
 ungrounded_time = 0;
+
+anim_aquasuit_equip = 0;
 
 // базовые хар-ки
 event_user(0);
@@ -104,8 +105,6 @@ set_aquasuit_state = function(_state) {
 	if (!_state) {
 		oxygen_meter_active = false;
 	}
-	
-	animation_reset();
 }
 
 /// @function get_contextual_sprite(sprite)
