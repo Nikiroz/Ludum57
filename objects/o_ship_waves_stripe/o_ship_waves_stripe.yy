@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_sound_seaguls",
+  "%Name":"o_ship_waves_stripe",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_sound_seaguls",
+  "name":"o_ship_waves_stripe",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Objects/Sounds.yy",
+    "name":"Water",
+    "path":"folders/Objects/Water.yy",
   },
   "parentObjectId":{
-    "name":"o_sound",
-    "path":"objects/o_sound/o_sound.yy",
+    "name":"o_water_waves",
+    "path":"objects/o_water_waves/o_water_waves.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -32,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_sound",
-    "path":"sprites/s_sound/s_sound.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
