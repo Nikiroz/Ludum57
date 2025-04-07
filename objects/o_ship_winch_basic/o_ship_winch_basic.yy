@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"o_ship_winch_basic",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_ship_winch_basic",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":{
-    "name":"o_boatPart",
-    "path":"objects/o_boatPart/o_boatPart.yy",
+    "name":"o_sound_static",
+    "path":"objects/o_sound_static/o_sound_static.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
