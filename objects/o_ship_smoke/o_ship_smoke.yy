@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_bottomparts05",
-  "eventList":[],
+  "%Name":"o_ship_smoke",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"o_bottomparts05",
+  "name":"o_ship_smoke",
   "overriddenProperties":[],
   "parent":{
-    "name":"BottomParts",
-    "path":"folders/Objects/BottomParts.yy",
+    "name":"Ship",
+    "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bg_bottomparts05",
-    "path":"sprites/s_bg_bottomparts05/s_bg_bottomparts05.yy",
+    "name":"s_ship_smoke",
+    "path":"sprites/s_ship_smoke/s_ship_smoke.yy",
   },
   "spriteMaskId":null,
   "visible":true,

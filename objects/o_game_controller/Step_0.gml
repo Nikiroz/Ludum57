@@ -82,6 +82,19 @@ if (random(100) < 50) {
 		)
 	}
 }
+if (random(100) < 10) {
+	with (o_player) {
+		if (bbox_top > mcr_waterline) {
+			part_particles_create(
+				other.ps_bubbles,
+				x + random(2) * choose(-1, 1),
+				bbox_top,
+				other.pt_bubbles_array[irandom(other.pt_bubbles_count - 1)],
+				1
+			)
+		}
+	}
+}
 
 var _fish_chance = lerp(0.02, 0.6, min(1, camera_get_view_y(view_camera[0]) / mcr_waterline));
 if (random(100) < _fish_chance) {
