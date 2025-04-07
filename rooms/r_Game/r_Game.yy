@@ -32,7 +32,6 @@
     {"name":"inst_7AA8C768","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_17AA2240","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_6F1615C4","path":"rooms/r_Game/r_Game.yy",},
-    {"name":"inst_E46E4C4","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_1071F966","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_AB9DC58","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_39D43171","path":"rooms/r_Game/r_Game.yy",},
@@ -49,6 +48,7 @@
     {"name":"inst_5FED09F1","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_19A8FAC1","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_C538F46","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_CFDCDE9","path":"rooms/r_Game/r_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -97,7 +97,7 @@
         {"$GMRInstance":"v1","%Name":"inst_C538F46","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C538F46","objectId":{"name":"o_loot_oldcomputer","path":"objects/o_loot_oldcomputer/o_loot_oldcomputer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":321.0,"y":752.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"gradient","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_E46E4C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E46E4C4","objectId":{"name":"o_gradient","path":"objects/o_gradient/o_gradient.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":39.000004,"scaleY":14.0,"x":-96.0,"y":320.0,},
+        {"$GMRInstance":"v1","%Name":"inst_CFDCDE9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_CFDCDE9","objectId":{"name":"o_gradient","path":"objects/o_gradient/o_gradient.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":36.0,"scaleY":13.0,"x":-32.0,"y":352.0,},
       ],"layers":[],"name":"gradient","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"water_post","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_49DB9106","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49DB9106","objectId":{"name":"obj_water_screen","path":"objects/obj_water_screen/obj_water_screen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-32.0,},
