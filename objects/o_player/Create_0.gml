@@ -43,6 +43,8 @@ interaction_time = 0;
 interaction_time_max = 0;
 interaction_active = false;
 interaction_release = false;
+interaction2_active = false;
+interaction_mode = 0;
 
 ropeend_instance = noone;
 carried_instance = noone;
@@ -57,6 +59,8 @@ has_carried_item = function(_object = undefined) {
 
 ///@function set_carried_item(instance)
 set_carried_item = function(_instance = noone) {
+	if (!aquasuit_equipped) exit;
+	
 	with (carried_instance) {
 		depth = other.depth + 1;
 		is_carried = false;
