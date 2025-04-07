@@ -137,7 +137,7 @@ if (!climb_aboard_confirmation && is_submerged) {
 }
 
 if (has_carried_item()) {
-	var _tx = facing ? bbox_right : (bbox_left - 8),
+	var _tx = facing ? (bbox_right - 4) : bbox_left,
 		_ty = bbox_center_y + 4;
 	
 	with (carried_instance) {
@@ -155,7 +155,9 @@ if (has_carried_item()) {
 if (bbox_bottom > mcr_waterline) {
 	if (!in_water) {
 		instance_create_depth(x, y, depth - 1, o_water_divein)
-		audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
+		if(!audio_is_playing(snd_surfacing)){
+			audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
+		}
 	} else {
 		if (bbox_top < mcr_waterline) {
 			instance_single_get(x, y, depth - 1, o_water_diveout)

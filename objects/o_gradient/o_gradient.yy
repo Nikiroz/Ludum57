@@ -35,5 +35,5 @@
     "path":"sprites/s_gradient/s_gradient.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
