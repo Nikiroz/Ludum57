@@ -34,6 +34,17 @@ if (motion_enabled) {
 		if (!is_boated && _was_boated) {
 			hsp += o_boatController.hsp;
 			vsp += o_boatController.vsp;
+			
+			with (o_boatController) {
+				var _index = array_get_index(boatElements, other.id);
+				if (_index != -1) array_delete(boatElements, other.id, 1);
+			}
+		}
+		else if (is_boated) {
+			with (o_boatController) {
+				var _index = array_get_index(boatElements, other.id);
+				if (_index == -1) array_push(boatElements, other.id);
+			}
 		}
 		
 		if (!array_contains(_collide, _ground)) {
