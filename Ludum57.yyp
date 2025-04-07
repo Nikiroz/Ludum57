@@ -234,7 +234,7 @@
     {"id":{"name":"s_camera","path":"sprites/s_camera/s_camera.yy",},},
     {"id":{"name":"s_char_divein","path":"sprites/s_char_divein/s_char_divein.yy",},},
     {"id":{"name":"s_char_diveout","path":"sprites/s_char_diveout/s_char_diveout.yy",},},
-    {"id":{"name":"s_circle16","path":"sprites/s_circle16/s_circle16.yy",},},
+    {"id":{"name":"s_circle_x8","path":"sprites/s_circle_x8/s_circle_x8.yy",},},
     {"id":{"name":"s_collision_ship","path":"sprites/s_collision_ship/s_collision_ship.yy",},},
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_controller","path":"sprites/s_controller/s_controller.yy",},},

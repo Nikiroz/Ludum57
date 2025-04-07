@@ -35,8 +35,8 @@
   "solid":false,
   "spriteId":null,
   "spriteMaskId":{
-    "name":"s_circle16",
-    "path":"sprites/s_circle16/s_circle16.yy",
+    "name":"s_circle_x8",
+    "path":"sprites/s_circle_x8/s_circle_x8.yy",
   },
   "visible":true,
 }

@@ -30,7 +30,22 @@ function scr_render_ropes() {
 	draw_set_color(c_white);
 }
 
-function scr_rope_pull(_hsp, _vsp, _iteration = 0) {
+function scr_rope_pull(_speed, _direction) {
+	if (instance_is(parent, o_rope_simple) && _speed > 0.1) {
+		var _px = lerp(x, parent.x, 0.5),
+			_py = lerp(y, parent.y, 0.5);
+		
+		_direction = angle_lerp(_direction, point_direction(
+			_px, _py, parent.x, parent.y), 0.5)
+		
+		with (parent) scr_rope_pull(_speed * 0.75, _direction);
+	}
+	
+	hsp += ldrx(_speed, _direction);
+	vsp += ldry(_speed, _direction);
+}
+
+function scr_rope_pull_OBSOLETE(_hsp, _vsp, _iteration = 0) {
 	print("pre speed", speed_get(), _hsp, _vsp)
 	
 	hsp += _hsp

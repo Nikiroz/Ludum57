@@ -1,6 +1,6 @@
 /// @description Обновление характеристик
 
-oxygen = 100;
+oxygen_capacity = 100 * 60;
 max_hp = 100;
 
 movement_speed = mcr_playerSpeed;

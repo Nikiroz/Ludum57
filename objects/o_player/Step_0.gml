@@ -1,3 +1,5 @@
+if (is_dead) exit;
+
 var _left = false,
 	_right = false,
 	_jump = false,
@@ -105,6 +107,35 @@ else {
 	else if (sprite_index == s_player_walk
 	|| sprite_index == s_player_aquasuit_walk) {
 		self.animation_reset();
+	}
+}
+
+#endregion
+
+#region Кислород
+
+if (aquasuit_equipped && is_submerged) {
+	if (!oxygen_meter_active) {
+		oxygen_meter_active = true;
+		oxygen = oxygen_capacity;
+	}
+	
+	if (oxygen > 0) {
+		oxygen --;
+		
+		if (!oxygen) put_to_death();
+	}
+}
+
+if (has_carried_item()) {
+	var _tx = facing ? bbox_right : (bbox_left - 8),
+		_ty = bbox_center_y + 4;
+	
+	with (carried_instance) {
+		hsp = other.hsp;
+		vsp = other.vsp;
+		x = _tx;
+		y = _ty;
 	}
 }
 
