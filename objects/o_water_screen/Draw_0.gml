@@ -86,7 +86,10 @@ shader_set_uniform_f_array(
 )
 shader_set_uniform_f_array(
 	u_underwater_offset,
-	underwater_offset
+	[
+		underwater_offset[0],
+		underwater_offset[1] + 0
+	]
 )
 shader_set_uniform_f_array(
 	u_sprite_underwater_size,
