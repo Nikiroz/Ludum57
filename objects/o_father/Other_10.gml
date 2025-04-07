@@ -28,9 +28,7 @@ if (boatControl) {
 		audio_play_sound(snd_boat_start,1,false,global.soundVoulme);
 	}
 	
-	if(!audio_is_playing(snd_boat_enginge_loop)){
-		audio_play_sound(snd_boat_enginge_loop, 1, true, global.soundVoulme);		
-	}
+	
 }
 else {
 	sprite_index = s_father_drive_end;
