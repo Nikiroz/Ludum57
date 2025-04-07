@@ -83,4 +83,24 @@ if (random(100) < 50) {
 	}
 }
 
+var _fish_chance = lerp(0.02, 0.6, min(1, camera_get_view_y(view_camera[0]) / mcr_waterline));
+if (random(100) < _fish_chance) {
+	/// o_fish
+	
+	/*
+	var _bx1 = camera_get_view_x(view_camera[0]),
+		_bx2 = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]),
+		_by1 = camera_get_view_y(view_camera[0]),
+		_by2 = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]);
+	
+	_by1 = max(mcr_waterline, _by1)
+	_by2 = _by1 + camera_get_view_height(view_camera[0])\
+	*/
+	instance_create_depth(
+		0, 0,
+		layer_get_depth("Bottom") + 1,
+		o_fish
+	)
+}
+
 #endregion
