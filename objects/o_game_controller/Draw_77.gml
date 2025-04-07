@@ -16,7 +16,7 @@ if(surface_exists(_surface)){
 	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface(application_surface, 0, 0);
 	shader_reset();
-
+	
 	gpu_set_blendmode(bm_add);
 	with (o_lights) {
 		draw_sprite_ext(sprite_index, image_index, (x - camera_get_view_x(view_camera[0])) * 2, (y - camera_get_view_y(view_camera[0]) * 2) * 2 + 30, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
