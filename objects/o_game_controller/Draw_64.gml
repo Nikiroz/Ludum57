@@ -9,3 +9,26 @@ if(global.isDebug) {
     }
 
 }
+
+
+var _scavenge_amount = 0;
+with (o_loot) {
+	if (is_boated) 
+	{
+		switch (part_size)
+		{
+		    case size.S:
+				_scavenge_amount += 1;
+		    break;
+			case size.M:
+				_scavenge_amount += 4;
+		    break;
+			case size.L:
+				_scavenge_amount += 8;
+		    break;
+		}
+		
+	}
+}
+
+draw_text(10, 10, "Loot: " + string(_scavenge_amount) + "$");
