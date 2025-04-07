@@ -1,1 +1,0 @@
-popup = lerp(popup, 0.6, 0.05);
