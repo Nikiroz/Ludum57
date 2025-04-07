@@ -30,9 +30,9 @@ void main(){
 	float sunriseDuration = 0.3;
 	float sunsetDuration = 0.3;  
 		
-	vec3 colorNight   = vec3(0.01, 0.09, 0.15); // Ночь
-    vec3 colorMorning = vec3(1, 0.5, 0.52);	// Утро
-    vec3 colorEvening = vec3(0.56, 0.34, 0);	// Вечер
+	vec3 colorNight   = vec3(0.02, 0.08, 0.08); // Ночь
+    vec3 colorMorning = vec3(0.82, 0.63, 0.55);	// Утро
+    vec3 colorEvening = vec3(0.68, 0.56, 0.16);	// Вечер
 	
 	float realY = (v_vTexcoord.y * view_size.y + view_pos.y);
 	float waterlineDelta = max(0.0, realY - (wave_y - 32.0));
