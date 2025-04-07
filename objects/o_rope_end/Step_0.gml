@@ -57,8 +57,15 @@ with (target) {
 			other.vsp += _vy;
 		}
 		
-		x = _tx
-		y = _ty
+		x = _tx;
+		
+		if (_is_player) {
+			
+			y = _ty - 5;
+		}
+		else {
+			y = _ty + 5;
+		}
 	}
 	
 	other.x = bbox_center_x;
