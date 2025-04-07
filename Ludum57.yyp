@@ -251,6 +251,8 @@
     {"id":{"name":"s_bg_clouds02","path":"sprites/s_bg_clouds02/s_bg_clouds02.yy",},},
     {"id":{"name":"s_bg_fish01","path":"sprites/s_bg_fish01/s_bg_fish01.yy",},},
     {"id":{"name":"s_bg_fish02","path":"sprites/s_bg_fish02/s_bg_fish02.yy",},},
+    {"id":{"name":"s_bg_fish03","path":"sprites/s_bg_fish03/s_bg_fish03.yy",},},
+    {"id":{"name":"s_bg_fish04","path":"sprites/s_bg_fish04/s_bg_fish04.yy",},},
     {"id":{"name":"s_bg_godrays01","path":"sprites/s_bg_godrays01/s_bg_godrays01.yy",},},
     {"id":{"name":"s_bg_godrays02","path":"sprites/s_bg_godrays02/s_bg_godrays02.yy",},},
     {"id":{"name":"s_bg_godrays03","path":"sprites/s_bg_godrays03/s_bg_godrays03.yy",},},
