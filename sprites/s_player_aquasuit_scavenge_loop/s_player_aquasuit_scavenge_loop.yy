@@ -12,16 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"88f32031-ffe3-4c98-b634-904c0ed4894e","name":"88f32031-ffe3-4c98-b634-904c0ed4894e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4328ed21-576d-4271-872a-20829da6b11f","name":"4328ed21-576d-4271-872a-20829da6b11f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"40e3ea71-1e5b-4462-b027-fa4cb33bc22a","name":"40e3ea71-1e5b-4462-b027-fa4cb33bc22a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"99c3ace2-20fd-42bf-9b89-4a7051b49b32","name":"99c3ace2-20fd-42bf-9b89-4a7051b49b32","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"70c50e8a-5836-43f3-9352-28079a842e14","name":"70c50e8a-5836-43f3-9352-28079a842e14","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"33ac3735-4c8e-481c-92cc-8803e5155a94","name":"33ac3735-4c8e-481c-92cc-8803e5155a94","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"16a3ad6e-2c18-4da4-b2b4-617ea54eb917","name":"16a3ad6e-2c18-4da4-b2b4-617ea54eb917","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d83c06db-37ee-40e2-adbe-346f25da3ea8","name":"d83c06db-37ee-40e2-adbe-346f25da3ea8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"27aa4b07-fca4-41aa-969f-aab7e23171f0","name":"27aa4b07-fca4-41aa-969f-aab7e23171f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c01651e7-d1ff-4beb-bf2c-13542d622a5a","name":"c01651e7-d1ff-4beb-bf2c-13542d622a5a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50e730c4-456f-469b-b6a8-99a941060903","name":"50e730c4-456f-469b-b6a8-99a941060903","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":46,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"49af4ed2-89f6-4b16-b6a0-7c5b086d9f50","blendMode":0,"displayName":"default","isLocked":false,"name":"49af4ed2-89f6-4b16-b6a0-7c5b086d9f50","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"04582f4b-fdad-426f-bd3c-4ce2347b113e","blendMode":0,"displayName":"default","isLocked":false,"name":"04582f4b-fdad-426f-bd3c-4ce2347b113e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_player_aquasuit_scavenge_loop",
   "nineSlice":null,
@@ -51,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -71,14 +76,29 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"88f32031-ffe3-4c98-b634-904c0ed4894e","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ff193d52-5c3b-450e-89a7-07e06f85dfaf","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"99c3ace2-20fd-42bf-9b89-4a7051b49b32","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"86c0b284-d39a-40ff-94ec-e04391203d69","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4328ed21-576d-4271-872a-20829da6b11f","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7ff77939-227e-43d9-8e26-440bd181fca6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"70c50e8a-5836-43f3-9352-28079a842e14","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"511349cf-b02a-4be1-90bf-2a7b092cb38f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"40e3ea71-1e5b-4462-b027-fa4cb33bc22a","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ebbfb817-ad33-49bc-869e-2569e3108f2d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"33ac3735-4c8e-481c-92cc-8803e5155a94","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d56e3d3d-294c-4473-8520-b837e143aa3a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16a3ad6e-2c18-4da4-b2b4-617ea54eb917","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5669c89a-531b-4c20-980a-5a13c373df84","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d83c06db-37ee-40e2-adbe-346f25da3ea8","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a6c6a3bf-8e11-4892-90f3-7b433dd1d19d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"27aa4b07-fca4-41aa-969f-aab7e23171f0","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"33cdaf15-a553-43fb-bcd8-d745e4f1839d","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c01651e7-d1ff-4beb-bf2c-13542d622a5a","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0ec2efb-6b22-44a8-ab9f-984aaacc5458","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50e730c4-456f-469b-b6a8-99a941060903","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e97839f6-53ff-40b5-8414-cb6ff4f67770","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
