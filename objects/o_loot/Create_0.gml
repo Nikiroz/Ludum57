@@ -12,3 +12,5 @@ scr_interactible_set_text("Carry");
 scr_interactible_configure(0, 15);
 
 is_carried = false;
+
+rotation = 0;

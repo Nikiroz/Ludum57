@@ -9,6 +9,7 @@ enum Locale{
 #macro leftKey "A"
 #macro rightKey "D"
 #macro actionKey "E"
+#macro action2Key "F"
 #macro jumpKey vk_space
 
 //Screen

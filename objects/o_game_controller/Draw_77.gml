@@ -41,8 +41,15 @@ if(surface_exists(_surface)){
 	gpu_set_blendmode(bm_normal);
 	surface_reset_target();
 	
+	var _app_data = application_get_position();
 	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
-	draw_surface(_surface, 0, 0);
+	draw_surface_stretched(
+		_surface,
+		_app_data[0],
+		_app_data[1],
+		_app_data[2] - _app_data[0],
+		_app_data[3] - _app_data[1]
+	);
 	gpu_set_blendmode(bm_normal);
 
 } 
