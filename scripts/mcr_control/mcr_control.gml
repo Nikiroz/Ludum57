@@ -21,6 +21,15 @@ enum Locale{
 #macro gameDayLenght (0.9 / ((gameSessionInMinute * 0.25) * 60)) / 60
 #macro gameSpeed (1080 / (gameSessionInMinute * 60))
 
+global.soundBoatArray = [
+	snd_boat_creak_1, snd_boat_creak_2, snd_boat_creak_3,
+	snd_boat_creak_4, snd_boat_creak_5, snd_seagull_1
+]
+
+global.soundSeagulArray = [
+	snd_seagull_2, snd_seagull_3, snd_seagull_4, snd_seagull_5,
+	snd_seagull_6, snd_seagull_7
+]
 enum size
 {
     S,

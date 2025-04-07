@@ -34,6 +34,8 @@ void main()
 	// if (v_vPosition.y > wave_y) {
 	vec2 mask_uv = (v_vPosition.xy - u_waterdata.zw);
 	mask_uv = mask_uv / u_waterdata.xy;
+	mask_uv.x = mod(mask_uv.x, 1.0);
+	mask_uv.y = mod(mask_uv.y, 1.0);
 	/*a 
 	vec2 deb = mask_uv;
 	// mask_uv.y = max(mask_uv.y, -0.9);
@@ -55,7 +57,9 @@ void main()
 		uv.x = uv.x / u_sprite_size.x;
 		uv.y -= u_sprite_pos.y;
 		uv.y = min(uv.y, u_sprite_size.y - 0.01) / u_sprite_size.y;
+		uv.x = mod(uv.x, 1.0);
 		base = v_vColour * texture2D(gm_BaseTexture, uv);
+		// base.rgb = vec3(mod(uv.x, 1.0), 0.0, 0.0);
 	}
 	
 	gl_FragColor = base;
