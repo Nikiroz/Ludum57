@@ -63,8 +63,8 @@ function scr_interaction_update() {
 	
 	var _obj = interaction_object, _any = false;
 	
-	if (instance_exists(_obj)) {
-		interaction_time_max = _obj.interaction_time_max;
+	if (instance_exists(_obj) && _obj.interaction_visible) {
+		interaction_time_max  = _obj.interaction_time_max;
 		
 		with (o_interaction_text) {
 			if (target == _obj) {
@@ -88,8 +88,14 @@ function scr_interactible_check_selected(_instance) {
 }
 
 function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {
-	draw_sprite_outline(scr_interactible_check_selected(id) ? _outline_flags : 0,
-		sprite_index, image_index, x , y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+	
+	if (interaction_visible) {
+		draw_sprite_outline(scr_interactible_check_selected(id) ? _outline_flags : 0,
+			sprite_index, image_index, x , y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+	}
+	else {
+		draw_self();
+	}
 }
 
 /// @function scr_interactible_configure
