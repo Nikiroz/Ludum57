@@ -259,6 +259,7 @@
     {"id":{"name":"s_player_aquasuit_scavenge_end","path":"sprites/s_player_aquasuit_scavenge_end/s_player_aquasuit_scavenge_end.yy",},},
     {"id":{"name":"s_player_aquasuit_scavenge_loop","path":"sprites/s_player_aquasuit_scavenge_loop/s_player_aquasuit_scavenge_loop.yy",},},
     {"id":{"name":"s_player_aquasuit_scavenge_start","path":"sprites/s_player_aquasuit_scavenge_start/s_player_aquasuit_scavenge_start.yy",},},
+    {"id":{"name":"s_player_aquasuit_swim","path":"sprites/s_player_aquasuit_swim/s_player_aquasuit_swim.yy",},},
     {"id":{"name":"s_player_aquasuit_walk","path":"sprites/s_player_aquasuit_walk/s_player_aquasuit_walk.yy",},},
     {"id":{"name":"s_player_drive_end","path":"sprites/s_player_drive_end/s_player_drive_end.yy",},},
     {"id":{"name":"s_player_drive_hand_end","path":"sprites/s_player_drive_hand_end/s_player_drive_hand_end.yy",},},
