@@ -127,6 +127,7 @@
     {"id":{"name":"o_shipBG","path":"objects/o_shipBG/o_shipBG.yy",},},
     {"id":{"name":"o_sound_static","path":"objects/o_sound_static/o_sound_static.yy",},},
     {"id":{"name":"o_soundController","path":"objects/o_soundController/o_soundController.yy",},},
+    {"id":{"name":"o_statistics","path":"objects/o_statistics/o_statistics.yy",},},
     {"id":{"name":"o_sun","path":"objects/o_sun/o_sun.yy",},},
     {"id":{"name":"o_underwater_dark","path":"objects/o_underwater_dark/o_underwater_dark.yy",},},
     {"id":{"name":"o_water_divein","path":"objects/o_water_divein/o_water_divein.yy",},},
@@ -138,6 +139,7 @@
     {"id":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
     {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
     {"id":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
+    {"id":{"name":"r_Statistics","path":"rooms/r_Statistics/r_Statistics.yy",},},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
     {"id":{"name":"collision_find_normal","path":"scripts/collision_find_normal/collision_find_normal.yy",},},
@@ -350,6 +352,7 @@
     {"roomId":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
     {"roomId":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
     {"roomId":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
+    {"roomId":{"name":"r_Statistics","path":"rooms/r_Statistics/r_Statistics.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
