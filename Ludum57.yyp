@@ -167,6 +167,7 @@
     {"id":{"name":"mcr_physics","path":"scripts/mcr_physics/mcr_physics.yy",},},
     {"id":{"name":"print","path":"scripts/print/print.yy",},},
     {"id":{"name":"Rendermode","path":"scripts/Rendermode/Rendermode.yy",},},
+    {"id":{"name":"scr_calculate_max_rope_length","path":"scripts/scr_calculate_max_rope_length/scr_calculate_max_rope_length.yy",},},
     {"id":{"name":"scr_deicde_loot","path":"scripts/scr_deicde_loot/scr_deicde_loot.yy",},},
     {"id":{"name":"scr_instance_check_boated","path":"scripts/scr_instance_check_boated/scr_instance_check_boated.yy",},},
     {"id":{"name":"scr_levelobject_updae_divein","path":"scripts/scr_levelobject_updae_divein/scr_levelobject_updae_divein.yy",},},
