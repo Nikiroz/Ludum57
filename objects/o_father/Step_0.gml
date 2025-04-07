@@ -1,8 +1,7 @@
 event_inherited();
 
-is_boated = true;
-
-interaction2_active = !o_player.aquasuit_equipped;
+interaction_active = !o_player.aquasuit_equipped;
+interaction2_active = interaction_active;
 
 if (boatControl)
 {

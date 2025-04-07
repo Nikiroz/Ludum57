@@ -38,6 +38,7 @@ anim_aquasuit_exit = 0;
 // базовые хар-ки
 event_user(0);
 oxygen = oxygen_capacity;
+oxygen_refilling = false;
 hp = max_hp;
 
 // ввод и прочее

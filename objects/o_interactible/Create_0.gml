@@ -1,5 +1,7 @@
 event_inherited();
 
+interaction_active = true;
+interaction_visible = true;
 interaction_time_max = 0;
 interaction_range = 20;
 interactor = noone;
@@ -7,7 +9,6 @@ interactor = noone;
 //
 interaction_text_hint = "N/A"
 interaction_text_progress = "N/A {0}%"
-interaction_visible = true;
 
 //
 interaction2_active = false;

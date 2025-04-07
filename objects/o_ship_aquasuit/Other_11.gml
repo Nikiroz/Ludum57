@@ -9,4 +9,6 @@ with (interactor) {
 
 interaction2_active = false;
 
+scr_interactible_set_text("Start Diving");
+
 alarm[0] = -1;
