@@ -104,6 +104,22 @@ set_aquasuit_state = function(_state) {
 	animation_reset();
 }
 
+/// @function get_contextual_sprite(sprite)
+get_contextual_sprite = function(_sprite) {
+	if (has_carried_item()) {
+		switch (_sprite) {
+			case s_player_aquasuit_swim: return s_player_aquasuit_groundtoswim_hold;
+			case s_player_aquasuit_groundtoswim: return s_player_aquasuit_groundtoswim_hold;
+			case s_player_aquasuit_rope_end_hold: return s_player_aquasuit_rope_end_hold;
+			case s_player_aquasuit_swimtoground: return s_player_aquasuit_swimtoground_hold;
+			case s_player_aquasuit_idle: return s_player_aquasuit_idle_hold;
+			case s_player_aquasuit_walk: return s_player_aquasuit_walk_hold;
+		}
+	}
+	
+	return _sprite;
+}
+
 //
 
 /// @function sprite_change(sprite)
@@ -120,4 +136,11 @@ animation_reset = function() {
 
 put_to_death = function() {
 	is_dead = true;
+	
+	
+	if(audio_is_playing(snd_low_oxygen_choking_d)){
+		audio_stop_sound(snd_low_oxygen_choking_d);
+	}
+	audio_play_sound(snd_dead, 100, false, global.soundVolume);
+	
 }
