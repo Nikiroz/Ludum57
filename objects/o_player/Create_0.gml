@@ -1,11 +1,20 @@
 event_inherited();
 
+u_waterline = shader_get_uniform(shd_player, "u_waterline")
+u_color = shader_get_uniform(shd_player, "u_color")
+underwater_color = [30, 36, 33]
+underwater_color[0] /= 255
+underwater_color[1] /= 255
+underwater_color[2] /= 255
+
 // состояния
 walking = false;
 input_enabled = true;
 walking_enabled = true;
 motion_enabled = true;
 boat_control = false;
+oxygen_meter_active = false;
+is_dead = false;
 
 // экипировка
 aquasuit_equipped = false;
@@ -15,8 +24,8 @@ ungrounded_time = 0;
 
 // базовые хар-ки
 event_user(0);
+oxygen = oxygen_capacity;
 hp = max_hp;
-
 
 // ввод и прочее
 input_interact = false;
@@ -38,6 +47,19 @@ has_carried_item = function(_object = undefined) {
 	return instance_is(carried_instance, _object)
 }
 
+set_carried_item = function(_instance = noone) {
+	with (carried_instance) {
+		depth = other.depth + 1;
+		is_carried = false;
+	}
+	
+	carried_instance = _instance;
+	
+	with (_instance) {
+		depth = other.depth - 1;
+		is_carried = true;
+	}
+}
 
 //
 
@@ -51,4 +73,8 @@ sprite_change = function(_sprite) {
 animation_reset = function() {
 	image_index = 0;
 	event_perform(ev_other, ev_animation_end);
+}
+
+put_to_death = function() {
+	is_dead = true;
 }

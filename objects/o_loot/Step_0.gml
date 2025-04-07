@@ -1,3 +1,13 @@
+if (is_carried) {
+	mask_index = msk_none;
+	interaction_visible = false;
+	exit;
+}
+else if (mask_index == msk_none) {
+	mask_index = object_get_mask(object_index);
+	interaction_visible = true;
+}
+
 event_inherited();
 
 if (is_grounded && vsp > 0) {
