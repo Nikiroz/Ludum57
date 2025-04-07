@@ -39,3 +39,12 @@ time += timeScale;//gameSpeed / 1000
 hour = time mod 24;
 
 #endregion
+
+#region Weather
+
+if (irandom(100) < 1) {
+	instance_create_layer(camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + irandom(100), 
+		camera_get_view_y(view_camera[0]) + irandom(camera_get_view_height(view_camera[0]) / 2), "Instances", choose(o_fog01, o_fog02));
+}
+
+#endregion
