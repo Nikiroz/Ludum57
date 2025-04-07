@@ -10,48 +10,50 @@ else if (mask_index == msk_none) {
 
 event_inherited();
 
-if (is_grounded && vsp > 0) {
-	if (instance_exists(ground_instance)) {
-		float_level = lerp(float_level, ground_instance.bbox_top, 0.1);
-	}
-	else float_level = lerp(float_level, y - 128, 0.1);
-}
-
-var _radius = 2, _collision = collision_circle(
-		x, y, _radius, o_levelobject, false, true);
-
-if (_collision) {
-	var _cx, _cy;
-	
-	with (_collision) {
-		_cx = bbox_center_x;
-		_cy = bbox_center_y;
+if (!is_boated) {
+	if (is_grounded && vsp > 0) {
+		if (instance_exists(ground_instance)) {
+			float_level = lerp(float_level, ground_instance.bbox_top, 0.1);
+		}
+		else float_level = lerp(float_level, y - 128, 0.1);
 	}
 	
-	var _vx = ((x - _cx) + random_range(-1, 1)) * 0.1 + _collision.hsp,
-		_vy = ((y - _cy) + random_range(-1, 1)) * 0.1 + _collision.vsp
+	var _radius = 2, _collision = collision_circle(
+			x, y, _radius, o_levelobject, false, true);
 	
-	hsp += _vx * 0.5;
-	vsp += _vx * 0.5;
-	
-	if (true && instance_is(_collision, o_loot)) {
-		_collision.hsp -= _vx * 0.5;
-		_collision.vsp -= _vx * 0.5;
-	}
-	else {
-		var _normal = collision_find_normal(x, y, _radius, _radius, _collision)
+	if (_collision) {
+		var _cx, _cy;
 		
-		if (_normal != undefined) {
-			hsp -= _normal[0];
-			vsp -= _normal[1];
+		with (_collision) {
+			_cx = bbox_center_x;
+			_cy = bbox_center_y;
+		}
+		
+		var _vx = ((x - _cx) + random_range(-1, 1)) * 0.1 + _collision.hsp,
+			_vy = ((y - _cy) + random_range(-1, 1)) * 0.1 + _collision.vsp
+		
+		hsp += _vx * 0.5;
+		vsp += _vx * 0.5;
+		
+		if (instance_is(_collision, o_loot)) {
+			_collision.hsp -= _vx * 0.5;
+			_collision.vsp -= _vx * 0.5;
 		}
 		else {
-			speed_add(1, random(360));
-			hsp += _collision.hsp;
+			var _normal = collision_find_normal(x, y, _radius, _radius, _collision)
+			
+			if (_normal != undefined) {
+				hsp -= _normal[0];
+				vsp -= _normal[1];
+			}
+			else {
+				speed_add(1, random(360));
+				hsp += _collision.hsp;
+			}
 		}
-	}
 	
-	speed_limit(2);
+		speed_limit(2);
+	}
 }
 
 //
@@ -91,4 +93,4 @@ else {
 	vsp += 0.1;
 }
 
-image_angle += hsp * 2 + vsp
+rotation += hsp * 2 + vsp

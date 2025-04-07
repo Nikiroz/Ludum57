@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.75,
+  "duration":0.961917,
   "name":"snd_boat_start",
   "parent":{
     "name":"Boat",
