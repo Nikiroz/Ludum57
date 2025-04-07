@@ -136,4 +136,11 @@ animation_reset = function() {
 
 put_to_death = function() {
 	is_dead = true;
+	
+	
+	if(audio_is_playing(snd_low_oxygen_choking_d)){
+		audio_stop_sound(snd_low_oxygen_choking_d);
+	}
+	audio_play_sound(snd_dead, 100, false, global.soundVolume);
+	
 }

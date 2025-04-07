@@ -21,6 +21,10 @@ enum Locale{
 #macro gameDayLenght (0.9 / ((gameSessionInMinute * 0.25) * 60)) / 60
 #macro gameSpeed (1080 / (gameSessionInMinute * 60))
 
+global.soundGameplayArray = [
+	snd_mus_scavenger_deep_gameplay_1, snd_mus_scavenger_deep_gameplay_2, snd_mus_scavenger_deep_gameplay_3,
+	snd_mus_scavenger_deep_gameplay_4, snd_mus_scavenger_deep_gameplay_5, snd_mus_scavenger_deep_gameplay_6
+]
 global.soundBoatArray = [
 	snd_boat_creak_1, snd_boat_creak_2, snd_boat_creak_3,
 	snd_boat_creak_4, snd_boat_creak_5, snd_seagull_1

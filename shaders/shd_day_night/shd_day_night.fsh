@@ -46,13 +46,15 @@ void main(){
 	colorMorning = mix(
 		colorMorning,
 		//vec3((colorMorning.r + colorMorning.g + colorMorning.b) / 3.0),
-		texColor.rgb,
+		mix(colorMorning, vec3((colorMorning.r + colorMorning.g + colorMorning.b) / 3.0), 0.8),
+		//texColor.rgb,
 		waterlineDelta
 	);
 	colorEvening = mix(
 		colorEvening,
 		//vec3((colorEvening.r + colorEvening.g + colorEvening.b) / 3.0),
-		texColor.rgb,
+		mix(colorEvening, vec3((colorEvening.r + colorEvening.g + colorEvening.b) / 3.0), 0.8),
+		//texColor.rgb,
 		waterlineDelta
 	);
 	
