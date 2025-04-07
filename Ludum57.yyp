@@ -132,6 +132,7 @@
     {"id":{"name":"o_water_waves","path":"objects/o_water_waves/o_water_waves.yy",},},
     {"id":{"name":"o_water","path":"objects/o_water/o_water.yy",},},
     {"id":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
+    {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
     {"id":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
     {"id":{"name":"angle_lerp","path":"scripts/angle_lerp/angle_lerp.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
@@ -335,6 +336,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"r_Game","path":"rooms/r_Game/r_Game.yy",},},
     {"roomId":{"name":"r_Menu","path":"rooms/r_Menu/r_Menu.yy",},},
+    {"roomId":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

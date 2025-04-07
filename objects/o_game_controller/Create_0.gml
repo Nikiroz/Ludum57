@@ -24,7 +24,7 @@ global.saveTime = 0;
 timeScale = 0.001;
 global.soundVoulme = 1;
 
-window_set_fullscreen(true)
+//window_set_fullscreen(true)
 
 
 if (file_exists("debug.ini")) {
