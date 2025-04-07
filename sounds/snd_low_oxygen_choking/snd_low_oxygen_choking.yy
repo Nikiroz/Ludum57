@@ -12,8 +12,8 @@
   "duration":10.0,
   "name":"snd_low_oxygen_choking",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

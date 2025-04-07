@@ -13,7 +13,7 @@
   "name":"snd_footsteps_boat_6",
   "parent":{
     "name":"Footsteps",
-    "path":"folders/Sounds/Footsteps.yy",
+    "path":"folders/Sounds/Player/Footsteps.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

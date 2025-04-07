@@ -22,14 +22,15 @@ if (boatControl) {
 	with(o_ship_winch_basic){
 		event_user(1);	
 	}
-	
+	audio_play_sound(snd_boat_enginge_loop,1,true,global.soundVoulme);
 }
 else {
 	sprite_index = s_father_drive_end;
 	with(o_ship_winch_basic){
 		event_user(0);	
 	}
-
+	audio_stop_sound(snd_boat_enginge_loop);
+	audio_play_sound(snd_boat_stop, 1, false, global.soundVoulme);
 }
 		
 event_user(1);

@@ -12,8 +12,8 @@
   "duration":8.5,
   "name":"snd_scrap_metal_dismantling_loop",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
