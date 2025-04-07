@@ -10,8 +10,8 @@
   "name":"o_ship_aquasuit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Ship",
+    "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":{
     "name":"o_boat_interactible",

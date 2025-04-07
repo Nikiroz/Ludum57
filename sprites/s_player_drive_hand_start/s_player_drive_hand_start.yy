@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Characters",
-    "path":"folders/Sprites/Characters.yy",
+    "path":"folders/Tile Sets/Sprites/Characters.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

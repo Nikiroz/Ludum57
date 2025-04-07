@@ -6,8 +6,8 @@
   "name":"o_ship_part02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Ship",
+    "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":{
     "name":"o_boatPart",

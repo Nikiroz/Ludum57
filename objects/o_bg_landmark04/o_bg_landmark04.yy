@@ -6,8 +6,8 @@
   "name":"o_bg_landmark04",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Landmarks",
+    "path":"folders/Objects/Landmarks.yy",
   },
   "parentObjectId":null,
   "persistent":false,

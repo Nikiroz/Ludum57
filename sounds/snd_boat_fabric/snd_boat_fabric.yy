@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_boat_fabric",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":5.652083,
+  "name":"snd_boat_fabric",
+  "parent":{
+    "name":"Boat",
+    "path":"folders/Sounds/Boat.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_boat_fabric.wav",
+  "type":0,
+  "volume":1.0,
+}

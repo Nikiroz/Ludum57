@@ -8,8 +8,8 @@
   "name":"o_gradient",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Water",
+    "path":"folders/Objects/Water.yy",
   },
   "parentObjectId":null,
   "persistent":false,

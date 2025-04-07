@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_ambience_wind",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":81.0,
+  "name":"snd_ambience_wind",
+  "parent":{
+    "name":"Ambience",
+    "path":"folders/Sounds/Ambience.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_ambience_wind.wav",
+  "type":0,
+  "volume":1.0,
+}

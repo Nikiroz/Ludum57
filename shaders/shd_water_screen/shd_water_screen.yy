@@ -3,8 +3,8 @@
   "%Name":"shd_water_screen",
   "name":"shd_water_screen",
   "parent":{
-    "name":"Water",
-    "path":"folders/Objects/Water.yy",
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

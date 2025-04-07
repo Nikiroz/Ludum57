@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"GUI",
-    "path":"folders/Sprites/GUI.yy",
+    "path":"folders/Tile Sets/Sprites/GUI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

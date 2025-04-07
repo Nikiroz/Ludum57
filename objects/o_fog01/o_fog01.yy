@@ -6,8 +6,8 @@
   "name":"o_fog01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Weather",
+    "path":"folders/Objects/Weather.yy",
   },
   "parentObjectId":{
     "name":"c_fog",

@@ -10,8 +10,8 @@
   "name":"o_levelobject",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Interactive",
+    "path":"folders/Objects/Interactive.yy",
   },
   "parentObjectId":null,
   "persistent":false,

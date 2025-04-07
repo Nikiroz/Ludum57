@@ -12,8 +12,8 @@
   "name":"o_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Interactive",
+    "path":"folders/Objects/Interactive.yy",
   },
   "parentObjectId":{
     "name":"o_levelobject",
