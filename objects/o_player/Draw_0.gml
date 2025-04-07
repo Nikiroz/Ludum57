@@ -1,4 +1,4 @@
-if (is_boated) exit;
+if (isBoatRender) exit;
 
 event_inherited();
 

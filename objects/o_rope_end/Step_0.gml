@@ -8,7 +8,30 @@ else if (is_submerged) {
 }
 else vsp = 0;
 
-if (instance_exists(rope_instance)) {
+var _rope = rope_instance
+
+if (instance_exists(_rope)) {
 	rope_instance.x = x;
 	rope_instance.y = y;
+}
+else exit
+
+with (target) {
+	var _tx = x, _ty = bbox_bottom - 20,
+		_is_player = (object_index == o_player);
+	
+	with (_rope) {
+		if (stress > length && _is_player) {
+			var _diff = stress - length
+			other.hsp += ((x + parent.x) * 0.5 - _tx) * 0.2
+			other.vsp += ((y + parent.y) * 0.5 - _ty) * 0.2
+		}
+		
+		x = _tx
+		y = _ty
+	}
+	
+	
+	other.x = bbox_center_x;
+	other.y = bbox_center_y;
 }

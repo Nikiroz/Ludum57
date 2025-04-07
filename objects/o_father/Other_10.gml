@@ -1,17 +1,23 @@
+/// @description Взаимодействие
 with (interactor)
 {
-	status.isFreeze = !status.isFreeze;
+	walking_enabled = !walking_enabled;
 	
-	if (status.isFreeze) {
+	if (walking_enabled) {
 		sprite_index = s_player_drive_start;
 	}
-	else sprite_index = s_player_drive_end;
-	
+	else {
+		sprite_index = s_player_drive_end;
+	}
 	
 	with (other) {
 		boatControl = !boatControl
-		if (boatControl)
+		
+		if (boatControl) {
 			sprite_index = s_father_drive_start;
-		else sprite_index = s_father_drive_end;
+		}
+		else {
+			sprite_index = s_father_drive_end;
+		}
 	}
 }

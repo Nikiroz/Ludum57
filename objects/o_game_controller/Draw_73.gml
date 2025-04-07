@@ -11,7 +11,7 @@ with (o_collision) {
 		gpu_set_fog(1, c_green, 0, 0)
 		
 		draw_sprite_ext(sprite_index, 0, x, y,
-			image_xscale, image_yscale, 0, c_white, 0.8)
+			image_xscale, image_yscale, 0, c_white, 0.3)
 		
 		gpu_set_fog(0, 0, 0, 0)
 	}

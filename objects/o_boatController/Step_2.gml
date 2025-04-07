@@ -19,25 +19,29 @@ for (var i = _count - 1; i >= 0; i --) {
 	}
 }
 
+//
+rendermode_set(Rendermode.Boat);
+
 for (var i = 0; i < _count; i ++) {
 	with (boatElements[i]) {
 		if (!(scr_instance_check_boated(id) && visible)) continue;
 		
 		if (instance_is(self, o_levelobject))
 		{
-			is_boated = false;
-			
 			event_perform(ev_draw, ev_draw_normal);
-			
-			is_boated = true;
 		}
-		else if (sprite_index >= 0) {
+		else if (sprite_exists(sprite_index)) {
+			
+			//print(object_get_name(object_index))
 			
 			draw_sprite_ext(sprite_index, image_index, x, y,
 				image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 		}
 	}
 }
+
+//
+rendermode_reset();
 
 for (var i = _count - 1; i >= 0; i --) {
 	with (boatElements[i]) {
