@@ -1,8 +1,8 @@
 #macro mcr_ropeRenderThickness 1
 #macro mcr_ropeRenderColor #2e2d27
 
-function scr_draw_ropes() {
-	if (global.isDebug) {
+function scr_render_ropes() {
+	if (false && global.isDebug) {
 		draw_set_font(fnt_debug_small);
 		
 		with (o_rope_simple) {

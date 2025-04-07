@@ -12,6 +12,7 @@ if(surface_exists(_surface)){
 		_shadingTime = _minShading
 	*/
 	shader_set_uniform_f(shader_get_uniform(shd_day_night, "hour"), hour);
+	//shader_set_uniform_f(shader_get_uniform(shd_day_night, "wave_y"), wave_y);
 	
 	//gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface(application_surface, 0, 0);

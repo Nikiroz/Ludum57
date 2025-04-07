@@ -19,9 +19,17 @@ boatControl = !boatControl
 		
 if (boatControl) {
 	sprite_index = s_father_drive_start;
+	with(o_ship_winch_basic){
+		event_user(1);	
+	}
+	
 }
 else {
 	sprite_index = s_father_drive_end;
+	with(o_ship_winch_basic){
+		event_user(0);	
+	}
+
 }
 		
 event_user(1);

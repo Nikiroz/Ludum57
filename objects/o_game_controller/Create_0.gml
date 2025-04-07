@@ -40,3 +40,18 @@ if (global.isDebug) {
 	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
 	
 }
+
+
+
+ps_bubbles = part_system_create()
+pt_bubbles_count = 5
+pt_bubbles_array = array_create(pt_bubbles_count)
+for (var i = 0; i < pt_bubbles_count; i ++) {
+	var _sprite_bubble = asset_get_index("s_bg_bubbles0" + string(i + 1));
+	var _pt_bubble = part_type_create();
+	part_type_sprite(_pt_bubble, _sprite_bubble, 1, 1, 0)
+	part_type_life(_pt_bubble, 30, 50)
+	pt_bubbles_array[i] = _pt_bubble
+}
+
+instance_create_layer(0, 0, "water_pre", o_underwater_dark)

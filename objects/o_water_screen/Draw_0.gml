@@ -10,7 +10,7 @@ wave_y = draw_y
 if (is_wave) {
 	draw_y = draw_y
 } else {
-	with (obj_water_screen) {
+	with (o_water_screen) {
 		if (is_wave) {
 			other.wave_y = draw_y
 		}

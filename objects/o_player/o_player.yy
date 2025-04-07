@@ -45,6 +45,9 @@
     "name":"s_player_idle",
     "path":"sprites/s_player_idle/s_player_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"msk_player",
+    "path":"sprites/msk_player/msk_player.yy",
+  },
   "visible":true,
 }
