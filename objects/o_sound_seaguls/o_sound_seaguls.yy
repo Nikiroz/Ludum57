@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"o_sound",
+  "%Name":"o_sound_seaguls",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_sound",
+  "name":"o_sound_seaguls",
   "overriddenProperties":[],
   "parent":{
     "name":"Sounds",
     "path":"folders/Objects/Sounds.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_sound",
+    "path":"objects/o_sound/o_sound.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -42,7 +42,7 @@
   "origin":9,
   "parent":{
     "name":"Ship",
-    "path":"folders/Tile Sets/Sprites/Ship.yy",
+    "path":"folders/Sprites/Ship.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
