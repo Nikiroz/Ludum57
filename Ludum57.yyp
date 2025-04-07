@@ -312,6 +312,7 @@
     {"id":{"name":"s_moon_mask","path":"sprites/s_moon_mask/s_moon_mask.yy",},},
     {"id":{"name":"s_moon","path":"sprites/s_moon/s_moon.yy",},},
     {"id":{"name":"s_player_aquasuit_death","path":"sprites/s_player_aquasuit_death/s_player_aquasuit_death.yy",},},
+    {"id":{"name":"s_player_aquasuit_enter","path":"sprites/s_player_aquasuit_enter/s_player_aquasuit_enter.yy",},},
     {"id":{"name":"s_player_aquasuit_groundtoswim_hold","path":"sprites/s_player_aquasuit_groundtoswim_hold/s_player_aquasuit_groundtoswim_hold.yy",},},
     {"id":{"name":"s_player_aquasuit_groundtoswim","path":"sprites/s_player_aquasuit_groundtoswim/s_player_aquasuit_groundtoswim.yy",},},
     {"id":{"name":"s_player_aquasuit_idle_hold","path":"sprites/s_player_aquasuit_idle_hold/s_player_aquasuit_idle_hold.yy",},},
