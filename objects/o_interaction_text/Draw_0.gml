@@ -38,6 +38,10 @@ with (o_player) {
 	}
 }
 
+if (instance_exists(_target) && _target.interaction2_active) {
+	_text += $"\n[{action2Key}] {_target.interaction2_text_hint}"
+}
+
 text_key = _text;
 
 scr_text(x, y, string(_text, round(_progress * 100)),

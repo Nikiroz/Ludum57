@@ -1,16 +1,32 @@
 function scr_interaction_update() {
 	var _interact = input_interact,
-		_interacting = false
+		_interacting = false,
+		_mode = -1;
 	
 	if (keyboard_check(ord(actionKey))) {
-		if (!interaction_release)
+		if (!interaction_release) {
 			_interacting = true;
+		}
 	}
 	else interaction_release = false;
 	
-	if (instance_exists(interaction_object) && (stable || !interaction_object.interaction_time_max)
-	&& (!interaction_object.interaction_time_max || _interacting)) {
-		var _obj = interaction_object,
+	if (instance_exists(interaction_object) && interaction2_active && input_interact2) {
+		with (interaction_object) {
+			other.interaction_time = 0;
+			other.interaction_time_max = 0;
+			other.interaction_release = true;
+			interactor = other.id;
+			
+			event_user(1);
+		}
+		
+		interaction_time = 0;
+		interaction_time_max = 0;
+	}
+	else if (instance_exists(interaction_object)
+	&& (stable || !interaction_object.interaction_time_max)
+	&& ((!interaction_object.interaction_time_max || _interacting))) {
+		var _obj = interaction_object
 		
 		if (distance_to_object(_obj) > _obj.interaction_range || (sign(_obj.x - bbox_center_x) != facing)) {
 			interaction_object = noone;
@@ -26,6 +42,7 @@ function scr_interaction_update() {
 				other.interaction_time_max = 0;
 				other.interaction_release = true;
 				interactor = other.id;
+				
 				event_user(0);
 			}
 		}
@@ -40,6 +57,8 @@ function scr_interaction_update() {
 			if (interaction_time < 1)
 				interaction_time = 0;
 		}
+		
+		interaction2_active = false;
 		
 		var _result = noone
 		
@@ -66,7 +85,8 @@ function scr_interaction_update() {
 	var _obj = interaction_object, _any = false;
 	
 	if (instance_exists(_obj) && _obj.interaction_visible) {
-		interaction_time_max  = _obj.interaction_time_max;
+		interaction_time_max = _obj.interaction_time_max;
+		interaction2_active = _obj.interaction2_active;
 		
 		with (o_interaction_text) {
 			if (target == _obj) {
@@ -113,4 +133,10 @@ function scr_interactible_configure(_delay = 0, _distance = 20) {
 function scr_interactible_set_text(_hint = "N/A", _progress = "N/A {0}%") {
 	interaction_text_hint = _hint;
 	interaction_text_progress = _progress;
+}
+
+function scr_interactible_set_second_interaction(_active, _hint = "N/A", _progress = "N/A {0}%") {
+	interaction2_active = _active;
+	interaction2_text_hint = _hint;
+	interaction2_text_progress = _progress;
 }

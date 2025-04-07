@@ -81,3 +81,4 @@ if (climb_aboard_confirmation || confirmation_time > 0) {
 	draw_set_halign(fa_left);
 }
 
+scr_text_hl(40, 40, $"{interaction2_active}\n{input_interact2}");
