@@ -55,6 +55,18 @@ with (target) {
 			
 			other.hsp += _vx;
 			other.vsp += _vy;
+			
+			with (other) {
+				if (sprite_index == s_player_aquasuit_idle
+				|| sprite_index == s_player_aquasuit_swim
+				|| sprite_index == s_player_aquasuit_scavenge_start
+				|| sprite_index == s_player_aquasuit_scavenge_loop
+				|| sprite_index == s_player_aquasuit_scavenge_end)
+				{
+					sprite_index = s_player_aquasuit_rope_end;
+					image_index = 0;
+				}
+			}
 		}
 		
 		x = _tx;

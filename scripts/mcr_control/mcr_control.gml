@@ -21,10 +21,17 @@ enum Locale{
 #macro gameDayLenght (0.9 / ((gameSessionInMinute * 0.25) * 60)) / 60
 #macro gameSpeed (1080 / (gameSessionInMinute * 60))
 
-
 enum size
 {
     S,
     M,
     L
 }
+
+global.soundStepArray = 
+[	
+	snd_footsteps_boat_1, snd_footsteps_boat_2, snd_footsteps_boat_3,
+	snd_footsteps_boat_4, snd_footsteps_boat_5, snd_footsteps_boat_6,
+	snd_footsteps_boat_7, snd_footsteps_boat_8
+];
+

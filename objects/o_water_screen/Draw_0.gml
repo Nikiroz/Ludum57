@@ -26,9 +26,6 @@ var _vx = camera_get_view_x(view_camera[0]) - 1,
 	_vy2 = _vy + camera_get_view_height(view_camera[0]) + 2;
 
 gpu_push_state()
-gpu_set_tex_repeat(true)
-
-shader_set(shd_water_screen)
 
 var _height = sprite_get_height(sprite);
 _vy = max(
@@ -36,6 +33,25 @@ _vy = max(
 	waterline_y
 )
 // _vy2 = _vy + _height
+
+if (godray_draw) {
+	shader_set(shd_godray)
+	gpu_set_blendmode(bm_add)
+	for (var i = 0; i < godray_count; i ++) {
+		shader_set_uniform_f_array(u_gradient, [_vy, sprite_get_height(godray_array[i].sprite)])
+		draw_sprite_ext(
+			godray_array[i].sprite, 0,
+			godray_array[i].x, _vy,
+			1, 1, 0, godray_color,
+			0.2// + dcos(current_time * 0.06 + godray_array[i].x) * 0.2
+		)
+	}
+	gpu_set_blendmode(bm_normal)
+	shader_reset()
+}
+
+gpu_set_tex_repeat(true)
+shader_set(shd_water_screen)
 
 texture_set_stage(
 	u_watermask,
@@ -69,11 +85,29 @@ shader_set_uniform_f_array(
 	]
 )
 shader_set_uniform_f_array(
+	u_underwater_offset,
+	[
+		underwater_offset[0],
+		underwater_offset[1] + 0
+	]
+)
+shader_set_uniform_f_array(
 	u_sprite_underwater_size,
 	[
 		sprite_get_width(sprite_underwater),
 		sprite_get_height(sprite_underwater) * underwater_hscale
 	]
+)
+shader_set_uniform_f_array(
+	u_view,
+	[
+		camera_get_view_x(view_camera[0]),
+		camera_get_view_y(view_camera[0])
+	]
+)
+shader_set_uniform_f_array(
+	u_underwater_parallax,
+	[0, 0.1]
 )
 /*
 shader_set_uniform_f_array(

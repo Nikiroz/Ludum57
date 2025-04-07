@@ -9,8 +9,10 @@ input_interact = false;
 input_interact2 = false;
 
 if (input_enabled) {
-	
-	if (!boat_control && walking_enabled) {
+	if (!boat_control && walking_enabled
+	&& sprite_index != s_player_aquasuit_swimtoground
+	&& sprite_index != s_player_aquasuit_rope_end)
+	{
 		_left = keyboard_check(ord(leftKey));
 		_right = keyboard_check(ord(rightKey));
 		_hmove = _right - _left;
@@ -51,7 +53,7 @@ if (climb_aboard_confirmation) {
 
 x = round(x);
 
-if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
+if ((global.isDebug || GM_build_type == "run") && mouse_check_button_pressed(mb_middle)) {
 	x = mouse_x;
 	y = mouse_y;
 }
@@ -74,7 +76,7 @@ if (instance_is(interaction_object, o_scrap) && interaction_time > 0) {
 		image_index = 0;
 	}
 }
-else {
+else if (sprite_index != s_player_aquasuit_rope_end) {
 	var _swimming = (ungrounded_time > 5);
 	
 	// остановка анимации сбора
@@ -92,11 +94,11 @@ else {
 		self.animation_reset();
 	}
 	
-	// анимация ходьбы
 	if (aquasuit_equipped && is_submerged && _swimming) {
 		if (sprite_index != s_player_aquasuit_swim)
 			sprite_index = s_player_aquasuit_swim;
 	}
+	// анимация ходьбы
 	else if (walking) {
 		if (aquasuit_equipped) {
 			sprite_index = s_player_aquasuit_walk;
@@ -104,6 +106,9 @@ else {
 		else {
 			sprite_index = s_player_walk;
 			is_boated = true;
+			if(isStepPlay(global.soundStepArray)){
+				audio_play_sound(getRandomSound(global.soundStepArray), 100, false);
+			}
 		}
 	}
 	else if (sprite_index == s_player_walk
