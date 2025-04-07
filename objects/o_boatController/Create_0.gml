@@ -52,6 +52,12 @@ move_boat = function(_x) {
 	
 	fuel_lost += abs(_x / 1000);
 	
+
+		if (random(100) < 5 * abs(_x)) {
+			instance_create_layer(o_shipBG.x + 185, o_shipBG.y - 158, "Boat", o_ship_smoke)
+		}
+	
+	
 	if (abs(_x) > 0.2) {
 		with (instance_single_get(o_ship_part01.x, o_ship_part01.y, depth, o_ship_waves_movement)) {
 			scale_x = sign(_x)

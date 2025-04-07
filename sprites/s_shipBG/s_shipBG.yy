@@ -35,6 +35,7 @@
   "height":220,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"33f963d3-dd3d-4f29-b26b-017f1bbb718a","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"33f963d3-dd3d-4f29-b26b-017f1bbb718a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"78d6d5ce-7a5c-4aee-b509-7a4960163973","blendMode":0,"displayName":"default","isLocked":false,"name":"78d6d5ce-7a5c-4aee-b509-7a4960163973","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_shipBG",

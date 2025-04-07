@@ -24,6 +24,10 @@ with (target) {
 		if (bbox_top > mcr_waterline) {
 			speed_add(point_direction(x, y, o_rope_source.x, o_rope_source.y), 1);
 			speed_limit(rope_pull_speed);
+			
+			with (o_ship_winch_basic) {
+				motion += 0.2;
+			}
 		}
 		else if (!climb_aboard_confirmation) {
 			self.set_climb_confirmation_active(true);
@@ -50,8 +54,8 @@ with (target) {
 	with (_rope) {
 		if (stress > length && _is_player) {
 			var _diff = stress - length,
-				_vx = ((x + parent.x) * 0.5 - _tx) * 0.2,
-				_vy = ((y + parent.y) * 0.5 - _ty) * 0.2;
+				_vx = ((x + parent.x) * 0.5 - _tx) * 0.5,
+				_vy = ((y + parent.y) * 0.5 - _ty) * 0.5;
 			
 			other.hsp += _vx;
 			other.vsp += _vy;

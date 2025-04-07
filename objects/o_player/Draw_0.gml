@@ -1,10 +1,18 @@
 if (isBoatRender) exit;
 
 shader_set(shd_player)
+
+var _sprite = get_contextual_sprite(sprite_index);
+
 shader_set_uniform_f(u_waterline, mcr_waterline)
 shader_set_uniform_f_array(u_color, underwater_color)
+shader_set_uniform_f_array(u_lightcolor, lightcolor)
+shader_set_uniform_f_array(u_texel, [
+	texture_get_texel_width(sprite_get_texture(_sprite, image_index)),
+	texture_get_texel_height(sprite_get_texture(_sprite, image_index))
+])
 
-draw_levelobject(get_contextual_sprite(sprite_index), image_index, x, y,
+draw_levelobject(_sprite, image_index, x, y,
 	image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 
 shader_reset()
