@@ -54,7 +54,7 @@ if (motion_enabled) {
 				_ny = (vsp ? bbox_bottom : bbox_top) + vsp,
 				_stepped_up = false
 			
-			if (hsp != 0 && object_index != o_player && place_meeting(_nx, bbox_bottom, _inst)) {
+			if (hsp != 0 && object_index == o_player && place_meeting(_nx, bbox_bottom, _inst)) {
 				var _step_size = 5, _offset = 0
 				
 				for(var j = 0; j <= _step_size; j ++) {
