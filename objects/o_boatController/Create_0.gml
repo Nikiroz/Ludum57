@@ -3,7 +3,8 @@ boatSpeed = 0;
 boatElements = [];
 
 boatAngle = 0;
-boatSurface = -1;
+boatSurface = -1
+fuel_lost = 0;
 
 __reset_surface = function() {
 	boatSurface = surface_create(
@@ -48,6 +49,8 @@ move_boat = function(_x) {
 			_inst.x += _x;
 		}
 	}
+	
+	fuel_lost += abs(_x / 1000);
 	
 	if (abs(_x) > 0.2) {
 		with (instance_single_get(o_ship_part01.x, o_ship_part01.y, depth, o_ship_waves_movement)) {

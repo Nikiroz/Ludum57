@@ -1,4 +1,11 @@
 global.screenshot_sprite = -1;
+
+global.scavenge = 0;
+global.fuel = 0;
+global.oxygen = 0;
+
+
+
 _surface = surface_create(gameWidth * gameZoom, gameHeight * gameZoom);
 
 background_map = ds_map_create();
