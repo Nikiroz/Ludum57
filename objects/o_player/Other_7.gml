@@ -5,8 +5,6 @@ if (sprite_index == s_player_aquasuit_scavenge_end) {
 	walking_enabled = true;
 }
 
-//
-
 if (sprite_index == s_player_aquasuit_enter) {
 	sprite_index = s_player_aquasuit_enter_dive;
 }
