@@ -55,17 +55,57 @@ if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
 
 #region Стейтмашина
 
-if (walking) {
-	if (aquasuit_equipped) {
-		sprite_index = s_player_aquasuit_walk;
-	}
-	else {
-		sprite_index = s_player_walk;
+if (!is_grounded && is_submerged) {
+	ungrounded_time ++;
+}
+else {
+	ungrounded_time = 0;
+}
+
+
+if (instance_is(interaction_object, o_scrap) && interaction_time > 0) {
+	if (!(sprite_index == s_player_aquasuit_scavenge_start ||
+	sprite_index == s_player_aquasuit_scavenge_loop)) {
+		
+		sprite_index = s_player_aquasuit_scavenge_start;
+		image_index = 0;
 	}
 }
-else if (sprite_index == s_player_walk
-|| sprite_index == s_player_aquasuit_walk) {
-	self.animation_reset();
+else {
+	var _swimming = (ungrounded_time > 5);
+	
+	// остановка анимации сбора
+	if ((sprite_index == s_player_aquasuit_scavenge_start
+	|| sprite_index == s_player_aquasuit_scavenge_loop)) {
+		
+		if (sprite_index != s_player_aquasuit_scavenge_end) {
+			self.animation_reset();
+			walking_enabled = true;
+		}
+	}
+	
+	// сброс анимации плавания
+	if (!_swimming && sprite_index == s_player_aquasuit_swim) {
+		self.animation_reset();
+	}
+	
+	// анимация ходьбы
+	if (aquasuit_equipped && is_submerged && _swimming) {
+		if (sprite_index != s_player_aquasuit_swim)
+			sprite_index = s_player_aquasuit_swim;
+	}
+	else if (walking) {
+		if (aquasuit_equipped) {
+			sprite_index = s_player_aquasuit_walk;
+		}
+		else {
+			sprite_index = s_player_walk;
+		}
+	}
+	else if (sprite_index == s_player_walk
+	|| sprite_index == s_player_aquasuit_walk) {
+		self.animation_reset();
+	}
 }
 
 #endregion
