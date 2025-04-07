@@ -11,6 +11,7 @@ boat_control = false;
 aquasuit_equipped = false;
 lighter_available = false;
 
+ungrounded_time = 0;
 
 // базовые хар-ки
 event_user(0);

@@ -1,0 +1,1 @@
+if (disassembled) instance_destroy();
