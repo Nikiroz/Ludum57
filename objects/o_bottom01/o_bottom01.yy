@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"o_sound_seaguls",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_bottom01",
+  "eventList":[],
   "managed":true,
-  "name":"o_sound_seaguls",
+  "name":"o_bottom01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Objects/Sounds.yy",
+    "name":"BottomParts",
+    "path":"folders/Objects/BottomParts.yy",
   },
-  "parentObjectId":{
-    "name":"o_sound",
-    "path":"objects/o_sound/o_sound.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_sound",
-    "path":"sprites/s_sound/s_sound.yy",
+    "name":"s_bg_bottom01",
+    "path":"sprites/s_bg_bottom01/s_bg_bottom01.yy",
   },
   "spriteMaskId":null,
   "visible":true,

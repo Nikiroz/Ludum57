@@ -1,5 +1,5 @@
-#macro mcr_ropeRenderThickness 2
-#macro mcr_ropeRenderColor #696757
+#macro mcr_ropeRenderThickness 1
+#macro mcr_ropeRenderColor #2e2d27
 
 function scr_draw_ropes() {
 	if (global.isDebug) {

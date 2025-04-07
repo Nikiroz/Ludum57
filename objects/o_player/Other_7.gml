@@ -1,12 +1,13 @@
-if (sprite_index == s_father_drive_start)
+if (sprite_index == s_player_drive_start)
 {
-	sprite_index = s_father_drive_loop;
+	sprite_index = s_player_drive_loop;
 }
-else if (sprite_index == s_father_drive_loop)
+else if (sprite_index == s_player_drive_loop)
 {
-	sprite_index = s_father_drive_loop;
+	sprite_index = s_player_drive_loop;
+	x = o_father.x - 20;
 }
-else if (sprite_index == s_father_drive_end)
+else if (sprite_index == s_player_drive_end)
 {
 	sprite_index = s_player_idle;
 }
