@@ -39,11 +39,25 @@ if (godray_draw) {
 	gpu_set_blendmode(bm_add)
 	for (var i = 0; i < godray_count; i ++) {
 		shader_set_uniform_f_array(u_gradient, [_vy, sprite_get_height(godray_array[i].sprite)])
+		var _to_alpha = 0.2;
+		if (
+			abs(
+				godray_array[i].x + sprite_get_width(godray_array[i].sprite) / 2 -
+				(o_ship_part01.x + sprite_get_width(s_ship_part01) / 2)
+			) < sprite_get_width(s_ship_part01) / 2
+		) {
+			_to_alpha = 0
+		}
+		godray_array[i].alpha = lerp(
+			godray_array[i].alpha,
+			_to_alpha,
+			0.1
+		)
 		draw_sprite_ext(
 			godray_array[i].sprite, 0,
 			godray_array[i].x, _vy,
 			1, 1, 0, godray_color,
-			0.2// + dcos(current_time * 0.06 + godray_array[i].x) * 0.2
+			godray_array[i].alpha// + dcos(current_time * 0.06 + godray_array[i].x) * 0.2
 		)
 	}
 	gpu_set_blendmode(bm_normal)
