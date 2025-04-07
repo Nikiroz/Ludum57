@@ -29,6 +29,11 @@ hp = max_hp;
 
 // ввод и прочее
 input_interact = false;
+input_interact2 = false;
+input_pull_up = false;
+
+climb_aboard_confirmation = false;
+confirmation_time = 0;
 
 interaction_object = noone;
 interaction_time = 0;
@@ -47,6 +52,7 @@ has_carried_item = function(_object = undefined) {
 	return instance_is(carried_instance, _object)
 }
 
+///@function set_carried_item(instance)
 set_carried_item = function(_instance = noone) {
 	with (carried_instance) {
 		depth = other.depth + 1;
@@ -59,6 +65,11 @@ set_carried_item = function(_instance = noone) {
 		depth = other.depth - 1;
 		is_carried = true;
 	}
+}
+
+set_climb_aboard = function(_active) {
+	climb_aboard_confirmation = _active;
+	input_enabled = !_active;
 }
 
 //

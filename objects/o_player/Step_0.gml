@@ -2,21 +2,23 @@ if (is_dead) exit;
 
 var _left = false,
 	_right = false,
-	_jump = false,
 	_hmove = 0;
 
+input_pull_up = false;
 input_interact = false;
+input_interact2 = false;
 
 if (input_enabled) {
 	
 	if (!boat_control && walking_enabled) {
 		_left = keyboard_check(ord(leftKey));
 		_right = keyboard_check(ord(rightKey));
-		//_jump = keyboard_check_pressed(jumpKey);
 		_hmove = _right - _left;
 	}
 	
 	input_interact = keyboard_check_pressed(ord(actionKey));
+	input_interact2 = keyboard_check_pressed(ord(action2Key));
+	input_pull_up = keyboard_check(ord(upKey));
 }
 
 //
@@ -39,16 +41,14 @@ else {
 	walking = false;
 }
 
-if (_jump) vsp = mcr_playerJumpForce;
-
-
-
 event_inherited();
 
 scr_interaction_update();
 
 
-
+if (climb_aboard_confirmation) {
+	vsp = (mcr_waterline - bbox_top - 6) * 0.2;
+}
 
 if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
 	x = mouse_x;
@@ -114,7 +114,7 @@ else {
 
 #region Кислород
 
-if (aquasuit_equipped && is_submerged) {
+if (aquasuit_equipped && !climb_aboard_confirmation && is_submerged) {
 	if (!oxygen_meter_active) {
 		oxygen_meter_active = true;
 		oxygen = oxygen_capacity;
