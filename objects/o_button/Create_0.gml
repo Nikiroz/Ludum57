@@ -10,6 +10,7 @@ scriptArg = [];
 langText = text;
 isPlayHover = false;
 hasEntered = false;
+clickSound = snd_ui_click;
 _x = x;
 _y = y;
 _ystart = _y
