@@ -261,6 +261,7 @@
     {"id":{"name":"s_collision","path":"sprites/s_collision/s_collision.yy",},},
     {"id":{"name":"s_controller","path":"sprites/s_controller/s_controller.yy",},},
     {"id":{"name":"s_cursor","path":"sprites/s_cursor/s_cursor.yy",},},
+    {"id":{"name":"s_Dead_sign","path":"sprites/s_Dead_sign/s_Dead_sign.yy",},},
     {"id":{"name":"s_empty","path":"sprites/s_empty/s_empty.yy",},},
     {"id":{"name":"s_father_drive_end","path":"sprites/s_father_drive_end/s_father_drive_end.yy",},},
     {"id":{"name":"s_father_drive_loop","path":"sprites/s_father_drive_loop/s_father_drive_loop.yy",},},

@@ -33,7 +33,7 @@
   "height":20,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1ac6909d-a07f-45a4-8296-caba57edabf6","blendMode":0,"displayName":"default","isLocked":false,"name":"1ac6909d-a07f-45a4-8296-caba57edabf6","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"1ac6909d-a07f-45a4-8296-caba57edabf6","blendMode":0,"displayName":"default","isLocked":false,"name":"1ac6909d-a07f-45a4-8296-caba57edabf6","opacity":40.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_bg_underwater01",
   "nineSlice":null,

@@ -27,8 +27,8 @@ void main(){
       
 	float sunriseStart = 9.00;  
 	float sunsetStart = 18.60;  
-	float sunriseDuration = 0.3;
-	float sunsetDuration = 0.3;  
+	float sunriseDuration = 1.0;
+	float sunsetDuration = 2.0;  
 		
 	vec3 colorNight   = vec3(0.02, 0.08, 0.08); // Ночь
     vec3 colorMorning = vec3(0.82, 0.63, 0.55);	// Утро
