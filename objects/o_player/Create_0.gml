@@ -108,9 +108,9 @@ set_aquasuit_state = function(_state) {
 get_contextual_sprite = function(_sprite) {
 	if (has_carried_item()) {
 		switch (_sprite) {
-			case s_player_aquasuit_swim: return s_player_aquasuit_groundtoswim_hold;
+			case s_player_aquasuit_swim: return s_player_aquasuit_swim_hold;
 			case s_player_aquasuit_groundtoswim: return s_player_aquasuit_groundtoswim_hold;
-			case s_player_aquasuit_rope_end_hold: return s_player_aquasuit_rope_end_hold;
+			case s_player_aquasuit_rope_end: return s_player_aquasuit_rope_end_hold;
 			case s_player_aquasuit_swimtoground: return s_player_aquasuit_swimtoground_hold;
 			case s_player_aquasuit_idle: return s_player_aquasuit_idle_hold;
 			case s_player_aquasuit_walk: return s_player_aquasuit_walk_hold;
