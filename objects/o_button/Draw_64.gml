@@ -43,6 +43,7 @@ if(global.isDebug){
 	draw_set_color(c_red);
 	draw_rectangle(_x, _y, _x + width, _y + height, true);
 }
+
 draw_set_color(c_dkgray)
 draw_text_ext_transformed(textX + 2, textY + 2, langText, 10, 300, 0.5, 0.5, image_angle);
 draw_set_color(currentColor);

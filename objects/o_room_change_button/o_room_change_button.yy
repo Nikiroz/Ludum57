@@ -2,8 +2,9 @@
   "$GMObject":"",
   "%Name":"o_room_change_button",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"o_room_change_button",
@@ -13,8 +14,8 @@
     "path":"folders/Objects/GUI.yy",
   },
   "parentObjectId":{
-    "name":"o_menu_button_parent",
-    "path":"objects/o_menu_button_parent/o_menu_button_parent.yy",
+    "name":"o_button",
+    "path":"objects/o_button/o_button.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +34,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_collision",
-    "path":"sprites/s_collision/s_collision.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
