@@ -38,8 +38,8 @@ with (target) {
 				with (carried_instance) {
 					hsp = sign(_cx - x) * 3;
 					vsp = -5;
-					
-					y -= 50
+					is_boated = true;
+					y -= 80
 				}
 				
 				set_carried_item(noone);

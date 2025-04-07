@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"o_loot_oldpipe",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"o_loot_oldpipe",
   "overriddenProperties":[],

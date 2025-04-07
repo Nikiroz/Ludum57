@@ -17,7 +17,7 @@ with (interactor) {
 }
 
 var _sprite = asset_get_index(sprite_get_name(sprite_index) + "_disassembled");
-if (!sprite_exists(_sprite)) _sprite = s_scrap_small_diassembled;
+if (!sprite_exists(_sprite)) _sprite = s_scrap_medium_disassembled;
 
 disassembled = true;
 sprite_index = _sprite;
