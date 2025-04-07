@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"c_fog",
+  "%Name":"o_fish",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"c_fog",
+  "name":"o_fish",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weather",
-    "path":"folders/Objects/Weather.yy",
+    "name":"Water",
+    "path":"folders/Objects/Water.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_bg_fish01",
+    "path":"sprites/s_bg_fish01/s_bg_fish01.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
