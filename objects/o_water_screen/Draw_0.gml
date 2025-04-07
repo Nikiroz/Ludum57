@@ -3,6 +3,8 @@
 anim += 0.2
 mask_frame += 0.2
 mask_frame = mask_frame mod sprite_get_number(sprite_mask)
+underwater_frame += 0.2
+underwater_frame = underwater_frame mod sprite_get_number(sprite_underwater)
 
 waterline_y = mcr_waterline - 12
 wave_amp = 12
@@ -41,7 +43,7 @@ texture_set_stage(
 )
 texture_set_stage(
 	u_underwater,
-	sprite_get_texture(sprite_underwater, 0)
+	sprite_get_texture(sprite_underwater, underwater_frame)
 )
 shader_set_uniform_f_array(
 	u_sprite_size,
@@ -64,6 +66,13 @@ shader_set_uniform_f_array(
 	[
 		_vx,
 		_vy
+	]
+)
+shader_set_uniform_f_array(
+	u_sprite_underwater_size,
+	[
+		sprite_get_width(sprite_underwater),
+		sprite_get_height(sprite_underwater) * underwater_hscale
 	]
 )
 /*

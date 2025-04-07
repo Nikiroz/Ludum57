@@ -25,10 +25,7 @@ float fbm1(float _value) {
 void main()
 {
 	vec2 uv = v_vPosition.xy;
-	uv.x = uv.x / u_sprite_size.x;
-	uv.y -= u_sprite_pos.y;
-	uv.y = min(uv.y, u_sprite_size.y - 0.01) / u_sprite_size.y;
-	vec4 base = v_vColour * texture2D(gm_BaseTexture, uv);
+	vec4 base = vec4(0.0);
 	
 	// float wave_y = u_wave_data.x + sin(u_anim + v_vPosition.x * 0.02) * u_wave_data.y;
 	// if (v_vPosition.y > wave_y) {
@@ -42,10 +39,19 @@ void main()
 	// mask_uv.x = clamp(mask_uv.x, 0.0, 1.0);
 	// mask_uv.y = clamp(mask_uv.y, -0.9, 0.1);
 	if (texture2D(u_watermask, mask_uv).r > 0.1 || v_vPosition.y > u_waterdata.w) {
+		uv.x = uv.x / u_sprite_underwater_size.x;
+		uv.y -= u_sprite_pos.y + u_sprite_underwater_size.y / 2.0 - 12.0;
+		uv.y = min(uv.y, u_sprite_underwater_size.y - 0.01) / u_sprite_underwater_size.y;
 		base = v_vColour * texture2D(u_underwater, uv);
-		if (v_vPosition.y > u_waterdata.w + u_sprite_underwater_size.y) {
+		// if (v_vPosition.y > u_sprite_pos.y + u_sprite_underwater_size.y) {
+		if (uv.y >= 0.99) {
 			base.a = 0.0;
 		}
+	} else {
+		uv.x = uv.x / u_sprite_size.x;
+		uv.y -= u_sprite_pos.y;
+		uv.y = min(uv.y, u_sprite_size.y - 0.01) / u_sprite_size.y;
+		base = v_vColour * texture2D(gm_BaseTexture, uv);
 	}
 	
 	gl_FragColor = base;
