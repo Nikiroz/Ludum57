@@ -7,11 +7,12 @@ if (sprite_index == s_player_aquasuit_scavenge_end) {
 if (sprite_index == s_player_drive_start)
 {
 	sprite_index = s_player_drive_loop;
+	hand_sprite = s_player_drive_hand_loop;
 }
 else if (sprite_index == s_player_drive_loop)
 {
 	sprite_index = s_player_drive_loop;
-	x = o_father.x - 20;
+	hand_sprite = s_player_drive_hand_loop;
 }
 else if (sprite_index == s_player_aquasuit_scavenge_start) {
 	sprite_index = s_player_aquasuit_scavenge_loop;

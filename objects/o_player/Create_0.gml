@@ -1,5 +1,7 @@
 event_inherited();
 
+hand_sprite = s_player_drive_hand_loop;
+
 u_waterline = shader_get_uniform(shd_player, "u_waterline")
 u_color = shader_get_uniform(shd_player, "u_color")
 underwater_color = [30, 36, 33]

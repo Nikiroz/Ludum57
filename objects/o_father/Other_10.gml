@@ -5,13 +5,15 @@ with (interactor)
 	
 	if (!walking_enabled) {
 		sprite_index = s_player_drive_start;
+		hand_sprite = s_player_drive_hand_start;
 		facing = 1;
 	}
 	else {
 		sprite_index = s_player_drive_end;
+		hand_sprite = s_player_drive_hand_end;
 	}
 	
-	x = other.x - 20;
+	
 	
 }
 
