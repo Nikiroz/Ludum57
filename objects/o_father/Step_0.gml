@@ -11,6 +11,9 @@ if (boatControl)
 	{
 		boatSpeed = lerp(boatSpeed, (right - left), 0.1);
 	}
+	with (o_player) {
+		x = other.x - 16;
+	}
 }
 else with (o_boatController)
 {
