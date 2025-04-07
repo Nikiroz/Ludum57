@@ -1,0 +1,12 @@
+draw_text(300, 20, "Day 1");
+draw_text(50, 120, "Scrap collected value: +" + string(global.scavenge) + "$");
+
+draw_text(50, 160, "Food: -" + string(4) + "$");
+draw_text(50, 180, "Oxygen: " + string(global.oxygen) + "$");
+draw_text(50, 220, "Fuel: " + string(global.fuel) + "$");
+
+draw_text(10, 280, "_________________________");
+
+draw_text(150, 320, "Income: " + string(global.scavenge - 4 + global.oxygen + global.fuel) + "$");
+
+

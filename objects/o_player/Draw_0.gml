@@ -3,7 +3,10 @@ if (isBoatRender) exit;
 shader_set(shd_player)
 shader_set_uniform_f(u_waterline, mcr_waterline)
 shader_set_uniform_f_array(u_color, underwater_color)
-event_inherited();
+
+draw_levelobject(get_contextual_sprite(sprite_index), image_index, x, y,
+	image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+
 shader_reset()
 
 //if (instance_exists(interaction_object)) {

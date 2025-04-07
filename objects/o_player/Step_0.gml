@@ -137,7 +137,7 @@ if (!climb_aboard_confirmation && is_submerged) {
 }
 
 if (has_carried_item()) {
-	var _tx = facing ? bbox_right : (bbox_left - 8),
+	var _tx = facing ? (bbox_right - 4) : bbox_left,
 		_ty = bbox_center_y + 4;
 	
 	with (carried_instance) {

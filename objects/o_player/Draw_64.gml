@@ -80,3 +80,4 @@ if (climb_aboard_confirmation || confirmation_time > 0) {
 	
 	draw_set_halign(fa_left);
 }
+
