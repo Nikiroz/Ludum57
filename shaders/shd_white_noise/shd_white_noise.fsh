@@ -4,6 +4,7 @@
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform float time;
+uniform float itensity;
 
 // Simple pseudo-random function
 float random(vec2 st) {
@@ -21,7 +22,7 @@ void main()
     // Apply intensity control
     noise = noise * 1.0;
     finalColor = mix(texColor.rgb, vec3(noise), 0.1);
-    finalColor = mix(finalColor.rgb, vec3(0.0, 0.0, 0.0), 0.5);
+    finalColor = mix(finalColor.rgb, vec3(0.0, 0.0, 0.0), itensity);
 	
 	gl_FragColor = vec4(finalColor.rgb, texColor.a * v_vColour.a);
 	
