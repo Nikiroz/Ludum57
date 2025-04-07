@@ -7,4 +7,4 @@ factor_amount = 2;
 
 isActive = true;
 
-event_user(2)
+//event_user(2)

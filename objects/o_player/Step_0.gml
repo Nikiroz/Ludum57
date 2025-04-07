@@ -45,10 +45,11 @@ event_inherited();
 
 scr_interaction_update();
 
-
 if (climb_aboard_confirmation) {
 	vsp = (mcr_waterline - bbox_top - 6) * 0.2;
 }
+
+x = round(x);
 
 if (global.isDebug && mouse_check_button_pressed(mb_middle)) {
 	x = mouse_x;
@@ -102,6 +103,7 @@ else {
 		}
 		else {
 			sprite_index = s_player_walk;
+			is_boated = true;
 		}
 	}
 	else if (sprite_index == s_player_walk
@@ -137,6 +139,23 @@ if (has_carried_item()) {
 		x = _tx;
 		y = _ty;
 	}
+}
+
+#endregion
+
+#region Анимации
+
+if (bbox_bottom > mcr_waterline) {
+	if (!in_water) {
+		instance_create_depth(x, y, depth - 1, o_water_divein)
+	} else {
+		if (bbox_top < mcr_waterline) {
+			instance_single_get(x, y, depth - 1, o_water_diveout)
+		}
+	}
+	in_water = true
+} else {
+	in_water = false
 }
 
 #endregion
