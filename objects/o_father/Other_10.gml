@@ -38,4 +38,4 @@ else {
 	audio_sound_gain(snd_boat_enginge_loop, 0, 100);
 }
 		
-event_user(1);
+event_user(2);

@@ -19,3 +19,5 @@ stable = false;
 
 motion_enabled = true;
 gravity_enabled = true;
+
+dive_in = false;

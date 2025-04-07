@@ -4,7 +4,14 @@ if (sprite_index == s_player_aquasuit_scavenge_end) {
 
 //
 
-if (sprite_index == s_player_drive_start)
+if (sprite_index == s_player_aquasuit_enter) {
+	sprite_index = s_player_aquasuit_enter_dive;
+}
+else if (sprite_index == s_player_aquasuit_enter_dive) {
+	sprite_index = s_player_aquasuit_swim;
+	facing = -facing;
+}
+else if (sprite_index == s_player_drive_start)
 {
 	sprite_index = s_player_drive_loop;
 	hand_sprite = s_player_drive_hand_loop;

@@ -1,6 +1,3 @@
-/// @description Обновление текста интеракции
+/// @description Взаимодействие 2
 
-scr_interactible_set_text(
-	boatControl ? "Stop sailing" : "Start sailing")
 
-interaction_visible = !boatControl;
