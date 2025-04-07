@@ -6,5 +6,8 @@ if(global.isDebug){
 	draw_set_color(c_purple);
 	draw_circle(x + offsetX, y + offsetY, max_amount, true);
 	
-	draw_self();
+	if(audio_is_playing(soundLoop)){
+		draw_sprite(s_sound, 0, x, y-32);
+	}
+	
 }

@@ -17,6 +17,5 @@ void main()
     
     v_vColour = in_Colour;
     v_vTexcoord = in_TextureCoord;
-	
 	v_vPosition = (gm_Matrices[MATRIX_WORLD] * object_space_pos).xyz;
 }

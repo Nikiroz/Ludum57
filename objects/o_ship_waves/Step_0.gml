@@ -1,6 +1,6 @@
 
 offset = 6
-with (obj_water_screen) {
+with (o_water_screen) {
 	if (sprite == s_bg_water02) {
 		other.y = draw_y + other.offset
 	}
