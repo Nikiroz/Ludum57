@@ -6,3 +6,5 @@ parallax_y = 0
 offset_y = 0
 is_wave = 0
 sprite_underwater = s_bg_underwater04
+
+underwater_offset[1] = 96

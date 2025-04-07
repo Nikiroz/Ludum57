@@ -22,23 +22,22 @@ time   = startHour;
 global.saveTime = 0;
 
 timeScale = 0.001;
-global.soundVoulme = 1;
-
+global.soundVoulme = 0.8;
 
 if (file_exists("debug.ini")) {
-	
+
 	ini_open("debug.ini")
-	
+
 	global.isDebug = ini_read_real("Data", "Debug", false);
-	
+
 	ini_close();
-	
+
 }
 
 if (global.isDebug) {
-	
+
 	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
-	
+
 }
 
 

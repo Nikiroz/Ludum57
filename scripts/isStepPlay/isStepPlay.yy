@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"isStepPlay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"isStepPlay",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

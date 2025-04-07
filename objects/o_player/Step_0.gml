@@ -106,6 +106,9 @@ else if (sprite_index != s_player_aquasuit_rope_end) {
 		else {
 			sprite_index = s_player_walk;
 			is_boated = true;
+			if(isStepPlay(global.soundStepArray)){
+				audio_play_sound(getRandomSound(global.soundStepArray), 100, false);
+			}
 		}
 	}
 	else if (sprite_index == s_player_walk
