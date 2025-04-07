@@ -153,7 +153,9 @@ if (has_carried_item()) {
 if (bbox_bottom > mcr_waterline) {
 	if (!in_water) {
 		instance_create_depth(x, y, depth - 1, o_water_divein)
-		audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
+		if(!audio_is_playing(snd_surfacing)){
+			audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
+		}
 	} else {
 		if (bbox_top < mcr_waterline) {
 			instance_single_get(x, y, depth - 1, o_water_diveout)
