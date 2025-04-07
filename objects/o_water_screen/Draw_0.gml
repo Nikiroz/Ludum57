@@ -52,6 +52,7 @@ if (godray_draw) {
 
 gpu_set_tex_repeat(true)
 shader_set(shd_water_screen)
+gpu_set_tex_repeat(true)
 
 texture_set_stage(
 	u_watermask,
