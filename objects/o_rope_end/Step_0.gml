@@ -22,9 +22,17 @@ with (target) {
 	
 	with (_rope) {
 		if (stress > length && _is_player) {
-			var _diff = stress - length
-			other.hsp += ((x + parent.x) * 0.5 - _tx) * 0.2
-			other.vsp += ((y + parent.y) * 0.5 - _ty) * 0.2
+			var _diff = stress - length,
+				_vx = ((x + parent.x) * 0.5 - _tx) * 0.2,
+				_vy = ((y + parent.y) * 0.5 - _ty) * 0.2;
+			
+			//_direction = point_direction(
+			//	0, 0, _vx, _vy),
+			//_speed = point_distance(
+			//	0, 0, _vx, _vy);
+			
+			other.hsp += _vx;
+			other.vsp += _vy;
 		}
 		
 		x = _tx

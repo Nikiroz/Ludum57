@@ -5,6 +5,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"o_loot",
@@ -14,8 +15,8 @@
     "path":"folders/Objects/loot.yy",
   },
   "parentObjectId":{
-    "name":"o_levelobject",
-    "path":"objects/o_levelobject/o_levelobject.yy",
+    "name":"o_interactible",
+    "path":"objects/o_interactible/o_interactible.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,6 +36,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":null,
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"s_circle_x8",
+    "path":"sprites/s_circle_x8/s_circle_x8.yy",
+  },
   "visible":true,
 }
