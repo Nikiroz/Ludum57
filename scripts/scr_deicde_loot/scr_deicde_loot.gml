@@ -48,6 +48,7 @@ function scr_deicde_loot() {
 			}
 			
 		break;
-			
 	}
+	
+	return _small;
 }
