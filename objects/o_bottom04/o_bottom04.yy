@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_bottom01",
+  "%Name":"o_bottom04",
   "eventList":[],
   "managed":true,
-  "name":"o_bottom01",
+  "name":"o_bottom04",
   "overriddenProperties":[],
   "parent":{
     "name":"BottomParts",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_bg_bottom01",
-    "path":"sprites/s_bg_bottom01/s_bg_bottom01.yy",
+    "name":"s_bg_bottom04",
+    "path":"sprites/s_bg_bottom04/s_bg_bottom04.yy",
   },
   "spriteMaskId":null,
   "visible":true,

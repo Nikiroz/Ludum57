@@ -9,10 +9,7 @@
     "name":"BottomParts",
     "path":"folders/Objects/BottomParts.yy",
   },
-  "parentObjectId":{
-    "name":"o_collision",
-    "path":"objects/o_collision/o_collision.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
