@@ -1,5 +1,5 @@
 #region Pause handling
-
+global.soundVolume = soundVolume;
 if (global.isPause) exit;
 
 #endregion

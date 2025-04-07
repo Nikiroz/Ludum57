@@ -5,4 +5,4 @@ offsetX = 0;
 offsetY = 0;
 soundLoop = -1;
 isStatic = true;
-gain = global.soundVoulme;
+gain = global.soundVolume;

@@ -105,7 +105,7 @@ else {
 			sprite_index = s_player_walk;
 			is_boated = true;
 			if(isStepPlay(global.soundStepArray)){
-				audio_play_sound(getRandomSound(global.soundStepArray), 100, false);
+				audio_play_sound(getRandomSound(global.soundStepArray), 100, false, global.soundVolume);
 			}
 		}
 	}
@@ -151,6 +151,7 @@ if (has_carried_item()) {
 if (bbox_bottom > mcr_waterline) {
 	if (!in_water) {
 		instance_create_depth(x, y, depth - 1, o_water_divein)
+		audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
 	} else {
 		if (bbox_top < mcr_waterline) {
 			instance_single_get(x, y, depth - 1, o_water_diveout)
