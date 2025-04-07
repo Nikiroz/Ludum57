@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_dead",
+  "%Name":"snd_short_rope",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":10.0,
-  "name":"snd_dead",
+  "duration":0.741187,
+  "name":"snd_short_rope",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_dead.wav",
+  "soundFile":"snd_short_rope.wav",
   "type":0,
   "volume":1.0,
 }

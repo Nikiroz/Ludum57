@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_dive",
+  "%Name":"snd_upgrade",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":6.935458,
-  "name":"snd_dive",
+  "duration":2.75,
+  "name":"snd_upgrade",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Ui",
+    "path":"folders/Sounds/Ui.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_dive.wav",
+  "soundFile":"snd_upgrade.wav",
   "type":0,
   "volume":1.0,
 }

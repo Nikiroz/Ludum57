@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_boat_horn_2",
+  "%Name":"snd_alert_low_oxygen",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":5.0,
-  "name":"snd_boat_horn_2",
+  "duration":6.689208,
+  "name":"snd_alert_low_oxygen",
   "parent":{
-    "name":"Boat",
-    "path":"folders/Sounds/Boat.yy",
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_boat_horn_2.wav",
+  "soundFile":"snd_alert_low_oxygen.wav",
   "type":0,
   "volume":1.0,
 }

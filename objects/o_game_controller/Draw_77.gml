@@ -2,6 +2,7 @@ if(surface_exists(_surface)){
 	surface_set_target(_surface);
 
 	shader_set(shd_day_night)
+	
 	/*
 	var _minShading = 0.4;
 	
@@ -11,11 +12,11 @@ if(surface_exists(_surface)){
 	else if (hour < 5)
 		_shadingTime = _minShading
 	*/
+	
 	var viewArray= [camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0])];
 	var viewposArray= [camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0])];
 	var view_pos = shader_get_uniform(shd_day_night, "view_pos")
 	var view_size = shader_get_uniform(shd_day_night, "view_size")
-	
 	
 	shader_set_uniform_f(shader_get_uniform(shd_day_night, "hour"), hour);
 	shader_set_uniform_f(shader_get_uniform(shd_day_night, "wave_y"), o_water_screen.wave_y);

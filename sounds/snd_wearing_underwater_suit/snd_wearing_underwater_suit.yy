@@ -12,8 +12,8 @@
   "duration":1.75,
   "name":"snd_wearing_underwater_suit",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Player",
+    "path":"folders/Sounds/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

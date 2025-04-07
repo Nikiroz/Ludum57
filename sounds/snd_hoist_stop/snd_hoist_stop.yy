@@ -12,8 +12,8 @@
   "duration":1.25,
   "name":"snd_hoist_stop",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Boat",
+    "path":"folders/Sounds/Boat.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

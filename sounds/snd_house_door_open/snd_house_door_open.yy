@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_boat_horn_3",
+  "%Name":"snd_house_door_open",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":12.0,
-  "name":"snd_boat_horn_3",
+  "duration":2.419271,
+  "name":"snd_house_door_open",
   "parent":{
-    "name":"Boat",
-    "path":"folders/Sounds/Boat.yy",
+    "name":"Book",
+    "path":"folders/Sounds/House/Book.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_boat_horn_3.wav",
+  "soundFile":"snd_house_door_open.wav",
   "type":0,
   "volume":1.0,
 }
