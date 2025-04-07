@@ -5,7 +5,7 @@ varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 uniform float hour;
-
+uniform float wave_y;
 
 vec3 vividLight(vec3 base, vec3 blend, float intensity) {
     vec3 vividResult = vec3(
