@@ -26,7 +26,7 @@ with (target) {
 			speed_limit(rope_pull_speed);
 		}
 		else if (!climb_aboard_confirmation) {
-			self.set_climb_aboard(true);
+			self.set_climb_confirmation_active(true);
 			
 			if (has_carried_item() && instance_exists(o_collision_ship)) {
 				var _cx;

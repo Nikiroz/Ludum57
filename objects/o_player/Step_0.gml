@@ -121,7 +121,7 @@ else if (sprite_index != s_player_aquasuit_rope_end) {
 
 #region Кислород
 
-if (aquasuit_equipped && !climb_aboard_confirmation && is_submerged) {
+if (!climb_aboard_confirmation && is_submerged) {
 	if (!oxygen_meter_active) {
 		oxygen_meter_active = true;
 		oxygen = oxygen_capacity;
@@ -129,6 +129,8 @@ if (aquasuit_equipped && !climb_aboard_confirmation && is_submerged) {
 	
 	if (oxygen > 0) {
 		oxygen --;
+		
+		if (!aquasuit_equipped) oxygen -= 9;
 		
 		if (!oxygen) put_to_death();
 	}
