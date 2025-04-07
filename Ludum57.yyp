@@ -368,6 +368,7 @@
     {"id":{"name":"s_player_drive_start","path":"sprites/s_player_drive_start/s_player_drive_start.yy",},},
     {"id":{"name":"s_player_idle_headturn","path":"sprites/s_player_idle_headturn/s_player_idle_headturn.yy",},},
     {"id":{"name":"s_player_idle","path":"sprites/s_player_idle/s_player_idle.yy",},},
+    {"id":{"name":"s_player_oxygentank_change","path":"sprites/s_player_oxygentank_change/s_player_oxygentank_change.yy",},},
     {"id":{"name":"s_player_walk","path":"sprites/s_player_walk/s_player_walk.yy",},},
     {"id":{"name":"s_scrap_large_disassembled","path":"sprites/s_scrap_large_disassembled/s_scrap_large_disassembled.yy",},},
     {"id":{"name":"s_scrap_large_hl","path":"sprites/s_scrap_large_hl/s_scrap_large_hl.yy",},},
