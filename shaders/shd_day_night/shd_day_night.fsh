@@ -25,7 +25,7 @@ void main(){
 
     vec4 texColor = texture2D(gm_BaseTexture, v_vTexcoord);
       
-	float sunriseStart = 9.00;  
+	float sunriseStart = 8.60;  
 	float sunsetStart = 18.60;  
 	float sunriseDuration = 1.0;
 	float sunsetDuration = 2.0;  
@@ -58,9 +58,9 @@ void main(){
 		waterlineDelta
 	);
 	
-	float intensityNight = 0.8;
-	float intensityEvening = 0.9;
-	float intensityMorning = 0.9;
+	float intensityNight = 0.4;
+	float intensityEvening = 0.3;
+	float intensityMorning = 0.3;
 	
 	vec3 finalColor;
 	
