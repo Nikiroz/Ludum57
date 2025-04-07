@@ -87,6 +87,7 @@
     {"id":{"name":"o_collision_ship","path":"objects/o_collision_ship/o_collision_ship.yy",},},
     {"id":{"name":"o_collision","path":"objects/o_collision/o_collision.yy",},},
     {"id":{"name":"o_father","path":"objects/o_father/o_father.yy",},},
+    {"id":{"name":"o_fish","path":"objects/o_fish/o_fish.yy",},},
     {"id":{"name":"o_fog01","path":"objects/o_fog01/o_fog01.yy",},},
     {"id":{"name":"o_fog02","path":"objects/o_fog02/o_fog02.yy",},},
     {"id":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},},
