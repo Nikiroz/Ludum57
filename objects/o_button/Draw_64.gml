@@ -40,9 +40,9 @@ if(click){
 } 
 
 draw_set_color(c_dkgray);
-draw_text(textX + 2, textY + 2, "123");
+draw_text(textX + 2, textY + 2, text);
 draw_set_color(currentColor);
-draw_text(textX, textY,  "123");
+draw_text(textX, textY,  text);
 		
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
