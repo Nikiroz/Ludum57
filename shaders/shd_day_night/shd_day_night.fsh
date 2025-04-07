@@ -43,6 +43,16 @@ void main(){
 		vec3((colorNight.r + colorNight.g + colorNight.b) / 3.0),
 		waterlineDelta
 	);
+	colorMorning = mix(
+		colorMorning,
+		vec3((colorMorning.r + colorMorning.g + colorMorning.b) / 3.0),
+		waterlineDelta
+	);
+	colorEvening = mix(
+		colorEvening,
+		vec3((colorEvening.r + colorEvening.g + colorEvening.b) / 3.0),
+		waterlineDelta
+	);
 	
 	float intensityNight = 0.8;
 	float intensityEvening = 0.9;

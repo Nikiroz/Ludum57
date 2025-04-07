@@ -25,13 +25,20 @@ else if (sprite_index == s_player_drive_end)
 {
 	sprite_index = s_player_idle;
 }
+else if (sprite_index == s_player_aquasuit_swimtoground) {
+	sprite_index = s_player_aquasuit_idle;
+}
 else if (!walking) {
 	if (aquasuit_equipped) {
 		if (!is_grounded && is_submerged) {
 			sprite_index = s_player_aquasuit_swim;
 		}
 		else {
-			sprite_index = s_player_aquasuit_idle;
+			if (sprite_index == s_player_aquasuit_swim) {
+				sprite_index = s_player_aquasuit_swimtoground;
+				image_index = 0;
+			}
+			else sprite_index = s_player_aquasuit_idle;
 		}
 	}
 	else {
