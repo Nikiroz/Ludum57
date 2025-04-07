@@ -10,10 +10,14 @@ draw_x = x
 draw_y = y
 wave_y = draw_y
 
+underwater_frame = 0
+
 is_wave = false
 
 parallax_x = 0
 parallax_y = 0
+
+underwater_hscale = 1
 
 offset_y = 0
 
@@ -24,6 +28,7 @@ u_anim = shader_get_uniform(shd_water_screen, "u_anim")
 u_underwater = shader_get_sampler_index(shd_water_screen, "u_underwater")
 u_watermask = shader_get_sampler_index(shd_water_screen, "u_watermask")
 u_waterdata = shader_get_uniform(shd_water_screen, "u_waterdata")
+u_sprite_underwater_size = shader_get_uniform(shd_water_screen, "u_sprite_underwater_size")
 
 /*
 base_y = 0

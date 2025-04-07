@@ -1,11 +1,14 @@
 event_inherited();
 
+hand_sprite = s_player_drive_hand_loop;
+
 u_waterline = shader_get_uniform(shd_player, "u_waterline")
 u_color = shader_get_uniform(shd_player, "u_color")
 underwater_color = [30, 36, 33]
 underwater_color[0] /= 255
 underwater_color[1] /= 255
 underwater_color[2] /= 255
+in_water = false /// Для анимации плюханья игрока
 
 // состояния
 walking = false;
