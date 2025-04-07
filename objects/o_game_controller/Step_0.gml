@@ -42,9 +42,17 @@ hour = time mod 24;
 
 #region Weather
 
-if (irandom(100) < 1) {
-	instance_create_layer(camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + irandom(100), 
-		camera_get_view_y(view_camera[0]) + irandom(camera_get_view_height(view_camera[0]) / 2), "Instances", choose(o_fog01, o_fog02));
+var _fog_max_y = mcr_waterline - 100;
+if (irandom(100) < 1 && camera_get_view_y(view_camera[0]) <= _fog_max_y) {
+	var _x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) + irandom(100),
+		_y = camera_get_view_y(view_camera[0]) + irandom(camera_get_view_height(view_camera[0]) / 2);
+	
+	_y = min(_y, _fog_max_y)
+	instance_create_layer(
+		_x, _y,
+		"Instances",
+		choose(o_fog01, o_fog02)
+	);
 }
 
 #endregion

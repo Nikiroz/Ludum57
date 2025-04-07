@@ -21,7 +21,6 @@ hour   = startHour;
 time   = startHour;
 global.saveTime = 0;
 
-
 timeScale = 0.001;
 global.soundVoulme = 1;
 

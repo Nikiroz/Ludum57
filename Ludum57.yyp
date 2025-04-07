@@ -145,6 +145,7 @@
     {"id":{"name":"scr_deicde_loot","path":"scripts/scr_deicde_loot/scr_deicde_loot.yy",},},
     {"id":{"name":"scr_instance_check_boated","path":"scripts/scr_instance_check_boated/scr_instance_check_boated.yy",},},
     {"id":{"name":"scr_render_ropes","path":"scripts/scr_render_ropes/scr_render_ropes.yy",},},
+    {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},},
     {"id":{"name":"speed_add","path":"scripts/speed_add/speed_add.yy",},},
     {"id":{"name":"shd_day_night","path":"shaders/shd_day_night/shd_day_night.yy",},},
     {"id":{"name":"shd_water_screen","path":"shaders/shd_water_screen/shd_water_screen.yy",},},

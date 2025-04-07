@@ -1,6 +1,6 @@
 if (instance_exists(target)) {
 	x = target.x;
-	y = target.bbox_bottom;
+	y = target.y + 16;
 }
 
 var _target = target
@@ -31,15 +31,17 @@ with (o_player) {
 	}
 	
 	if (instance_exists(_target)) {
+		if (!_target.interaction_visible)
+			_hide = true;
+		
 		_text = $"[{actionKey}] {_target.interaction_text_hint}";
 	}
 }
 
 text_key = _text;
 
-draw_text_transformed_color(
-	x, y, string(_text, round(_progress * 100)), image_xscale, image_yscale, image_angle,
-	image_blend, image_blend, image_blend, image_blend, image_alpha)
+scr_text(x, y, string(_text, round(_progress * 100)),
+	image_xscale * 0.5, image_yscale * 0.5, image_blend, image_alpha)
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

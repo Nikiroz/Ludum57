@@ -31,4 +31,7 @@ var _y = target.y - ((_camH / 2) + offsetTargetY);
 cameraX = round(lerp(cameraX, _x, 0.1));
 cameraY = round(lerp(cameraY, _y, 0.1));
 
+cameraX = clamp(cameraX, 0, room_width - camera_get_view_width(view_camera[0]))
+cameraY = clamp(cameraY, 0, room_height - camera_get_view_height(view_camera[0]))
+
 camera_set_view_pos(view_camera[0], cameraX, cameraY);
