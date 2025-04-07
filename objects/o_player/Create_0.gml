@@ -1,5 +1,12 @@
 event_inherited();
 
+u_waterline = shader_get_uniform(shd_player, "u_waterline")
+u_color = shader_get_uniform(shd_player, "u_color")
+underwater_color = [30, 36, 33]
+underwater_color[0] /= 255
+underwater_color[1] /= 255
+underwater_color[2] /= 255
+
 // состояния
 walking = false;
 input_enabled = true;

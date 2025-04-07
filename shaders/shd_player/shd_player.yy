@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_player",
+  "name":"shd_player",
+  "parent":{
+    "name":"Interactive",
+    "path":"folders/Objects/Interactive.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
