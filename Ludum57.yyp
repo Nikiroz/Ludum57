@@ -320,6 +320,7 @@
     {"id":{"name":"s_fog03","path":"sprites/s_fog03/s_fog03.yy",},},
     {"id":{"name":"s_fog04","path":"sprites/s_fog04/s_fog04.yy",},},
     {"id":{"name":"s_gradient","path":"sprites/s_gradient/s_gradient.yy",},},
+    {"id":{"name":"s_logo_sign_1","path":"sprites/s_logo_sign_1/s_logo_sign_1.yy",},},
     {"id":{"name":"s_loot_cable","path":"sprites/s_loot_cable/s_loot_cable.yy",},},
     {"id":{"name":"s_loot_casingfragment","path":"sprites/s_loot_casingfragment/s_loot_casingfragment.yy",},},
     {"id":{"name":"s_loot_circutboard","path":"sprites/s_loot_circutboard/s_loot_circutboard.yy",},},
