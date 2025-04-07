@@ -32,6 +32,8 @@ lighter_available = false;
 ungrounded_time = 0;
 
 anim_aquasuit_equip = 0;
+anim_aquasuit_ascend = 0;
+anim_aquasuit_exit = 0;
 
 // базовые хар-ки
 event_user(0);
@@ -128,6 +130,13 @@ get_contextual_sprite = function(_sprite) {
 	}
 	
 	return _sprite;
+}
+
+lock_next_to_aquasuit = function() {
+	with (o_ship_aquasuit) {
+		other.x = lerp(other.x, x + 7, 0.1);
+		other.y = lerp(other.y, bbox_bottom + 8, 0.1);
+	}
 }
 
 //

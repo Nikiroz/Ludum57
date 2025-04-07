@@ -21,6 +21,9 @@ with (target) {
 		_is_player = (object_index == o_player);
 	
 	if (_is_player && instance_exists(o_rope_source) && input_pull_up) {
+		//sprite_index = s_player_aquasuit_rope_end;
+		//image_index = 0;
+		
 		if (bbox_top > mcr_waterline) {
 			speed_add(point_direction(x, y, o_rope_source.x, o_rope_source.y), 1);
 			speed_limit(rope_pull_speed);
@@ -32,22 +35,22 @@ with (target) {
 		else if (!climb_aboard_confirmation) {
 			self.set_climb_confirmation_active(true);
 			
-			if (has_carried_item() && instance_exists(o_collision_ship)) {
-				var _cx;
+			//if (has_carried_item() && instance_exists(o_collision_ship)) {
+			//	var _cx;
 				
-				with (o_collision_ship) {
-					_cx = bbox_center_x;
-				}
+			//	with (o_collision_ship) {
+			//		_cx = bbox_center_x;
+			//	}
 				
-				with (carried_instance) {
-					hsp = sign(_cx - x) * 3;
-					vsp = -5;
-					is_boated = true;
-					y -= 80
-				}
+			//	with (carried_instance) {
+			//		hsp = sign(_cx - x) * 3;
+			//		vsp = -5;
+			//		is_boated = true;
+			//		y -= 80
+			//	}
 				
-				set_carried_item(noone);
-			}
+			//	set_carried_item(noone);
+			//}
 		}
 	}
 	

@@ -1,11 +1,8 @@
 if (isBoatRender) exit;
 
 if (instance_exists(o_player) && !o_player.aquasuit_equipped) {
+	scr_interactible_delete_text(id);
 	interaction_visible = false;
-	
-	with (o_interaction_text) {
-		if (target == other.id) instance_destroy();
-	}
 }
 
 
