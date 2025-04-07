@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shd_underwater_dark",
+  "name":"shd_underwater_dark",
+  "parent":{
+    "name":"Water",
+    "path":"folders/Objects/Water.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

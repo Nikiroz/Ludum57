@@ -53,3 +53,5 @@ for (var i = 0; i < pt_bubbles_count; i ++) {
 	part_type_life(_pt_bubble, 30, 50)
 	pt_bubbles_array[i] = _pt_bubble
 }
+
+instance_create_layer(0, 0, "water_pre", o_underwater_dark)
