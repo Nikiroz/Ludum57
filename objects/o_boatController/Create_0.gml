@@ -48,6 +48,18 @@ move_boat = function(_x) {
 			_inst.x += _x;
 		}
 	}
-
 	
+	/*
+	if (abs(_x) > 0) {
+		instance_single_get(x, y, depth, o_ship_waves_movement)
+		instance_single_get(x, y, depth, o_ship_waves_stripe)
+	} else {
+		with (instance_single_get(0, 0, 0, o_ship_waves_movement)) {
+			to_end = true
+		}
+		with (instance_single_get(0, 0, 0, o_ship_waves_stripe)) {
+			to_end = true
+		}
+	}
+	*/
 }
