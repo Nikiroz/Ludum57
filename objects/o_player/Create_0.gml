@@ -32,6 +32,8 @@ lighter_available = false;
 ungrounded_time = 0;
 
 anim_aquasuit_equip = 0;
+anim_aquasuit_ascend = 0;
+anim_aquasuit_exit = 0;
 
 // базовые хар-ки
 event_user(0);

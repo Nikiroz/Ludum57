@@ -4,7 +4,29 @@ if (sprite_index == s_player_aquasuit_scavenge_end) {
 
 //
 
-if (sprite_index == s_player_aquasuit_enter) {
+if (sprite_index == s_player_aquasuit_ascend) {
+	if (has_carried_item()) {
+		sprite_index = s_player_aquasuit_exit_drop_item;
+		
+		with (carried_instance) {
+			hsp = 3 + random(2);
+			vsp = 2 + random(1);
+			
+			x = other.x;
+			y = other.y - 20;
+		}
+		
+		interaction_object = noone;
+		set_carried_item(noone);
+	}
+	else {
+		sprite_index = s_player_aquasuit_exit;
+	}
+}
+else if (sprite_index == s_player_aquasuit_exit_drop_item) {
+	sprite_index = s_player_aquasuit_exit;
+}
+else if (sprite_index == s_player_aquasuit_enter) {
 	sprite_index = s_player_aquasuit_enter_dive;
 }
 else if (sprite_index == s_player_aquasuit_enter_dive) {

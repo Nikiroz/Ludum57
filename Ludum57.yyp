@@ -334,6 +334,7 @@
     {"id":{"name":"s_player_aquasuit_death","path":"sprites/s_player_aquasuit_death/s_player_aquasuit_death.yy",},},
     {"id":{"name":"s_player_aquasuit_enter_dive","path":"sprites/s_player_aquasuit_enter_dive/s_player_aquasuit_enter_dive.yy",},},
     {"id":{"name":"s_player_aquasuit_enter","path":"sprites/s_player_aquasuit_enter/s_player_aquasuit_enter.yy",},},
+    {"id":{"name":"s_player_aquasuit_exit_drop_item","path":"sprites/s_player_aquasuit_exit_drop_item/s_player_aquasuit_exit_drop_item.yy",},},
     {"id":{"name":"s_player_aquasuit_exit","path":"sprites/s_player_aquasuit_exit/s_player_aquasuit_exit.yy",},},
     {"id":{"name":"s_player_aquasuit_groundtoswim_hold","path":"sprites/s_player_aquasuit_groundtoswim_hold/s_player_aquasuit_groundtoswim_hold.yy",},},
     {"id":{"name":"s_player_aquasuit_groundtoswim","path":"sprites/s_player_aquasuit_groundtoswim/s_player_aquasuit_groundtoswim.yy",},},

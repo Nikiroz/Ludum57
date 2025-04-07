@@ -1,9 +1,49 @@
-if (sprite_index == s_player_aquasuit_enter) {
-	if (image_index < 32) {
-		hsp = 0;
-		vsp = 0;
+if (sprite_index == s_player_aquasuit_ascend) {
+	hsp = 0;
+	vsp = 0;
+	
+	if (image_index >= 4) {
+		anim_aquasuit_ascend ++;
+		
+		if (anim_aquasuit_ascend < 15) {
+			y -= 3;
+			x += 1;
+		}
+		else {
+			with (o_ship_aquasuit) {
+				other.x = lerp(other.x, x + 7, 0.1);
+				other.y = lerp(other.y, bbox_bottom + 8, 0.1);
+			}
+		}
 	}
-	else {
+	
+	is_boated = (image_index >= 12);
+	
+	scr_levelobject_updae_dive_splashes();
+	
+	exit;
+}
+else if (sprite_index == s_player_aquasuit_exit_drop_item) {
+	hsp = 0;
+	vsp = 0;
+	
+	exit;
+}
+else if (sprite_index == s_player_aquasuit_exit) {
+	hsp = 0;
+	vsp = 0;
+	
+	if (image_index >= 14 && aquasuit_equipped) {
+		set_aquasuit_state(false);
+	}
+	
+	exit;
+}
+else if (sprite_index == s_player_aquasuit_enter) {
+	hsp = 0;
+	vsp = 0;
+	
+	if (image_index > 32) {
 		if (!aquasuit_equipped) {
 			set_aquasuit_state(true);
 		}
@@ -191,6 +231,8 @@ if (has_carried_item()) {
 		vsp = other.vsp;
 		x = _tx;
 		y = _ty;
+		
+		is_boated = other.is_boated;
 	}
 }
 
