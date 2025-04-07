@@ -56,14 +56,19 @@ if (climb_aboard_confirmation || confirmation_time > 0) {
 		if (climb_aboard_confirmation && keyboard_check_pressed(ord(_key))) {
 			// continue diving
 			if (i == 0) {
-				
+				vsp += 3;
 			}
 			// climb aboard
 			else if (i == 1) {
+				with (o_ship_aquasuit) {
+					other.x = x;
+					other.y = y;
+				}
 				
+				set_aquasuit_state(false);
 			}
 			
-			set_climb_aboard(false);
+			set_climb_confirmation_active(false);
 		}
 		
 		var _string_width = string_width(_str);
