@@ -22,8 +22,8 @@ void main(){
 
     vec4 texColor = texture2D(gm_BaseTexture, v_vTexcoord);
       
-	float sunriseStart = 6.00;  
-	float sunsetStart = 19.00;  
+	float sunriseStart = 9.00;  
+	float sunsetStart = 18.60;  
 	float sunriseDuration = 0.3;
 	float sunsetDuration = 0.3;  
 		

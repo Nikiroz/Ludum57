@@ -27,7 +27,7 @@ var _skyPhase = 2 * cos(hour / 4);
 	
 var lay_id  = layer_get_id("l_bg_stars");
 var back_id = layer_background_get_id(lay_id);
-layer_background_alpha(back_id,1)// _skyPhase); //багует бленд луны и солнца
+layer_background_alpha(back_id, _skyPhase)// _skyPhase); //багует бленд луны и солнца
 
 with (o_lights) {
 	image_alpha = _skyPhase;

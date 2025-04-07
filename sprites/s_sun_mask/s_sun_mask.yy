@@ -28,7 +28,7 @@
     "name":"Background",
     "path":"folders/Sprites/Background.yy",
   },
-  "preMultiplyAlpha":false,
+  "preMultiplyAlpha":true,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
