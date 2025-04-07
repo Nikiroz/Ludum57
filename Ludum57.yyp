@@ -64,6 +64,7 @@
     {"id":{"name":"o_levelobject","path":"objects/o_levelobject/o_levelobject.yy",},},
     {"id":{"name":"o_lights","path":"objects/o_lights/o_lights.yy",},},
     {"id":{"name":"o_menu","path":"objects/o_menu/o_menu.yy",},},
+    {"id":{"name":"o_moon","path":"objects/o_moon/o_moon.yy",},},
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
     {"id":{"name":"o_rope_end","path":"objects/o_rope_end/o_rope_end.yy",},},
     {"id":{"name":"o_rope_simple","path":"objects/o_rope_simple/o_rope_simple.yy",},},

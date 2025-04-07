@@ -2,7 +2,7 @@ if(surface_exists(_surface)){
 	surface_set_target(_surface);
 
 	shader_set(shd_day_night)
-	
+	/*
 	var _minShading = 0.4;
 	
 	var _shadingTime = (max(hour - 6, _minShading));
@@ -10,8 +10,8 @@ if(surface_exists(_surface)){
 		_shadingTime = (max(18 - hour, _minShading));
 	else if (hour < 5)
 		_shadingTime = _minShading
-	
-	shader_set_uniform_f(shader_get_uniform(shd_day_night, "time"), _shadingTime * 4);
+	*/
+	shader_set_uniform_f(shader_get_uniform(shd_day_night, "hour"), hour);
 	
 	gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
 	draw_surface(application_surface, 0, 0);
@@ -25,4 +25,5 @@ if(surface_exists(_surface)){
 	surface_reset_target();
 
 	draw_surface(_surface, 0, 0);
+
 } 

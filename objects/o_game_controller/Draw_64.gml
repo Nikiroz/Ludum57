@@ -7,4 +7,5 @@ if(global.isDebug) {
 		instance_activate_all();
         game_restart();
     }
+
 }
