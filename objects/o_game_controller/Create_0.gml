@@ -21,8 +21,9 @@ hour   = startHour;
 time   = startHour;
 global.saveTime = 0;
 
-timeScale = 0//0.01;
+timeScale = 0.001;
 global.soundVoulme = 1;
+
 
 if (file_exists("debug.ini")) {
 	

@@ -2,7 +2,7 @@ boatWavesShift = 0;
 boatSpeed = 0;
 boatElements = [];
 
-
+boatAngle = 0;
 boatSurface = -1;
 
 __reset_surface = function() {

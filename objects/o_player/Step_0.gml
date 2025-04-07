@@ -62,10 +62,6 @@ if (walking) {
 	else {
 		sprite_index = s_player_walk;
 	}
-	
-	x = round(x);
-	y = round(y);
-	
 }
 else if (sprite_index == s_player_walk
 || sprite_index == s_player_aquasuit_walk) {

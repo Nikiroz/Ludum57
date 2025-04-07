@@ -6,3 +6,5 @@ interactor = noone;
 
 interaction_text_hint = "N/A"
 interaction_text_progress = "N/A {0}%"
+
+interaction_visible = true;
