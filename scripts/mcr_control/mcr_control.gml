@@ -30,6 +30,12 @@ global.soundSeagulArray = [
 	snd_seagull_2, snd_seagull_3, snd_seagull_4, snd_seagull_5,
 	snd_seagull_6, snd_seagull_7
 ]
+enum size
+{
+    S,
+    M,
+    L
+}
 
 global.soundStepArray = 
 [	
@@ -37,3 +43,4 @@ global.soundStepArray =
 	snd_footsteps_boat_4, snd_footsteps_boat_5, snd_footsteps_boat_6,
 	snd_footsteps_boat_7, snd_footsteps_boat_8
 ];
+

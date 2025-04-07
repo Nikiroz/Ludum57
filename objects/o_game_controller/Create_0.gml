@@ -14,7 +14,7 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 global.isDebug = false;
 global.isPause = false;
 
-startHour = 10//5.8//6;
+startHour = 9//5.8//6;
 second = 0;
 minute = 0;
 hour   = startHour;
@@ -25,21 +25,18 @@ timeScale = 0.001;
 soundVolume = 0.8;
 global.soundVolume = soundVolume;
 
-window_set_fullscreen(false)
-
-
 if (file_exists("debug.ini")) {
-	
+
 	ini_open("debug.ini")
-	
+
 	global.isDebug = ini_read_real("Data", "Debug", false);
-	
+
 	ini_close();
-	
+
 }
 
 if (global.isDebug) {
-	
+
 	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
 	dbg_slider(ref_create(self, "soundVolume"), 0, 1, "soundVolume", 0.1);
 	

@@ -19,7 +19,7 @@
   "height":52,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7d452b18-f682-469c-89e4-d3d8aaeeb488","blendMode":0,"displayName":"default","isLocked":false,"name":"7d452b18-f682-469c-89e4-d3d8aaeeb488","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7d452b18-f682-469c-89e4-d3d8aaeeb488","blendMode":0,"displayName":"default","isLocked":false,"name":"7d452b18-f682-469c-89e4-d3d8aaeeb488","opacity":50.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_moon",
   "nineSlice":null,

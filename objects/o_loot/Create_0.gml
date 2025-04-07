@@ -14,3 +14,7 @@ scr_interactible_configure(0, 15);
 is_carried = false;
 
 rotation = 0;
+
+part_size = size.S;
+
+is_boated = false;

@@ -10,7 +10,7 @@ function scr_interaction_update() {
 	
 	if (instance_exists(interaction_object) && stable
 	&& (!interaction_object.interaction_time_max || _interacting)
-	&& interaction_object.stable)
+	&& interaction_object.stable && is_grounded)
 	{
 		var _obj = interaction_object,
 		
@@ -43,18 +43,22 @@ function scr_interaction_update() {
 				interaction_time = 0;
 		}
 		
-		var _distance_max = infinity, _result = noone,
-			_x = bbox_center_x, _y = bbox_center_y,
-			_facing = facing;
+		var _result = noone
 		
-		with (o_interactible) {
-			var _distance = distance_to_point(_x, _y)
+		if (stable) {
+			var _distance_max = infinity,
+				_x = bbox_center_x, _y = bbox_center_y,
+				_facing = facing;
 			
-			if (sign(x - _x) != _facing || _distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
+			with (o_interactible) {
+				var _distance = distance_to_point(_x, _y)
 			
-			if (_distance < _distance_max) {
-				_distance_max = _distance
-				_result = id
+				if (sign(x - _x) != _facing || _distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
+			
+				if (_distance < _distance_max) {
+					_distance_max = _distance
+					_result = id
+				}
 			}
 		}
 		
@@ -81,10 +85,12 @@ function scr_interaction_update() {
 }
 
 function scr_interactible_check_selected(_instance) {
+	with (o_player) {
+		return (instance_is(_instance, o_interactible)
+			&& interaction_object == _instance && !interaction_release) && stable
+	}
 	
-	return (instance_is(_instance, o_interactible)
-		&& o_player.interaction_object == _instance
-		&& !o_player.interaction_release)
+	return false
 }
 
 function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {

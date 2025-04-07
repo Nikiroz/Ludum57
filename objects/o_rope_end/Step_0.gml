@@ -38,8 +38,8 @@ with (target) {
 				with (carried_instance) {
 					hsp = sign(_cx - x) * 3;
 					vsp = -5;
-					
-					y -= 50
+					is_boated = true;
+					y -= 80
 				}
 				
 				set_carried_item(noone);
@@ -55,6 +55,18 @@ with (target) {
 			
 			other.hsp += _vx;
 			other.vsp += _vy;
+			
+			with (other) {
+				if (sprite_index == s_player_aquasuit_idle
+				|| sprite_index == s_player_aquasuit_swim
+				|| sprite_index == s_player_aquasuit_scavenge_start
+				|| sprite_index == s_player_aquasuit_scavenge_loop
+				|| sprite_index == s_player_aquasuit_scavenge_end)
+				{
+					sprite_index = s_player_aquasuit_rope_end;
+					image_index = 0;
+				}
+			}
 		}
 		
 		x = _tx;
