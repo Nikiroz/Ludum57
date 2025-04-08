@@ -22,10 +22,20 @@ for (var i = _count - 1; i >= 0; i --) {
 //
 rendermode_set(Rendermode.Boat);
 
+// Лут за коораблём
 for (var i = 0; i < _count; i ++) {
 	with (boatElements[i]) {
-		if (!(scr_instance_check_boated(id) && visible)) continue;
 		
+		if !object_is_ancestor(object_index, o_loot) continue;
+		event_perform(ev_draw, ev_draw_normal);
+	}
+}
+
+for (var i = 0; i < _count; i ++) {
+	with (boatElements[i]) {
+		
+		if (!(scr_instance_check_boated(id) && visible)) continue;
+		if object_is_ancestor(object_index, o_loot) continue;
 		if (instance_is(self, o_levelobject))
 		{
 			event_perform(ev_draw, ev_draw_normal);
