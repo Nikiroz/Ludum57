@@ -89,7 +89,7 @@
     {"id":{"name":"o_bottomparts08","path":"objects/o_bottomparts08/o_bottomparts08.yy",},},
     {"id":{"name":"o_bottomparts09","path":"objects/o_bottomparts09/o_bottomparts09.yy",},},
     {"id":{"name":"o_bottomparts10","path":"objects/o_bottomparts10/o_bottomparts10.yy",},},
-    {"id":{"name":"o_button_continue","path":"objects/o_button_continue/o_button_continue.yy",},},
+
     {"id":{"name":"o_button_main_menu","path":"objects/o_button_main_menu/o_button_main_menu.yy",},},
     {"id":{"name":"o_button","path":"objects/o_button/o_button.yy",},},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
@@ -101,7 +101,7 @@
     {"id":{"name":"o_fog01","path":"objects/o_fog01/o_fog01.yy",},},
     {"id":{"name":"o_fog02","path":"objects/o_fog02/o_fog02.yy",},},
     {"id":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},},
-    {"id":{"name":"o_game_restart_button","path":"objects/o_game_restart_button/o_game_restart_button.yy",},},
+
     {"id":{"name":"o_gamelogo","path":"objects/o_gamelogo/o_gamelogo.yy",},},
     {"id":{"name":"o_gradient","path":"objects/o_gradient/o_gradient.yy",},},
     {"id":{"name":"o_hut","path":"objects/o_hut/o_hut.yy",},},
