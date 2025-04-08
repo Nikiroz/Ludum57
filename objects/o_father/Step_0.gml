@@ -6,10 +6,9 @@ interaction2_active = interaction_active;
 if (boatControl)
 {
 	var left = keyboard_check(ord(leftKey)),
-		right = keyboard_check(ord(rightKey)),
+		right = keyboard_check(ord(rightKey));
 	
-	with (o_boatController)
-	{
+	with (o_boatController)	{
 		boatSpeed = lerp(boatSpeed, (right - left), 0.1);
 	}
 	with (o_player) {
