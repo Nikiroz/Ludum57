@@ -1,11 +1,11 @@
-#region Pause handling
+/*#region Pause handling
 global.soundVolume = soundVolume;
 global.musicVolume = musicVolume;
 
 if (global.isPause) exit;
 
 #endregion
-
+*/
 #region Parallax
 
 var _cx = camera_get_view_x(view_camera[0]);

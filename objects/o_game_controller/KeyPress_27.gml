@@ -1,3 +1,3 @@
 event_user(0);
-room_goto(r_Menu);
+room_goto(r_Pause);
 //game_end();

@@ -1,0 +1,18 @@
+draw_set_font(fnt_main);
+draw_set_color(c_ltgray);
+draw_rectangle(_x, _y, _x + width, _y + height, false);
+
+draw_set_color(c_gray);
+draw_rectangle(_x, _y, _x + (width * _value), _y + height, false);
+
+var knob_x = _x + (width * _value);
+draw_set_color(c_white);
+draw_rectangle(knob_x - knobWidth/2, _y - 2, knob_x + knobWidth/2, _y + height + 2, false);
+
+var display_value = _min + (_max - _min) * _value;
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_middle);
+draw_text(_x + width + 10, _y + height/2, string(round(display_value)));
+draw_text_ext_transformed(_x, _y - 15, labelText, 10, 300, 0.8, 0.8, image_angle);
+

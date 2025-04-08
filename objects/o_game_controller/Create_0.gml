@@ -1,5 +1,3 @@
-
-
 global.scavenge = 0;
 global.fuel = 0;
 global.oxygen = 0;
@@ -27,11 +25,9 @@ time   = startHour;
 global.saveTime = 0;
 
 timeScale = 0.001;
-soundVolume = 0.8;
-musicVolume = 0.10;
 
-global.soundVolume = soundVolume;
-global.musicVolume = musicVolume;
+global.soundVolume = 0.8;
+global.musicVolume = 0.10;
 
 if (file_exists("debug.ini")) {
 
