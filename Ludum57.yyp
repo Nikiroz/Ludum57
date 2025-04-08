@@ -89,7 +89,6 @@
     {"id":{"name":"o_bottomparts08","path":"objects/o_bottomparts08/o_bottomparts08.yy",},},
     {"id":{"name":"o_bottomparts09","path":"objects/o_bottomparts09/o_bottomparts09.yy",},},
     {"id":{"name":"o_bottomparts10","path":"objects/o_bottomparts10/o_bottomparts10.yy",},},
-
     {"id":{"name":"o_button_main_menu","path":"objects/o_button_main_menu/o_button_main_menu.yy",},},
     {"id":{"name":"o_button","path":"objects/o_button/o_button.yy",},},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},},
@@ -101,7 +100,6 @@
     {"id":{"name":"o_fog01","path":"objects/o_fog01/o_fog01.yy",},},
     {"id":{"name":"o_fog02","path":"objects/o_fog02/o_fog02.yy",},},
     {"id":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},},
-
     {"id":{"name":"o_gamelogo","path":"objects/o_gamelogo/o_gamelogo.yy",},},
     {"id":{"name":"o_gradient","path":"objects/o_gradient/o_gradient.yy",},},
     {"id":{"name":"o_hut","path":"objects/o_hut/o_hut.yy",},},
@@ -295,6 +293,8 @@
     {"id":{"name":"s_bg_godrays04","path":"sprites/s_bg_godrays04/s_bg_godrays04.yy",},},
     {"id":{"name":"s_bg_godrays05","path":"sprites/s_bg_godrays05/s_bg_godrays05.yy",},},
     {"id":{"name":"s_bg_godrays06","path":"sprites/s_bg_godrays06/s_bg_godrays06.yy",},},
+    {"id":{"name":"s_bg_hut_chimney","path":"sprites/s_bg_hut_chimney/s_bg_hut_chimney.yy",},},
+    {"id":{"name":"s_bg_hut_shore","path":"sprites/s_bg_hut_shore/s_bg_hut_shore.yy",},},
     {"id":{"name":"s_bg_hut","path":"sprites/s_bg_hut/s_bg_hut.yy",},},
     {"id":{"name":"s_bg_landmark01","path":"sprites/s_bg_landmark01/s_bg_landmark01.yy",},},
     {"id":{"name":"s_bg_landmark02","path":"sprites/s_bg_landmark02/s_bg_landmark02.yy",},},
