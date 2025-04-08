@@ -21,6 +21,8 @@ if (sprite_index == s_player_aquasuit_ascend) {
 			
 			x = other.x + 15;
 			y = other.y - 20;
+			image_angle = 0;
+			rotation = 0;
 		}
 		
 		interaction_object = noone;
