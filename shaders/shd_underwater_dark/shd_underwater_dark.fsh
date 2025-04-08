@@ -12,8 +12,11 @@ void main()
 	vec4 base = vec4(u_color, 1.0);
 	base.rgb = vec3(0.0);
 	base.a = (v_vPosition.y - u_gradient.x) / (u_gradient.y - u_gradient.x);
+	// float delta = max(0.0, distance(v_vPosition.xy, u_playerpos) - u_radius * 0.3);
+	// delta = min(delta / (u_radius * 0.3), 1.0);
 	float delta = min(distance(v_vPosition.xy, u_playerpos) / u_radius, 1.0);
-	delta = delta;
+	// delta = pow(1.0 - delta, 5.0);
+	delta = pow(delta, 2.0);
 	base.a *= delta;
 	gl_FragColor = base;
 }
