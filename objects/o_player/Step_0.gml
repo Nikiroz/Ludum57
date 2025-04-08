@@ -109,6 +109,16 @@ if (input_enabled) {
 	input_interact = keyboard_check_pressed(ord(actionKey));
 	input_interact2 = keyboard_check_pressed(ord(action2Key));
 	input_pull_up = keyboard_check(ord(upKey));
+	
+	if (input_interact && has_carried_item()) {
+		with(carried_instance) {
+			hsp += other.facing * 1;
+			vsp += 0.5;
+		}
+		
+		set_carried_item(noone);
+		input_interact = false;
+	}
 }
 
 //
@@ -207,6 +217,16 @@ else if (sprite_index != s_player_aquasuit_rope_end) {
 #endregion
 
 #region Кислород
+
+if (oxygen_refilling) {
+	oxygen = lerp(oxygen, oxygen_capacity, 0.33);
+	oxygen += 2;
+	
+	if (oxygen > oxygen_capacity) {
+		oxygen_refilling = false;
+		oxygen = oxygen_capacity;
+	}
+}
 
 if (!climb_aboard_confirmation && is_submerged) {
 	if (!oxygen_meter_active) {

@@ -24,6 +24,7 @@ function scr_interaction_update() {
 		interaction_time_max = 0;
 	}
 	else if (instance_exists(interaction_object)
+	&& interaction_object.interaction_active
 	&& (stable || !interaction_object.interaction_time_max)
 	&& ((!interaction_object.interaction_time_max || _interacting))) {
 		var _obj = interaction_object
@@ -68,9 +69,18 @@ function scr_interaction_update() {
 				_facing = facing;
 			
 			with (o_interactible) {
-				var _distance = distance_to_point(_x, _y)
-			
-				if (sign(x - _x) != _facing || _distance > interaction_range || collision_line(x, y, _x, _y, o_collision, true, false) || !stable) continue
+				if (!(interaction_active || interaction2_active)) continue;
+				
+				var _distance = distance_to_point(_x, _y),
+					_px = bbox_center_x, _py = bbox_center_y
+				
+				//if (keyboard_check_pressed(vk_space)) {
+				//	print(id, object_get_name(object_index), interaction_active,
+				//		sign(_px - _x) == _facing, _distance <= interaction_range,
+				//		collision_line(_px, _py, _x, _y, o_collision, true, false), stable);
+				//}
+				
+				if (sign(_px - _x) != _facing || _distance > interaction_range || collision_line(_px, _py, _x, _y, o_collision, true, false) || !stable) continue
 			
 				if (_distance < _distance_max) {
 					_distance_max = _distance
@@ -104,7 +114,7 @@ function scr_interaction_update() {
 
 function scr_interactible_check_selected(_instance) {
 	with (o_player) {
-		return (instance_is(_instance, o_interactible)
+		return (instance_is(_instance, o_interactible) && (_instance.interaction_active || _instance.interaction2_active)
 			&& interaction_object == _instance && !interaction_release) && stable
 	}
 	

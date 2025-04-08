@@ -3,6 +3,9 @@
   "%Name":"o_ship_oxygentank_basic",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"o_ship_oxygentank_basic",
@@ -12,8 +15,8 @@
     "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":{
-    "name":"o_boatPart",
-    "path":"objects/o_boatPart/o_boatPart.yy",
+    "name":"o_boat_interactible",
+    "path":"objects/o_boat_interactible/o_boat_interactible.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

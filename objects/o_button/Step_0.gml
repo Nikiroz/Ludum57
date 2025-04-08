@@ -8,7 +8,7 @@ _y = lerp(_y, _ystart - _hover * 3, 0.07);
 if (_hover){
     hasEntered = true;
     if(!audio_is_playing(snd_ui_switch) && !isPlayHover) {
-	    audio_play_sound(snd_ui_switch, 10, false);
+	    audio_play_sound(snd_ui_switch, 10, false, global.soundVolume);
 		isPlayHover = true;
 	}
 }
@@ -20,7 +20,7 @@ if (!_hover && hasEntered){
 
 if(click){
 	if(_hover && mouse_check_button_pressed(mb_left)){
-		audio_play_sound(snd_ui_click, 10, false);
+		audio_play_sound(clickSound, 10, false, global.soundVolume);
 	} 	
 } 
 
@@ -29,5 +29,5 @@ if(_hover && mouse_check_button_released(mb_left)){
 }
 
 if(_hover && mouse_check_button_pressed(mb_left)){
-	audio_play_sound(snd_ui_click, 10, false);
+	audio_play_sound(clickSound, 10, false, global.soundVolume);
 } 
