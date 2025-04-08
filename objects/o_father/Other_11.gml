@@ -29,6 +29,8 @@ with (o_player) {
 	global.oxygen = -(oxygen / oxygen_capacity <= 0.5)
 }
 
-with o_game_controller event_user(0);
+with (o_game_controller) {
+	event_user(0);
+}
 room_goto(r_Statistics);
-
+global.isPause = true;

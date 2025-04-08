@@ -37,8 +37,10 @@ with (o_lights) {
 
 #region Time
 
-time += timeScale;//gameSpeed / 1000
-hour = time mod 24;
+if(hour > 0){
+	time += timeScale;//gameSpeed / 1000
+	hour = time mod 24;
+}
 
 #endregion
 

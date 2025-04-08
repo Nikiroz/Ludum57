@@ -1,6 +1,6 @@
 
 
-draw_text(300, 20, "Day 1");
+draw_text(300, 20, "Day " + string(global.dayNumbers));
 draw_text(50, 120, "Scrap collected value: +" + string(global.scavenge) + "$");
 
 draw_text(50, 160, "Food: -" + string(4) + "$");

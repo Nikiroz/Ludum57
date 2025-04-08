@@ -148,12 +148,12 @@ if (climb_aboard_confirmation) {
 }
 
 x = round(x);
-
+/*
 if ((global.isDebug || GM_build_type == "run") && mouse_check_button_pressed(mb_middle)) {
 	x = mouse_x;
 	y = mouse_y;
 }
-
+*/
 #region Стейтмашина
 
 if (!is_grounded && is_submerged) {

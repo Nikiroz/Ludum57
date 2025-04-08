@@ -1,1 +1,1 @@
-global.saveTime = time;
+//global.saveTime = time;

@@ -1,3 +1,4 @@
+draw_set_font(fnt_main);
 shader_set(shd_white_noise);
 shader_set_uniform_f(shader_get_uniform(shd_white_noise, "time"), current_time * 0.001);
 shader_set_uniform_f(shader_get_uniform(shd_white_noise, "itensity"), 0.5);

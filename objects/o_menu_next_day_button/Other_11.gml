@@ -1,1 +1,3 @@
-room_goto(target_room)
+global.dayNumbers++;
+global.restartTime = true;
+room_goto(r_Game)

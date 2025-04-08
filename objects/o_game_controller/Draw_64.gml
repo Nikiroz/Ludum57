@@ -1,4 +1,4 @@
-if(global.isDebug) {
+/*if(global.isDebug) {
     draw_text(32, 32, string(hour));
 	
 	with (o_sun) draw_text(32, 64, string(angle));
@@ -9,4 +9,4 @@ if(global.isDebug) {
     }
 
 }
-
+*/

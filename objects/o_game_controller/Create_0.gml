@@ -1,10 +1,8 @@
-global.screenshot_sprite = -1;
+
 
 global.scavenge = 0;
 global.fuel = 0;
 global.oxygen = 0;
-
-
 
 _surface = surface_create(gameWidth * gameZoom, gameHeight * gameZoom);
 
@@ -21,7 +19,7 @@ background_map[? layer_get_id("l_bg_water01")] = -0.5;
 global.isDebug = false;
 global.isPause = false;
 
-startHour = 9//5.8//6;
+startHour = 1//5.8//6;
 second = 0;
 minute = 0;
 hour   = startHour;
@@ -57,6 +55,7 @@ if (global.isDebug) {
 ps_bubbles = part_system_create()
 pt_bubbles_count = 5
 pt_bubbles_array = array_create(pt_bubbles_count)
+
 for (var i = 0; i < pt_bubbles_count; i ++) {
 	var _sprite_bubble = asset_get_index("s_bg_bubbles0" + string(i + 1));
 	var _pt_bubble = part_type_create();
