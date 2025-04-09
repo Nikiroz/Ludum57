@@ -47,6 +47,7 @@ else if (sprite_index == s_player_aquasuit_exit) {
 	hsp = 0;
 	vsp = 0;
 	
+	walking = false;
 	lock_next_to_aquasuit();
 	
 	if (image_index >= 14 && aquasuit_equipped) {
