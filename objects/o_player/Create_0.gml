@@ -15,6 +15,7 @@ lightcolor[0] /= 255
 lightcolor[1] /= 255
 lightcolor[2] /= 255
 in_water = false /// Для анимации плюханья игрока
+original_y = y;
 
 // состояния
 walking = false;
@@ -40,6 +41,7 @@ event_user(0);
 oxygen = oxygen_capacity;
 oxygen_refilling = false;
 hp = max_hp;
+oxygenValue = 1;
 
 // ввод и прочее
 input_interact = false;
@@ -156,10 +158,13 @@ animation_reset = function() {
 
 put_to_death = function() {
 	is_dead = true;
-	
+	original_y = y;
+	sprite_change(s_player_aquasuit_death);
 	if(audio_is_playing(snd_low_oxygen_choking_d)){
 		audio_stop_sound(snd_low_oxygen_choking_d);
-		instance_create_layer(0, 0, layer_get_id("UI"), o_menu_dead)
+		
+		instance_create_layer(0, 0, layer_get_id("UI"), o_menu_dead);
+		
 	}
 	audio_play_sound(snd_dead, 100, false, global.soundVolume);
 	

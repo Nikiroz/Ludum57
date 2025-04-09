@@ -3,6 +3,9 @@ with (interactor) {
 	
 	anim_aquasuit_equip = 0;
 	sprite_index = s_player_aquasuit_enter;
+	/*if(!audio_is_playing(snd_wearing_underwater_suit)){
+		audio_play_sound(snd_wearing_underwater_suit, 1, false, global.soundVolume);
+	}*/
 	image_index = 0;
 	
 	if (other.is_equipped)

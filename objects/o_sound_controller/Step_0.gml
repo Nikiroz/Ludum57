@@ -3,9 +3,27 @@ audio_listener_orientation(0,1,0,0,0,1);
 
 underwater = o_player.y > mcr_waterline 
 
-if(audio_is_playing(snd_underwater_loop)){
-	var soundVolume = clamp(underwater, 0, global.soundVolume);
-	audio_sound_gain(snd_underwater_loop, soundVolume, 0);
+//фикс вебверсии
+
+if(!audio_is_playing(snd_ambience_waves) && !underwater){
+	
+	if(audio_is_playing(snd_underwater_loop)){
+		audio_stop_sound(snd_underwater_loop);
+	}
+	
+	audio_play_sound(snd_ambience_waves, 1, true, global.soundVolume);
+	
+}
+
+
+if(!audio_is_playing(snd_underwater_loop) && underwater){
+	
+	if(audio_is_playing(snd_ambience_waves)){
+		audio_stop_sound(snd_ambience_waves);
+	}
+	
+	audio_play_sound(snd_underwater_loop, 1, true, global.soundVolume);
+	
 }
 
 with(o_sound_static){
@@ -16,12 +34,11 @@ with(o_sound_static){
 	}
 }
 
-if(audio_is_playing(snd_ambience_waves)){
-	var soundVolume = clamp(!underwater, 0, global.soundVolume);
-	audio_sound_gain(snd_ambience_waves, soundVolume, 0);
-}
-
 if(!o_father.boatControl){
+	if(audio_is_playing(snd_boat_enginge_loop)){
+		audio_stop_sound(snd_boat_enginge_loop);
+	}
+	
 	if(isStepPlay(global.soundBoatArray)){
 		if(!underwater){
 			audio_play_sound(getRandomSound(global.soundBoatArray), 100, false, global.soundVolume);
@@ -31,9 +48,11 @@ if(!o_father.boatControl){
 		}
 	}
 } else {
-	if(audio_is_playing(snd_boat_enginge_loop)){
-		audio_sound_gain(snd_boat_enginge_loop, global.soundVolume, 0);
-	}	
+	if(!audio_is_playing(snd_boat_stop) && o_father.startEngine){
+		if(!audio_is_playing(snd_boat_enginge_loop)){
+			audio_play_sound(snd_boat_enginge_loop, 1, true, global.soundVolume);
+		} 
+	}
 }
 
 if(!o_player.is_dead && o_player.oxygen < (o_player.oxygen_capacity * 0.15)){

@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_menu_game_restart_dead",
+  "%Name":"o_button_restart_dead",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_menu_game_restart_dead",
+  "name":"o_button_restart_dead",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"Dead menu",
+    "path":"folders/Objects/GUI/Dead menu.yy",
   },
   "parentObjectId":{
     "name":"o_button",

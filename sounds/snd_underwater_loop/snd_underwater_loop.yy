@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_underwater_loop.wav",
   "type":0,
-  "volume":0.0,
+  "volume":1.0,
 }

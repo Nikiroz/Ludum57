@@ -23,19 +23,22 @@ if (boatControl) {
 	sprite_index = s_father_drive_start;
 
 	if(!audio_is_playing(snd_boat_start2)){
-		audio_play_sound(snd_boat_start2,1,false,global.soundVolume);
+		audio_play_sound(snd_boat_start2, 1, false ,global.soundVolume);
+		alarm[0] = 30;
 	}
-	
-	audio_sound_gain(snd_boat_enginge_loop, global.soundVolume, 100);
+
 }
 else {
 	sprite_index = s_father_drive_end;
 	
+	if(audio_is_playing(snd_boat_enginge_loop)){
+		audio_stop_sound(snd_boat_enginge_loop);
+	}
+	
 	if(!audio_is_playing(snd_boat_stop)){
 		audio_play_sound(snd_boat_stop, 1, false, global.soundVolume);
 	}
-	
-	audio_sound_gain(snd_boat_enginge_loop, 0, 100);
+
 }
 		
 event_user(2);

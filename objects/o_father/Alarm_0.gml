@@ -1,1 +1,2 @@
 /// @description Двигатель
+startEngine = true

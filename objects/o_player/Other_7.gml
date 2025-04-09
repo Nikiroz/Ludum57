@@ -1,3 +1,7 @@
+if (is_dead) {
+	image_index = image_number - 1
+	exit;
+}
 if (sprite_index == s_player_aquasuit_scavenge_end) {
 	if(audio_is_playing(snd_scrap_metal_dismantling_loop)){
 		audio_stop_sound(snd_scrap_metal_dismantling_loop);

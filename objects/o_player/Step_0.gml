@@ -1,3 +1,11 @@
+if (is_dead) {
+	if(image_index == image_number - 1){
+
+		var targetY = original_y + sin(current_time/1000) * 50;
+		y = lerp(y, targetY, 0.02) ;	
+	}
+exit;
+}
 if (sprite_index == s_player_aquasuit_ascend) {
 	hsp = 0;
 	vsp = 0;
@@ -86,7 +94,7 @@ else if (sprite_index == s_player_aquasuit_enter_dive) {
 	exit;
 }
 
-if (is_dead) exit;
+
 
 var _left = false,
 	_right = false,
@@ -235,7 +243,7 @@ if (!climb_aboard_confirmation && is_submerged) {
 	}
 	
 	if (oxygen > 0) {
-		oxygen --;
+		oxygen -= oxygenValue;
 		
 		if (!aquasuit_equipped) oxygen -= 9;
 		
