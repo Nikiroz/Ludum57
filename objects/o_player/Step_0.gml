@@ -4,9 +4,17 @@ if (is_dead) {
 		var targetY = original_y + sin(current_time/1000) * 50;
 		y = lerp(y, targetY, 0.02) ;	
 	}
-exit;
+	
+	exit;
 }
-if (sprite_index == s_player_aquasuit_ascend) {
+
+if (sprite_index == s_player_oxygentank_change) {
+	hsp = 0;
+	vsp = 0
+	
+	exit
+}
+else if (sprite_index == s_player_aquasuit_ascend) {
 	hsp = 0;
 	vsp = 0;
 	

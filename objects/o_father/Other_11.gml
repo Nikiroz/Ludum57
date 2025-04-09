@@ -29,6 +29,11 @@ with (o_player) {
 	global.oxygen = -(oxygen / oxygen_capacity <= 0.5)
 }
 
+with (o_ship_oxygentank_basic) {
+	if (image_index > 0)
+		global.oxygen -= floor(image_index);
+}
+
 with (o_game_controller) {
 	event_user(0);
 }

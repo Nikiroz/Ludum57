@@ -123,7 +123,7 @@ function scr_interactible_check_selected(_instance) {
 
 function scr_interactible_draw_self_outlined(_outline_flags = outline_full) {
 	
-	if (interaction_visible) {
+	if (interaction_visible && instance_exists(o_player) && (o_player.interaction_time_max == 0 || !keyboard_check(ord(actionKey)))) {
 		draw_sprite_outline(scr_interactible_check_selected(id) ? _outline_flags : 0,
 			sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 	}
