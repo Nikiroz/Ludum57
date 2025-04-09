@@ -30,7 +30,7 @@ if(surface_exists(_surface)){
 	gpu_set_blendmode(bm_add);
 	with (o_ship_light) {
 		var _angle = o_boatController.boatAngle;
-		draw_sprite_ext(sprite_index, image_index, (x - camera_get_view_x(view_camera[0])) * 2 + _angle * 5 + 5, (y - camera_get_view_y(view_camera[0]) * 2) * 2 + 74 - _angle * 11, image_xscale * 2, image_yscale * 2, _angle, image_blend, image_alpha)
+		draw_sprite_ext(sprite_index, image_index, (x - camera_get_view_x(view_camera[0])) * 2 + _angle * 5 + 5, (y - camera_get_view_y(view_camera[0]) * 2) + 217 - _angle * 11, image_xscale * 2, image_yscale * 2, _angle, image_blend, image_alpha)
 	}
 	with (o_moon) {
 		if !(other.hour > 7.57 && other.hour <22.31) {
