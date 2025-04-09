@@ -35,9 +35,6 @@ with(o_sound_static){
 }
 
 if(!o_father.boatControl){
-	if(audio_is_playing(snd_boat_enginge_loop)){
-		audio_stop_sound(snd_boat_enginge_loop);
-	}
 	
 	if(isStepPlay(global.soundBoatArray)){
 		if(!underwater){
