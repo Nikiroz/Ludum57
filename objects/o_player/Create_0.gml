@@ -41,7 +41,7 @@ event_user(0);
 oxygen = oxygen_capacity;
 oxygen_refilling = false;
 hp = max_hp;
-oxygenValue = 10;
+oxygenValue = 1;
 
 // ввод и прочее
 input_interact = false;
