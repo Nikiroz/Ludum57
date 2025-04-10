@@ -11,8 +11,8 @@
   "name":"o_interactible",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"interactible",
+    "path":"folders/Objects/GUI/interactible.yy",
   },
   "parentObjectId":{
     "name":"o_levelobject",

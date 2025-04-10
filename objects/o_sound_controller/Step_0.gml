@@ -58,6 +58,10 @@ if(!o_player.is_dead && o_player.oxygen < (o_player.oxygen_capacity * 0.15)){
 	}
 }
 
+if(audio_is_playing(snd_low_oxygen_choking_d) && !underwater){
+	audio_stop_sound(snd_low_oxygen_choking_d);
+}
+
 if(isStepPlay(global.soundGameplayArray)){
 	currentMusic = audio_play_sound(getRandomSound(global.soundGameplayArray), 100, false, global.musicVolume);
 }

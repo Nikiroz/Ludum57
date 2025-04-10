@@ -1,7 +1,7 @@
 if (is_dead) {
 	if(image_index == image_number - 1){
 
-		var targetY = original_y + sin(current_time/1000) * 50;
+		var targetY = original_y + sin(current_time/1000) * 25;
 		y = lerp(y, targetY, 0.02) ;	
 	}
 	

@@ -12,6 +12,7 @@ draw_surface_stretched(
 );
 
 shader_reset();
+
 draw_set_alpha(fade);
 draw_sprite(s_Dead_sign, 0, gameWidth/2, (gameHeight/2));
 draw_set_alpha(1);

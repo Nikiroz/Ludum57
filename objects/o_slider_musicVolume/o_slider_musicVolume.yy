@@ -9,8 +9,8 @@
   "name":"o_slider_musicVolume",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"Pause",
+    "path":"folders/Objects/GUI/Pause.yy",
   },
   "parentObjectId":{
     "name":"o_slider",
