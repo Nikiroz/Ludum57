@@ -6,6 +6,7 @@ global.screenshot_sprite = -1;
 global.nonLootableObects = array_create(0);
 
 if(!variable_global_exists("soundVolume")){
+	
 	global.musicEmitter = audio_emitter_create();
 	global.soundEmitter = audio_emitter_create();
 	global.soundVolume = 0.8;

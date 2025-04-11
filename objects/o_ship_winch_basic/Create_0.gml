@@ -10,4 +10,4 @@ isActive = true;
 image_speed = 0;
 motion = 0;
 
-//event_user(2)
+event_user(2)

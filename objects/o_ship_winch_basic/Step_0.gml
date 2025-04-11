@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-
+var soundLevel = clamp(motion - 0.9, 0, 1);
 if(audio_is_playing(soundLoop)){
-	audio_sound_gain(soundLoop,0,0);	
+	audio_sound_gain(soundLoop,soundLevel,0);	
 }

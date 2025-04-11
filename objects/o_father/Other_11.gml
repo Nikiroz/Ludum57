@@ -1,4 +1,4 @@
-/// @description Взаимодействие 2
+/// @description Конец дня
 
 if (boatControl || !interaction2_active) exit;
 
