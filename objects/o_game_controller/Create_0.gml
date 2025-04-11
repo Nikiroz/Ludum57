@@ -26,8 +26,7 @@ global.saveTime = 0;
 
 timeScale = 0.001;
 
-global.soundVolume = 0.8;
-global.musicVolume = 0.10;
+
 
 if (file_exists("debug.ini")) {
 

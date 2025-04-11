@@ -5,7 +5,7 @@ function scr_levelobject_updae_dive_splashes() {
 				bbox_center_x, y, depth - 1, o_water_divein)
 			
 			if (!audio_is_playing(snd_surfacing)){
-				audio_play_sound(snd_surfacing, 1, false, global.soundVolume)
+				audio_play_sound_on(global.soundEmitter, snd_surfacing, false, 1);
 			}
 		}
 		else {

@@ -23,7 +23,7 @@ if (boatControl) {
 	sprite_index = s_father_drive_start;
 
 	if(!audio_is_playing(snd_boat_start2)){
-		audio_play_sound(snd_boat_start2, 1, false ,global.soundVolume);
+		audio_play_sound_on(global.soundEmitter, snd_boat_start2, false, 1);
 		alarm[0] = 30;
 	}
 
@@ -36,7 +36,7 @@ else {
 	}
 	
 	if(!audio_is_playing(snd_boat_stop)){
-		audio_play_sound(snd_boat_stop, 1, false, global.soundVolume);
+		audio_play_sound_on(global.soundEmitter, snd_boat_stop, false, 1);
 	}
 
 }

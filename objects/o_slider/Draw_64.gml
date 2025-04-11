@@ -13,6 +13,6 @@ var display_value = _min + (_max - _min) * _value;
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
-draw_text(_x + width + 10, _y + height/2, string(round(display_value)));
-draw_text_ext_transformed(_x, _y - 15, labelText, 10, 300, 0.8, 0.8, image_angle);
+draw_text_ext_transformed(_x + width + 10, _y, string(round(display_value)), 10, 300, textSize, textSize, image_angle);
+draw_text_ext_transformed(_x, _y - 15, labelText, 10, 300, textSize, textSize, image_angle);
 

@@ -1,5 +1,13 @@
 event_inherited();
 
+var _sizeArray = array_length(global.nonLootableObects);
+for (var i = 0; i < _sizeArray; ++i) {
+    if(global.nonLootableObects[i]==id){
+		instance_destroy();
+		exit;
+	}
+}
+
 disassembled = false;
 
 gravity_enabled = false;

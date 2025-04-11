@@ -157,15 +157,21 @@ animation_reset = function() {
 }
 
 put_to_death = function() {
+	
 	is_dead = true;
 	original_y = y;
+	
 	sprite_change(s_player_aquasuit_death);
+	
 	if(audio_is_playing(snd_low_oxygen_choking_d)){
-		audio_stop_sound(snd_low_oxygen_choking_d);
 		
+		audio_stop_sound(snd_low_oxygen_choking_d);
 		instance_create_layer(0, 0, layer_get_id("UI"), o_menu_dead);
 		
 	}
-	audio_play_sound(snd_dead, 100, false, global.soundVolume);
+	
+	audio_play_sound_on(global.soundEmitter, snd_dead, false, 100);
 	
 }
+
+audio_listener_orientation(0,1,0,0,0,1);

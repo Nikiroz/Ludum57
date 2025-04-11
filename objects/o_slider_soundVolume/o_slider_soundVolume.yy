@@ -1,20 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"o_sound_controller",
+  "%Name":"o_slider_soundVolume",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_sound_controller",
+  "name":"o_slider_soundVolume",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Objects/Sounds.yy",
+    "name":"Pause",
+    "path":"folders/Objects/GUI/Pause.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"o_slider",
+    "path":"objects/o_slider/o_slider.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_sound_controller",
-    "path":"sprites/s_sound_controller/s_sound_controller.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -11,5 +11,4 @@ if(global.isDebug){
 	draw_line(cameraX + (gameWidth / 2) - 10, cameraY + (gameHeight / 2), cameraX + (gameWidth / 2) + 10, cameraY + (gameHeight / 2));
 	draw_line(cameraX + (gameWidth / 2),  cameraY + (gameHeight / 2) - 10, cameraX + (gameWidth / 2), cameraY + (gameHeight / 2) + 10);
 	draw_set_color(c_white);
-	
 }

@@ -4,5 +4,4 @@ factor_amount = 1;
 offsetX = 0;
 offsetY = 0;
 soundLoop = -1;
-isStatic = true;
-gain = global.soundVolume;
+emmiter = audio_emitter_create();

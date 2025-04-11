@@ -17,6 +17,16 @@ if (oxygen_meter_active) {
 	draw_line_width(_xpos, _y1 + _length * _progress, _xpos, _y2, _thickness);
 	
 	draw_set_color(c_white);
+	
+	draw_set_color(c_gray);
+	var gap = 5
+	draw_line(15, 10, 15, gameHeight - 10);
+	
+	var _y =  10;
+	draw_circle(15, y, 5, false);
+	
+	
+	draw_set_color(c_white);
 }
 
 if (climb_aboard_confirmation || confirmation_time > 0) {
