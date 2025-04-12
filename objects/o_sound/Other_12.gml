@@ -12,6 +12,7 @@ var _sound_params =
     sound: soundLoop,
     priority: 1,
     gain: 1,
+    pitch: 1,
 	loop: true,
     emitter: emitter,
 

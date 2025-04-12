@@ -5,7 +5,7 @@ if (isMoving) {
 var startEngine = o_father.startEngine;
 
 if(!startEngine && audio_is_playing(snd_boat_enginge_loop)){
-	audio_sound_pitch(snd_boat_enginge_loop, 0);
+	audio_sound_pitch(snd_boat_enginge_loop, 1);
 	audio_stop_sound(snd_boat_enginge_loop);
 }
 

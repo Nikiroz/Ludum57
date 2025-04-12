@@ -49,7 +49,11 @@ else {
 	if(!audio_is_playing(snd_boat_stop)){
 		audio_play_sound_on(o_boatSound.emitter, snd_boat_stop, false, 1);
 	}
-
+	
+	if(audio_is_playing(snd_boat_enginge_loop)){
+		audio_sound_pitch(snd_boat_enginge_loop, 1);
+		audio_stop_sound(snd_boat_enginge_loop);
+	}
 }
 		
 event_user(2);
