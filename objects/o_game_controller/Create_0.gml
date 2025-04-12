@@ -41,8 +41,6 @@ if (file_exists("debug.ini")) {
 if (global.isDebug) {
 
 	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
-	dbg_slider(ref_create(self, "soundVolume"), 0, 1, "soundVolume", 0.05);
-	dbg_slider(ref_create(self, "musicVolume"), 0, 1, "musicVolume", 0.05);
 	
 }
 

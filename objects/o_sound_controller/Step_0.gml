@@ -9,11 +9,15 @@ if(isStepPlay(global.musicGameplayArray)){
 }
 
 if(instance_exists(o_player)){
-	
-	audio_listener_position(o_player.x, o_player.y, 0);
-	audio_emitter_position(global.musicEmitter, o_player.x, o_player.y, 0);
-	audio_emitter_position(global.soundEmitter, o_player.x, o_player.y, 0);
-	
+	if(!o_father.isEndDay){
+		audio_listener_position(o_player.x, o_player.y, 0);
+		audio_emitter_position(global.musicEmitter, o_player.x, o_player.y, 0);
+		audio_emitter_position(global.soundEmitter, o_player.x, o_player.y, 0);
+	} else{
+		audio_listener_position(o_camera.cameraX + gameWidth/2, o_camera.cameraY+ gameHeight/2, 0);
+		audio_emitter_position(global.musicEmitter, o_camera.cameraX + gameWidth/2, o_camera.cameraY + gameHeight/2, 0);
+		audio_emitter_position(global.soundEmitter, o_camera.cameraX + gameWidth/2, o_camera.cameraY + gameHeight/2, 0);
+	}
 	underwater = (o_player.y > mcr_waterline);
 	
 	if(!o_player.is_dead && o_player.oxygen < (o_player.oxygen_capacity * 0.15)){
@@ -44,11 +48,13 @@ if(instance_exists(o_player)){
 			}
 		}
 	}
+	
 	if(o_player.is_dead){
 		if(audio_is_playing(snd_mus_scavenger_deep_danger)){
 			audio_sound_gain(snd_mus_scavenger_deep_danger, 0, 500);
 		}
 	}
+	
 }
 
 if(!audio_is_playing(snd_ambience_waves)){
@@ -99,22 +105,16 @@ if(instance_exists(o_father)){
 	
 		if(isStepPlay(global.soundBoatArray)){
 			if(!underwater){
-				audio_play_sound_on(global.soundEmitter, getRandomSound(global.soundBoatArray), false, 100);
+				audio_play_sound_on(o_boatSound.emitter, getRandomSound(global.soundBoatArray), false, 100);
 				alarm[0] = irandom(30);
 			} else {
 				alarm[0] = -1;
 			}
 		}
-	} else {
-		
-		if(!audio_is_playing(snd_boat_stop) && o_father.startEngine){
-			if(!audio_is_playing(snd_boat_enginge_loop)){
-				audio_play_sound_on(global.soundEmitter, snd_boat_enginge_loop, true, 1);
-			} 
-		}
-		
-	}
+	} 
+	
 }
+
 
 if(audio_is_playing(snd_low_oxygen_choking_d) && !underwater){
 	audio_stop_sound(snd_low_oxygen_choking_d);

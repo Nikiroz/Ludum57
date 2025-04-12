@@ -1,8 +1,10 @@
 /// @description start
-
+if(soundLoop = -1){
+	exit;	
+}
 
 audio_falloff_set_model(audio_falloff_linear_distance);
-audio_emitter_falloff(emmiter, ref_amount, max_amount, factor_amount);
+audio_emitter_falloff(emitter, ref_amount, max_amount, factor_amount);
 
 
 var _sound_params =
@@ -11,7 +13,7 @@ var _sound_params =
     priority: 1,
     gain: 1,
 	loop: true,
-    emitter: emmiter,
+    emitter: emitter,
 
 };
 

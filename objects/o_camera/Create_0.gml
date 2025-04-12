@@ -4,7 +4,7 @@ offsetTargetX = 0;
 offsetTargetY = 20;
 fade = 1;
 depth = -1000;
-
+isFrize = false;
 var _camW = camera_get_view_width(view_camera[0]);
 var _camH = camera_get_view_height(view_camera[0]);
 display_set_gui_size(_camW, _camH);

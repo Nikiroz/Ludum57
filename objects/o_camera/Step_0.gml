@@ -1,3 +1,7 @@
+if(isFrize){
+	exit;
+}
+
 if(!view_enabled){
 	view_set_wport(0, gameWidth);
 	view_set_hport(0, gameHeight);

@@ -465,6 +465,7 @@
     {"name":"inst_54D42AAA","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_69FCCD5A","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_767450F7","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_7EBBDA1B","path":"rooms/r_Game/r_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -579,6 +580,7 @@
         {"$GMRInstance":"v1","%Name":"inst_3B2769B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B2769B5","objectId":{"name":"o_seaweed03","path":"objects/o_seaweed03/o_seaweed03.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1135.0,"y":740.0,},
       ],"layers":[],"name":"Scrap","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Boat","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v1","%Name":"inst_7EBBDA1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EBBDA1B","objectId":{"name":"o_boatSound","path":"objects/o_boatSound/o_boatSound.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":365.0,"y":199.0,},
         {"$GMRInstance":"v1","%Name":"inst_1172D1F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1172D1F2","objectId":{"name":"o_ropeRenderer","path":"objects/o_ropeRenderer/o_ropeRenderer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_3E024039","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E024039","objectId":{"name":"o_ship_part03","path":"objects/o_ship_part03/o_ship_part03.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":172.0,"y":196.0,},
         {"$GMRInstance":"v1","%Name":"inst_2979A4ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2979A4ED","objectId":{"name":"o_ship_winch_basic","path":"objects/o_ship_winch_basic/o_ship_winch_basic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":252.0,"y":207.0,},

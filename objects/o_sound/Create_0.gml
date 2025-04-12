@@ -4,4 +4,4 @@ factor_amount = 1;
 offsetX = 0;
 offsetY = 0;
 soundLoop = -1;
-emmiter = audio_emitter_create();
+emitter = audio_emitter_create();

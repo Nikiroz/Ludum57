@@ -7,7 +7,9 @@ if (is_dead) {
 	
 	exit;
 }
-
+if (o_father.isEndDay){
+	exit;
+}
 if (sprite_index == s_player_oxygentank_change) {
 	hsp = 0;
 	vsp = 0

@@ -2,7 +2,7 @@ start_point = x;
 boatWavesShift = 0;
 boatSpeed = 0;
 boatElements = [];
-
+emitter = audio_emitter_create();
 boatAngle = 0;
 boatSurface = -1
 fuel_lost = 0;

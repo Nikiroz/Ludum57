@@ -12,8 +12,8 @@
     "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":{
-    "name":"o_sound_static",
-    "path":"objects/o_sound_static/o_sound_static.yy",
+    "name":"o_sound",
+    "path":"objects/o_sound/o_sound.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
