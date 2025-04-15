@@ -175,3 +175,5 @@ put_to_death = function() {
 }
 
 audio_listener_orientation(0,1,0,0,0,1);
+
+depthmeterY = 0;

@@ -281,3 +281,7 @@ if (has_carried_item()) {
 scr_levelobject_updae_dive_splashes();
 
 scr_interaction_update();
+
+depthmeterY =  o_player.y - mcr_waterline;
+    
+
