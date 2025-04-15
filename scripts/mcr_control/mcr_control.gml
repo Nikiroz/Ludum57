@@ -27,7 +27,7 @@ global.musicGameplayArray = [
 ]
 global.soundBoatArray = [
 	snd_boat_creak_1, snd_boat_creak_2, snd_boat_creak_3,
-	snd_boat_creak_4, snd_boat_creak_5, snd_seagull_1
+	snd_boat_creak_4, snd_boat_creak_5
 ]
 
 global.soundSeagulArray = [

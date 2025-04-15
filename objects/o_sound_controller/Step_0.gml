@@ -1,10 +1,12 @@
 audio_emitter_gain(global.soundEmitter, global.soundVolume);
 audio_emitter_gain(global.musicEmitter, global.musicVolume);
+global.soundVolume = clamp(global.soundVolume, 0, 1);
+global.musicVolume = clamp(global.musicVolume, 0, 1);
+
 
 if(isStepPlay(global.musicGameplayArray)){
 	musicAmbient = getRandomSound(global.musicGameplayArray);
 	audio_play_sound_on(global.musicEmitter, musicAmbient, false, 1, 1);
-	audio_play_sound_on(global.musicEmitter, snd_mus_scavenger_deep_danger, true, 1);
 	audio_sound_gain(snd_mus_scavenger_deep_main_menu, 0, 0);
 }
 
@@ -20,7 +22,7 @@ if(instance_exists(o_player)){
 	}
 	underwater = (o_player.y > mcr_waterline);
 	
-	if(!o_player.is_dead && o_player.oxygen < (o_player.oxygen_capacity * 0.15)){
+	if(!o_player.is_dead && o_player.oxygen < (o_player.oxygen_capacity * 0.05)){
 		
 		if(!audio_is_playing(snd_low_oxygen_choking_d)){
 			audio_play_sound_on(global.soundEmitter, snd_low_oxygen_choking_d, true, 1);
@@ -83,20 +85,24 @@ if(instance_exists(o_game_controller)){
 	
 	if(!audio_is_playing(snd_ambience_night) && !underwater && o_game_controller.hour > 20){
 	
-		audio_play_sound_on(global.soundEmitter, snd_ambience_night, true, 1, 1);
+		audio_play_sound_on(global.soundEmitter, snd_ambience_night, true, 1);
 		audio_sound_gain(snd_ambience_night, 0, 0);
 		audio_sound_gain(snd_ambience_night, 1, 3000);
 		
 	}
 	
 	if(audio_is_playing(snd_ambience_night)){
-		if(underwater){
-			audio_sound_gain(snd_ambience_night, 0, 0);
+		if(o_game_controller.hour > 20 || o_game_controller.hour < 6){
+			if(underwater){
+				audio_sound_gain(snd_ambience_night, 0, 0);
+			} else {
+				audio_sound_gain(snd_ambience_night, 1, 0);
+			}
 		} else {
-			audio_sound_gain(snd_ambience_night, 1, 0);
+			audio_stop_sound(snd_ambience_night)
 		}
 	}
-	
+
 }
 
 if(instance_exists(o_father)){

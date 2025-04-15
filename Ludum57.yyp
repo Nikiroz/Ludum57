@@ -433,6 +433,8 @@
     {"id":{"name":"s_sound","path":"sprites/s_sound/s_sound.yy",},},
     {"id":{"name":"s_sun_mask","path":"sprites/s_sun_mask/s_sun_mask.yy",},},
     {"id":{"name":"s_sun","path":"sprites/s_sun/s_sun.yy",},},
+    {"id":{"name":"s_tank_mask","path":"sprites/s_tank_mask/s_tank_mask.yy",},},
+    {"id":{"name":"s_tank","path":"sprites/s_tank/s_tank.yy",},},
     {"id":{"name":"s_upgrades","path":"sprites/s_upgrades/s_upgrades.yy",},},
     {"id":{"name":"s_watermask","path":"sprites/s_watermask/s_watermask.yy",},},
     {"id":{"name":"spr_white_pixel","path":"sprites/spr_white_pixel/spr_white_pixel.yy",},},
