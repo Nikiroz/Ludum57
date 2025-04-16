@@ -56,7 +56,7 @@ with (target) {
 		}
 	}
 	
-	if (_is_player) {
+	if (_is_player && !input_pull_up) {
 		var _rope_tension = false;
 		with (o_newrope_controller) {
 			_rope_tension = rope_tension_get(2)
@@ -72,6 +72,16 @@ with (target) {
 				),
 				2
 			)
+			
+			if (sprite_index == s_player_aquasuit_idle
+			|| sprite_index == s_player_aquasuit_swim
+			|| sprite_index == s_player_aquasuit_scavenge_start
+			|| sprite_index == s_player_aquasuit_scavenge_loop
+			|| sprite_index == s_player_aquasuit_scavenge_end)
+			{
+				sprite_index = s_player_aquasuit_rope_end;
+				image_index = 0;
+			}
 		}
 	}
 }
