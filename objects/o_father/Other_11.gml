@@ -1,4 +1,4 @@
-/// @description Взаимодействие 2
+/// @description Конец дня
 
 if (boatControl || !interaction2_active) exit;
 
@@ -37,5 +37,33 @@ with (o_ship_oxygentank_basic) {
 with (o_game_controller) {
 	event_user(0);
 }
-room_goto(r_Statistics);
-global.isPause = true;
+
+with (interactor)
+{
+	walking_enabled = !walking_enabled;
+	
+	if (!walking_enabled) {
+		sprite_index = s_player_drive_start;
+		hand_sprite = s_player_drive_hand_start;
+		facing = 1;
+	}
+	else {
+		sprite_index = s_player_drive_end;
+		hand_sprite = s_player_drive_hand_end;
+	}
+		
+}
+
+sprite_index = s_father_drive_start;
+
+if(!audio_is_playing(snd_boat_start2)){
+	audio_play_sound_on(global.soundEmitter, snd_boat_start2, false, 1);
+}
+startEngine = true;
+alarm[0] = 60;	
+
+boatControl=true;
+isEndDay = true;
+o_camera.isFrize = true;
+
+instance_create_layer(0, 0, "UI", o_menu_statistics);

@@ -1,5 +1,4 @@
 depth = -9000;
-
 draw_set_font(fnt_main);
 var hoverColor = make_color_rgb(129,129,139);
 

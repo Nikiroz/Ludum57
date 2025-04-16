@@ -9,8 +9,8 @@
   "name":"o_interaction_text",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"interactible",
+    "path":"folders/Objects/GUI/interactible.yy",
   },
   "parentObjectId":null,
   "persistent":false,

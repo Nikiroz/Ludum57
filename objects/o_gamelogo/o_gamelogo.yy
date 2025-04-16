@@ -6,8 +6,8 @@
   "name":"o_gamelogo",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"Hub",
+    "path":"folders/Objects/GUI/Hub.yy",
   },
   "parentObjectId":null,
   "persistent":false,

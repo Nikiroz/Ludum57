@@ -1,13 +1,15 @@
 if (is_dead) {
 	if(image_index == image_number - 1){
 
-		var targetY = original_y + sin(current_time/1000) * 50;
+		var targetY = original_y + sin(current_time/1000) * 25;
 		y = lerp(y, targetY, 0.02) ;	
 	}
 	
 	exit;
 }
-
+if (o_father.isEndDay){
+	exit;
+}
 if (sprite_index == s_player_oxygentank_change) {
 	hsp = 0;
 	vsp = 0
@@ -221,7 +223,7 @@ else if (sprite_index != s_player_aquasuit_rope_end) {
 			sprite_index = s_player_walk;
 			is_boated = true;
 			if(isStepPlay(global.soundStepArray)){
-				audio_play_sound(getRandomSound(global.soundStepArray), 100, false, global.soundVolume);
+				audio_play_sound_on(global.soundEmitter, getRandomSound(global.soundStepArray), false, 100);
 			}
 		}
 	}
@@ -279,3 +281,7 @@ if (has_carried_item()) {
 scr_levelobject_updae_dive_splashes();
 
 scr_interaction_update();
+
+depthmeterY =  o_player.y - mcr_waterline;
+    
+

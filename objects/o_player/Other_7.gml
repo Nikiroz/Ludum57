@@ -65,7 +65,7 @@ else if (sprite_index == s_player_drive_loop)
 }
 else if (sprite_index == s_player_aquasuit_scavenge_start) {
 	if(!audio_is_playing(snd_scrap_metal_dismantling_loop)){
-		audio_play_sound(snd_scrap_metal_dismantling_loop, 1, true, global.soundVolume);
+		audio_play_sound_on(global.soundEmitter, snd_scrap_metal_dismantling_loop, true, 1);
 	};
 	sprite_index = s_player_aquasuit_scavenge_loop;
 	walking_enabled = false;
