@@ -33,7 +33,6 @@
     {"name":"inst_39D43171","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_7D9126CF","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_1A5B7001","path":"rooms/r_Game/r_Game.yy",},
-    {"name":"inst_269AE528","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_3E024039","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_CFDCDE9","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_6D2D62AA","path":"rooms/r_Game/r_Game.yy",},
@@ -443,6 +442,8 @@
     {"name":"inst_20B24E6F","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_47E3DB4","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_71306E62","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_14B9621A","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_7E8A6131","path":"rooms/r_Game/r_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -553,7 +554,8 @@
         {"$GMRInstance":"v1","%Name":"inst_134F093B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_134F093B","objectId":{"name":"o_ship_part01","path":"objects/o_ship_part01/o_ship_part01.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":166.0,"y":289.0,},
         {"$GMRInstance":"v1","%Name":"inst_C18B674","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C18B674","objectId":{"name":"o_ship_fan_basic","path":"objects/o_ship_fan_basic/o_ship_fan_basic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":187.0,"y":286.0,},
         {"$GMRInstance":"v1","%Name":"inst_6F1615C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F1615C4","objectId":{"name":"o_boatController","path":"objects/o_boatController/o_boatController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":180.0,},
-        {"$GMRInstance":"v1","%Name":"inst_269AE528","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_269AE528","objectId":{"name":"o_rope_source","path":"objects/o_rope_source/o_rope_source.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":178.0,"y":155.0,},
+        {"$GMRInstance":"v1","%Name":"inst_14B9621A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14B9621A","objectId":{"name":"o_newrope_controller","path":"objects/o_newrope_controller/o_newrope_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-64.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7E8A6131","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7E8A6131","objectId":{"name":"o_newrope_source","path":"objects/o_newrope_source/o_newrope_source.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":177.0,"y":155.0,},
       ],"layers":[],"name":"Boat","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_C7AC8C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C7AC8C1","objectId":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-32.0,},
