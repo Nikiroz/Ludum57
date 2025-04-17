@@ -33,7 +33,6 @@
     {"name":"inst_39D43171","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_7D9126CF","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_1A5B7001","path":"rooms/r_Game/r_Game.yy",},
-    {"name":"inst_269AE528","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_3E024039","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_CFDCDE9","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_6D2D62AA","path":"rooms/r_Game/r_Game.yy",},
@@ -346,7 +345,6 @@
     {"name":"inst_7073D87D","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_3A3C7805","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_3E2081F1","path":"rooms/r_Game/r_Game.yy",},
-    {"name":"inst_1172D1F2","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_54BE9105","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_5DFA4BC8","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_59C20093","path":"rooms/r_Game/r_Game.yy",},
@@ -466,6 +464,8 @@
     {"name":"inst_767450F7","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_7EBBDA1B","path":"rooms/r_Game/r_Game.yy",},
     {"name":"inst_69FCCD5A","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_5E6BDA01","path":"rooms/r_Game/r_Game.yy",},
+    {"name":"inst_6A178750","path":"rooms/r_Game/r_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -582,7 +582,7 @@
       ],"layers":[],"name":"Scrap","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Boat","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_7EBBDA1B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EBBDA1B","objectId":{"name":"o_boatSound","path":"objects/o_boatSound/o_boatSound.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":365.0,"y":199.0,},
-        {"$GMRInstance":"v1","%Name":"inst_1172D1F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1172D1F2","objectId":{"name":"o_ropeRenderer","path":"objects/o_ropeRenderer/o_ropeRenderer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5E6BDA01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E6BDA01","objectId":{"name":"o_newrope_controller","path":"objects/o_newrope_controller/o_newrope_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-64.0,},
         {"$GMRInstance":"v1","%Name":"inst_3E024039","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E024039","objectId":{"name":"o_ship_part03","path":"objects/o_ship_part03/o_ship_part03.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":172.0,"y":196.0,},
         {"$GMRInstance":"v1","%Name":"inst_2979A4ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2979A4ED","objectId":{"name":"o_ship_winch_basic","path":"objects/o_ship_winch_basic/o_ship_winch_basic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":252.0,"y":207.0,},
         {"$GMRInstance":"v1","%Name":"inst_914B16B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_914B16B","objectId":{"name":"o_shipBG","path":"objects/o_shipBG/o_shipBG.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":166.0,"y":289.0,},
@@ -597,7 +597,7 @@
         {"$GMRInstance":"v1","%Name":"inst_C18B674","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C18B674","objectId":{"name":"o_ship_fan_basic","path":"objects/o_ship_fan_basic/o_ship_fan_basic.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":187.0,"y":286.0,},
         {"$GMRInstance":"v1","%Name":"inst_767450F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_767450F7","objectId":{"name":"o_ship_cloth_sound","path":"objects/o_ship_cloth_sound/o_ship_cloth_sound.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":340.0,"y":181.0,},
         {"$GMRInstance":"v1","%Name":"inst_6F1615C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F1615C4","objectId":{"name":"o_boatController","path":"objects/o_boatController/o_boatController.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":180.0,},
-        {"$GMRInstance":"v1","%Name":"inst_269AE528","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_269AE528","objectId":{"name":"o_rope_source","path":"objects/o_rope_source/o_rope_source.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":178.0,"y":155.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6A178750","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A178750","objectId":{"name":"o_newrope_source","path":"objects/o_newrope_source/o_newrope_source.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":177.0,"y":155.0,},
       ],"layers":[],"name":"Boat","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_C7AC8C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_C7AC8C1","objectId":{"name":"o_game_controller","path":"objects/o_game_controller/o_game_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-32.0,},

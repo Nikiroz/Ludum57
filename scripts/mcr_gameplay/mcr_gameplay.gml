@@ -1,9 +1,9 @@
 
 // длинна каждого индивидуального сегмента лебедки
-#macro ropeSegmentLength 4
+#macro ropeSegmentLength 8
 
 // количество сегментов на всю лебедку
-#macro ropeSegmentCount 100
+#macro ropeSegmentCount 26
 
 // уровень с которого начинается вода
 #macro mcr_waterline 245

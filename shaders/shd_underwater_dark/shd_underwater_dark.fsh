@@ -16,7 +16,7 @@ void main()
 	// delta = min(delta / (u_radius * 0.3), 1.0);
 	float delta = min(distance(v_vPosition.xy, u_playerpos) / u_radius, 1.0);
 	// delta = pow(1.0 - delta, 5.0);
-	delta = pow(delta, 2.0);
+	// delta = pow(delta, 2.0);
 	base.a *= delta;
 	gl_FragColor = base;
 }

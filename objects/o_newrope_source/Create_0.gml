@@ -1,0 +1,3 @@
+/// @desc Init
+
+inited = false

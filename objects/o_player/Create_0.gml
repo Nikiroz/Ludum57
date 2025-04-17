@@ -108,7 +108,8 @@ set_aquasuit_state = function(_state) {
 		
 		is_equipped = _state;
 		
-		with (o_rope_end) {
+		//with (o_rope_end) {
+		with (o_newrope_end) {
 			if (target == (_state ? _suit : _player)) {
 				target = (_state ? _player : _suit);
 				break;
