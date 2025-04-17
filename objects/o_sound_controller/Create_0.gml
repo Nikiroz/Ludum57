@@ -1,7 +1,8 @@
 audio_falloff_set_model(audio_falloff_exponent_distance);
-
-randomize();
-musicAmbient = global.musicGameplayArray[irandom(array_length(global.musicGameplayArray) - 1)];
-audio_play_sound_on(global.musicEmitter, snd_mus_scavenger_deep_danger, true, 2, 0);
-audio_play_sound_on(global.musicEmitter, musicAmbient, false, 1);
+musicAmbient = -1;
+event_user(0);
+audio_emitter_gain(global.soundEmitter, global.soundVolume);
+audio_emitter_gain(global.musicEmitter, global.musicVolume);
+global.soundVolume = clamp(global.soundVolume, 0, 1);
+global.musicVolume = clamp(global.musicVolume, 0, 1);
 underwater = false

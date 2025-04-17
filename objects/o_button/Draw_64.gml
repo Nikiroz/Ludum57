@@ -1,5 +1,5 @@
 depth = -9000;
-draw_set_font(fnt_main);
+draw_set_font(font);
 var hoverColor = make_color_rgb(129,129,139);
 
 if(sprite == noone){
@@ -44,9 +44,9 @@ if(global.isDebug){
 }
 
 draw_set_color(c_dkgray)
-draw_text_ext_transformed(textX + 2, textY + 2, text, 10, 300, 0.5, 0.5, image_angle);
+draw_text_ext_transformed(textX + 2, textY + 2, text, 10, 300, scale, scale, image_angle);
 draw_set_color(currentColor);
-draw_text_ext_transformed(textX + 2, textY + 2, text, 10, 300, 0.5, 0.5, image_angle);
+draw_text_ext_transformed(textX + 2, textY + 2, text, 10, 300, scale, scale, image_angle);
 		
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

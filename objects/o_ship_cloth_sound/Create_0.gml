@@ -6,5 +6,3 @@ max_amount = 100;
 factor_amount = 1;
 
 image_speed = 0;
-
-event_user(2)

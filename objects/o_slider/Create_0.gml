@@ -8,4 +8,5 @@ _value		= 0.9;
 _min		= 0;
 _max		= 100;
 labelText	= "Label";
-textSize  = 0.5;
+textSize	= 0.5;
+labelOffset = 0;

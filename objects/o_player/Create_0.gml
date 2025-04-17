@@ -61,7 +61,9 @@ interaction_mode = 0;
 
 ropeend_instance = noone;
 carried_instance = noone;
-
+depthmeterY = 0;
+smoothDepthMeter = depthmeterY;
+isFreze = false;
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
 	if (is_undefined(_object))
@@ -176,5 +178,3 @@ put_to_death = function() {
 
 audio_listener_orientation(0,1,0,0,0,1);
 
-depthmeterY = 0;
-smoothDepthMeter = depthmeterY;

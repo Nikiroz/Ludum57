@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"o_gamelogo",
-  "eventList":[],
+  "%Name":"o_titile",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"o_gamelogo",
+  "name":"o_titile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hub",
-    "path":"folders/Objects/GUI/Hub.yy",
+    "name":"GUI",
+    "path":"folders/Objects/GUI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_logo_sign_2",
-    "path":"sprites/s_logo_sign_2/s_logo_sign_2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
