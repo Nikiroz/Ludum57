@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"mcr_gameplay",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"macros",
+    "path":"folders/Scripts/macros.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

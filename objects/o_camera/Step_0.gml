@@ -1,4 +1,4 @@
-if(isFrize){
+if(target == self){
 	exit;
 }
 

@@ -8,8 +8,8 @@
   "name":"o_loot_machinerypart",
   "overriddenProperties":[],
   "parent":{
-    "name":"loot",
-    "path":"folders/Objects/loot.yy",
+    "name":"Loot",
+    "path":"folders/Objects/Loot.yy",
   },
   "parentObjectId":{
     "name":"o_loot",

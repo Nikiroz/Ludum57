@@ -1,4 +1,4 @@
-function scr_levelobject_updae_dive_splashes() {
+function scr_levelobject_update_dive_splashes() {
 	if (bbox_bottom > mcr_waterline) {
 		if (!dive_in) {
 			instance_create_depth(

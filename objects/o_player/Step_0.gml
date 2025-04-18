@@ -1,9 +1,3 @@
-if (isFreze) {
-	hsp = 0;
-	vsp = 0
-	
-	exit
-}
 if (is_dead) {
 	
 	if(image_index == image_number - 1){
@@ -42,7 +36,7 @@ else if (sprite_index == s_player_aquasuit_ascend) {
 	with (carried_instance)
 		is_boated = other.is_boated;
 	
-	scr_levelobject_updae_dive_splashes();
+	scr_levelobject_update_dive_splashes();
 	
 	exit;
 }
@@ -95,7 +89,7 @@ else if (sprite_index == s_player_aquasuit_enter) {
 		anim_aquasuit_equip ++;
 	}
 	
-	scr_levelobject_updae_dive_splashes();
+	scr_levelobject_update_dive_splashes();
 	
 	exit;
 }
@@ -229,9 +223,7 @@ else if (sprite_index != s_player_aquasuit_rope_end) {
 		else {
 			sprite_index = s_player_walk;
 			is_boated = true;
-			if(isStepPlay(global.soundStepArray)){
-				audio_play_sound_on(global.soundEmitter, getRandomSound(global.soundStepArray), false, 100);
-			}
+			
 		}
 	}
 	else if (sprite_index == s_player_walk
@@ -263,7 +255,7 @@ if (!climb_aboard_confirmation && is_submerged) {
 	if (oxygen > 0) {
 		oxygen -= oxygenValue;
 		
-		if (!aquasuit_equipped) oxygen -= 9;
+		if (!aquasuit_equipped) oxygen -= oxygenValue * 9;
 		
 		if (!oxygen) put_to_death();
 	}
@@ -285,7 +277,7 @@ if (has_carried_item()) {
 
 #endregion
 
-scr_levelobject_updae_dive_splashes();
+scr_levelobject_update_dive_splashes();
 
 scr_interaction_update();
 

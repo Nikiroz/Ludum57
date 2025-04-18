@@ -6,8 +6,8 @@
   "name":"o_lights",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Ship",
+    "path":"folders/Objects/Ship.yy",
   },
   "parentObjectId":null,
   "persistent":false,

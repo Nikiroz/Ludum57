@@ -11,8 +11,8 @@
   "name":"o_scrap",
   "overriddenProperties":[],
   "parent":{
-    "name":"scraps",
-    "path":"folders/Objects/scraps.yy",
+    "name":"Scraps",
+    "path":"folders/Objects/Scraps.yy",
   },
   "parentObjectId":{
     "name":"o_interactible",

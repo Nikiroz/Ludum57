@@ -19,7 +19,7 @@ original_y = y;
 
 // состояния
 walking = false;
-input_enabled = true;
+
 walking_enabled = true;
 motion_enabled = true;
 boat_control = false;
@@ -44,9 +44,10 @@ hp = max_hp;
 oxygenValue = 1;
 
 // ввод и прочее
-input_interact = false;
-input_interact2 = false;
-input_pull_up = false;
+input_enabled	 = false;
+input_interact	 = false;
+input_interact2	 = false;
+input_pull_up	 = false;
 
 climb_aboard_confirmation = false;
 confirmation_time = 0;
@@ -63,7 +64,10 @@ ropeend_instance = noone;
 carried_instance = noone;
 depthmeterY = 0;
 smoothDepthMeter = depthmeterY;
-isFreze = false;
+
+dbg_slider(ref_create(self, "oxygen"), 0, 6000, "oxygen", 100);
+dbg_slider(ref_create(self, "oxygenValue"), 0, 10, "oxygenValue", 0.5);
+
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
 	if (is_undefined(_object))

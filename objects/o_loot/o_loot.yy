@@ -11,8 +11,8 @@
   "name":"o_loot",
   "overriddenProperties":[],
   "parent":{
-    "name":"loot",
-    "path":"folders/Objects/loot.yy",
+    "name":"Loot",
+    "path":"folders/Objects/Loot.yy",
   },
   "parentObjectId":{
     "name":"o_interactible",

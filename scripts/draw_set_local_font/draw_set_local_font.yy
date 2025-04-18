@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"getRandomSound",
+  "%Name":"draw_set_local_font",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"getRandomSound",
+  "name":"draw_set_local_font",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

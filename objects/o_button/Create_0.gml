@@ -16,3 +16,7 @@ _y = y;
 _ystart = _y
 scale = 0.5;
 font = fnt_main
+
+function getHover(){	
+	return point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), _x, _y, _x + width, _y + height);
+}

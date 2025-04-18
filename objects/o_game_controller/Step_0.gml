@@ -1,7 +1,7 @@
 #region Parallax
 
 var _cx = camera_get_view_x(view_camera[0]);
-var _xspd = 5 * (keyboard_check(ord(leftKey)) - keyboard_check(ord(rightKey)));
+var _xspd = 5 * o_player.hsp;
 _cx += _xspd
 
 var _b = ds_map_find_first(background_map);

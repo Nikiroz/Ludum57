@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"getHover",
+  "%Name":"scr_levelobject_update_dive_splashes",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"getHover",
+  "name":"scr_levelobject_update_dive_splashes",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

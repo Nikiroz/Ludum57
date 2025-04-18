@@ -9,8 +9,8 @@
   "name":"o_button_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"GUI",
-    "path":"folders/Objects/GUI.yy",
+    "name":"Main menu",
+    "path":"folders/Objects/GUI/Main menu.yy",
   },
   "parentObjectId":{
     "name":"o_button",
