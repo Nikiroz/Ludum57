@@ -87,8 +87,8 @@ with (target) {
 						3, 3, _collision
 					);
 				if (!is_undefined(_normal)) {
-					hsp += _normal[0] * 2
-					vsp += _normal[1] * 2
+					hsp += _normal[0] * 4
+					vsp += _normal[1] * 4
 				}
 			} else {
 				speed_add(
