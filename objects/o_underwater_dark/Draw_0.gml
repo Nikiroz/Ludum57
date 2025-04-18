@@ -14,7 +14,7 @@ shader_set(shd_underwater_dark)
 
 shader_set_uniform_f_array(u_gradient, [_border, room_height / 4])
 shader_set_uniform_f_array(u_playerpos, [o_player.x, o_player.y - 24])
-shader_set_uniform_f(u_radius, 180)
+shader_set_uniform_f(u_radius, 256)
 shader_set_uniform_f_array(u_color, [22, 27, 24])
 
 draw_sprite_pos(

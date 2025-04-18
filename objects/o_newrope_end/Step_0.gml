@@ -65,13 +65,37 @@ with (target) {
 			}
 		}
 		if (_rope_tension) {
-			speed_add(
-				point_direction(
-					x, y,
+			var _direction = point_direction(
+					bbox_center_x, bbox_center_y,
 					o_newrope_source.x, o_newrope_source.y
-				),
-				2
-			)
+				);
+			var _nx = bbox_center_x + dcos(_direction) * 8;
+			var _ny = bbox_center_y - dsin(_direction) * 8;
+			var _collision = collision_line(
+					bbox_center_x, bbox_center_y,
+					_nx,
+					_ny,
+					o_collision,
+					true,
+					true
+				);
+			
+			if (instance_exists(_collision)) {
+				var _normal = collision_find_normal(
+						_nx,
+						_ny,
+						3, 3, _collision
+					);
+				if (!is_undefined(_normal)) {
+					hsp += _normal[0] * 2
+					vsp += _normal[1] * 2
+				}
+			} else {
+				speed_add(
+					_direction,
+					2
+				)
+			}
 			
 			if (sprite_index == s_player_aquasuit_idle
 			|| sprite_index == s_player_aquasuit_swim
