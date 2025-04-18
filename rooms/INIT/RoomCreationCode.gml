@@ -4,6 +4,11 @@ global.dayNumbers = 1;
 global.restartTime  = false;
 global.screenshot_sprite = -1;
 global.nonLootableObects = array_create(0);
+global.isRestart = false;
+
+if(!variable_global_exists("isMainMenu")){
+	global.isMainMenu = true;
+}
 
 if(!variable_global_exists("soundVolume")){
 	
@@ -14,6 +19,7 @@ if(!variable_global_exists("soundVolume")){
 	
 	audio_emitter_gain(global.soundEmitter, global.soundVolume);
 	audio_emitter_gain(global.musicEmitter, global.musicVolume);
+	
 }
 
 show_debug_message("INIT")

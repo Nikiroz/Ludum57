@@ -1,4 +1,11 @@
+if (isFreze) {
+	hsp = 0;
+	vsp = 0
+	
+	exit
+}
 if (is_dead) {
+	
 	if(image_index == image_number - 1){
 
 		var targetY = original_y + sin(current_time/1000) * 25;

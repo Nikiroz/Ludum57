@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_button_main_continue",
+  "%Name":"o_button_main_menu",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_button_main_continue",
+  "name":"o_button_main_menu",
   "overriddenProperties":[],
   "parent":{
     "name":"Pause",

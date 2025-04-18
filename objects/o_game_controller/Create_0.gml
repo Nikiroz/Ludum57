@@ -24,9 +24,7 @@ hour   = startHour;
 time   = startHour;
 global.saveTime = 0;
 
-timeScale = 0.001;
-
-
+timeScale = 0 //0.001;
 
 if (file_exists("debug.ini")) {
 
@@ -58,3 +56,7 @@ for (var i = 0; i < pt_bubbles_count; i ++) {
 }
 
 instance_create_layer(0, 0, "water_pre", o_underwater_dark)
+
+if(global.isMainMenu){
+	alarm[0] = 5;
+}

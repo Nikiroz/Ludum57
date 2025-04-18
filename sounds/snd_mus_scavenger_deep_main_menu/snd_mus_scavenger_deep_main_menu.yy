@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_mus_scavenger_deep_main_menu.wav",
   "type":0,
-  "volume":0.1,
+  "volume":1.0,
 }

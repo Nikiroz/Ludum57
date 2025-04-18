@@ -1,0 +1,2 @@
+draw_set_font(fnt_main)
+draw_text_ext(gameWidth/2 - 150, 110, "Donec luctus nisl id venenatis sodales. Aenean vehicula euismod dignissim. Nulla auctor ligula non vehicula egestas. Curabitur vel velit in velit cursus consectetur quis eu nulla. Fusce scelerisque massa ac elit posuere fermentum et vitae lorem. Aenean ornare sagittis feugiat. Ut vehicula velit non malesuada imperdiet. Aliquam iaculis pretium aliquam. Aliquam erat volutpat. Aliquam sed blandit ex.",12,300)

@@ -14,3 +14,5 @@ clickSound = snd_ui_click;
 _x = x;
 _y = y;
 _ystart = _y
+scale = 0.5;
+font = fnt_main

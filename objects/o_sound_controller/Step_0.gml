@@ -3,13 +3,20 @@ audio_emitter_gain(global.musicEmitter, global.musicVolume);
 global.soundVolume = clamp(global.soundVolume, 0, 1);
 global.musicVolume = clamp(global.musicVolume, 0, 1);
 
+if(global.isMainMenu){
+	exit;	
+} else {
+	if(audio_is_playing(snd_mus_scavenger_deep_main_menu)){
+		audio_stop_sound(snd_mus_scavenger_deep_main_menu);	
+	}
+}
 
 if(isStepPlay(global.musicGameplayArray)){
 	musicAmbient = getRandomSound(global.musicGameplayArray);
 	audio_play_sound_on(global.musicEmitter, musicAmbient, false, 1, 1);
 	audio_sound_gain(snd_mus_scavenger_deep_main_menu, 0, 0);
 }
-
+	
 if(instance_exists(o_player)){
 	if(!o_father.isEndDay){
 		audio_listener_position(o_player.x, o_player.y, 0);
