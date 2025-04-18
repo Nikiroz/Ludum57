@@ -12,6 +12,7 @@ void main()
 	vec4 base = vec4(u_color, 1.0);
 	base.rgb = vec3(0.0);
 	base.a = (v_vPosition.y - u_gradient.x) / (u_gradient.y - u_gradient.x);
+	base.a = clamp(base.a, 0.0, 1.0);
 	// float delta = max(0.0, distance(v_vPosition.xy, u_playerpos) - u_radius * 0.3);
 	// delta = min(delta / (u_radius * 0.3), 1.0);
 	float delta = min(distance(v_vPosition.xy, u_playerpos) / u_radius, 1.0);
