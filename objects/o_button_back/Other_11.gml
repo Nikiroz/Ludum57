@@ -1,6 +1,7 @@
-instance_destroy(o_slider_soundVolume);
-instance_destroy(o_slider_musicVolume);
-instance_destroy(o_titile);
+instance_destroy(o_slider);
+instance_destroy(o_credits);
+instance_destroy(o_button);
+instance_destroy(o_label);
 
 with(o_mainMenu){
 	event_user(1);	

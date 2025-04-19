@@ -1,3 +1,8 @@
 function draw_set_local_font() {
-	draw_set_font(fnt_main);
+	if(global.locale == Locale.En){
+		font = isSmall ? fnt_main : fnt_main_big;
+	} else {
+		font = isSmall ? fnt_main_ru : fnt_main_big_ru;
+	}
+	draw_set_font(font);
 }

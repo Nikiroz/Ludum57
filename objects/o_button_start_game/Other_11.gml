@@ -9,5 +9,5 @@ with(o_sound_controller){
 }
 
 instance_destroy(o_button_settings);
-instance_destroy(o_button_title);
+instance_destroy(o_button_credits);
 instance_destroy();
