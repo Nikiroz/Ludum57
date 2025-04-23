@@ -2,13 +2,24 @@
 
 seg_max = scr_calculate_max_rope_length()
 
+with (o_player) {
+	if (!aquasuit_equipped) {
+		with (other) {
+			rope_tension(1)
+		}
+	}
+}
+
 var _seg_array = seg_array,
 	_normal_push = normal_push,
-	_tension_speed = tension_speed;
+	_tension_speed = tension_speed,
+	_grav_update = grav_update;
 for (var i = 0; i < seg_count; i ++) {
 	with (_seg_array[i]) {
 		if (!is_fixed) {
-			speed[1] += 0.2
+			if (_grav_update) {
+				speed[1] += 0.2
+			}
 			
 			if (i > 0) {
 				var _seg_prev = _seg_array[i - 1],
