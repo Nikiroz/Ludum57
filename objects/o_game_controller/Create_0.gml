@@ -14,7 +14,7 @@ background_map[? layer_get_id("l_bg_parallax04")] = 0;
 background_map[? layer_get_id("l_bg_stars")] = 0.2;
 background_map[? layer_get_id("l_bg_water01")] = -0.5;
 
-startHour = 9;
+startHour = 3;
 second = 0;
 minute = 0;
 hour   = startHour;

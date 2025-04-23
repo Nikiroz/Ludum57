@@ -34,8 +34,10 @@ if(surface_exists(_surface)){
 					   );
 	}
 	
+	/*	
 	with (o_moon) {
-		if !(other.hour > 7.57 && other.hour <22.31) {
+		if !(other.hour > 8 && other.hour <17.31) {
+			
 			
 			draw_sprite_ext( s_moon_mask, 0, 
 							 (x - camera_get_view_x(view_camera[0])) * 2, 
@@ -46,7 +48,7 @@ if(surface_exists(_surface)){
 							 image_blend, 
 							 image_alpha
 							);
-							
+					
 			draw_sprite_ext( s_moon, 0, 
 						 	 (x - camera_get_view_x(view_camera[0])) * 2, 
 							 (y - camera_get_view_y(view_camera[0]) * 2) * 2 + 74, 
@@ -56,9 +58,11 @@ if(surface_exists(_surface)){
 							 image_blend, 
 							 image_alpha
 							);
+		
 		}
 		
 	}
+	*/	
 	
 	gpu_set_blendmode(bm_normal);
 	surface_reset_target();

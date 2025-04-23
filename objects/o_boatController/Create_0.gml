@@ -41,6 +41,9 @@ array_foreach(_elements, function(_element) {
 })
 
 move_boat = function(_x) {
+	
+	
+	
 	var _element_count = array_length(boatElements)
 	
 	for (var i = 0; i < _element_count; i ++) {
