@@ -1,6 +1,6 @@
 if (!global.isDebug) exit
 
-draw_set_font(fnt_debug_small)
+draw_set_font(fnt_debug)
 
 draw_set_color(c_green)
 

@@ -14,34 +14,13 @@ background_map[? layer_get_id("l_bg_parallax04")] = 0;
 background_map[? layer_get_id("l_bg_stars")] = 0.2;
 background_map[? layer_get_id("l_bg_water01")] = -0.5;
 
-global.isDebug = false;
-global.isPause = false;
-
-startHour = 9//5.8//6;
+startHour = 9;
 second = 0;
 minute = 0;
 hour   = startHour;
 time   = startHour;
-global.saveTime = 0;
 
 timeScale = 0 //0.001;
-
-if (file_exists("debug.ini")) {
-
-	ini_open("debug.ini")
-
-	global.isDebug = ini_read_real("Data", "Debug", false);
-
-	ini_close();
-
-}
-
-if (global.isDebug) {
-
-	dbg_slider(ref_create(self, "time"), 0, 24, "time", timeScale);
-	
-}
-
 
 ps_bubbles = part_system_create()
 pt_bubbles_count = 5
@@ -57,6 +36,3 @@ for (var i = 0; i < pt_bubbles_count; i ++) {
 
 instance_create_layer(0, 0, "water_pre", o_underwater_dark)
 
-if(global.isMainMenu){
-	alarm[0] = 5;
-}

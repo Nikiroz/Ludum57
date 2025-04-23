@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_levelobject_update_dive_splashes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_levelobject_update_dive_splashes",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

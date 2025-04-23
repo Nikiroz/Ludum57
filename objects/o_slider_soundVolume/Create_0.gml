@@ -1,4 +1,4 @@
 event_inherited();
 height	  = 5;
-labelText = "Sound volume";
+text      = "volume";
 _value	  = global.soundVolume;

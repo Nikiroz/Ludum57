@@ -3,7 +3,7 @@
 
 function scr_render_ropes() {
 	if (false && global.isDebug) {
-		draw_set_font(fnt_debug_small);
+		draw_set_font(fnt_debug);
 		
 		with (o_rope_simple) {
 			if (instance_exists(parent)) {
