@@ -1,20 +1,28 @@
-lang,English,Русский,Украiньска мова
+lang,English,Русский,Українська мова
 newgame,PLAY,ИГРАТЬ,ГРАТИ
 settings,SETTINGS,НАСТРОЙКИ,НАЛАШТУВАННЯ
 credit,CREDITS,ТИТРЫ,ТИТРИ
 close,BACK,НАЗАД,НАЗАД
 exit,EXIT,ВЫХОД,ВИХIД
-langue,Langue,Язык,Мова
-volume,Volume,Громкость,Гучнiсть
-music,Music,Громкость музыки,Гучнiсть музики
-art,ART,АРТ,МИСТЕЦТВО
+langue,Language,Язык,Мова
+volume,Sound,Звук,Звук
+music,Music,Музыка,Музика
+art,ART,АРТ,АРТ
 code,CODE,ПРОГРАММИРОВАНИЕ,ПРОГРАМУВАННЯ
 Sound,SOUND DESIGN,ЗВУКИ И МУЗЫКА,ЗВУК ТА МУЗИКА
 pause,PAUSE,ПАУЗА,ПАУЗА
 resume,RESUME,ПРОДОЛЖИТЬ,ПРОДОВЖИТИ
 back_to_main_menu,MAIN MENU,ГЛАВНОЕ МЕНЮ,ГОЛОВНЕ МЕНЮ
-nextday,Next day,Следующий день,
-restart_game,Restart Game,Перезапустить игру,
-continue_diving,Continue diving,Нырнуть,
-climb_aboard,Climb aboard,Подняться на борт,
-return_to_home,Return to home,Вернуться домой,
+next_day,Next day,Следующий день,Наступний день
+restart_game,Restart Game,Перезапустить игру,Перезапустити гру
+climb_aboard,Climb Aboard,Подняться на борт,Піднятися на борт
+return_to_home,Return Home,Вернуться домой,Повернутися додому
+start_sailing,Start Sailing,Управлять лодкой,Управляти човном
+stop_sailing,Stop Sailing,Отойти от штурвала,Відійти від штурвала
+start_diving,Start Diving,Начать погружение,Розпочати занурення
+continue_diving,Dive,Нырнуть,Пірнути
+change_airtank,Change Airtank,Сменить балон,Замінити балон
+unequip,Unequip Suit,Снять экипировку,Зняти спорядження
+scavenge,Scavenge,Искать,Шукати
+carry,Take,Взять,Взяти
+drop,Drop,Бросить,Кинути

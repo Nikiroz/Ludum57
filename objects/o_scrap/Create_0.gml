@@ -32,4 +32,4 @@ scr_interactible_configure(
 size = _size;
 
 scr_interactible_set_text(
-	"Scavenge", "Scavenging {0}%");
+	"scavenge", "Scavenging {0}%");

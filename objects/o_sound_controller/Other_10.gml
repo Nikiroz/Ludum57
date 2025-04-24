@@ -1,5 +1,6 @@
 /// @description Музыка
 
+
 if(isStepPlay(global.musicGameplayArray)){
 	musicAmbient = getRandomSound(global.musicGameplayArray);
 	audio_play_sound_on(global.musicEmitter, musicAmbient, false, 1, 1);

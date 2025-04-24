@@ -13,6 +13,9 @@ if(!isEndDay){
 			if (x >= (room_width - 330)) {
 				right = false;
 			}
+			if (x <= 50) {
+				left = false;
+			}
 		}
 	
 		with (o_boatController)	{

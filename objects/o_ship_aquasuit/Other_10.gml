@@ -14,14 +14,14 @@ with (interactor) {
 is_equipped = true;
 
 if (is_equipped) {
-	scr_interactible_set_text("Continue diving");
+	scr_interactible_set_text("continue_diving");
 }
 else {
-	scr_interactible_set_text("Start Diving");
+	scr_interactible_set_text("start_diving");
 }
 
 scr_interactible_set_second_interaction(
-	is_equipped, "Unequip");
+	is_equipped, "unequip");
 	
 o_player.showSlot1 = false;
 o_player.showSlot2 = false;

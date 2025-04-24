@@ -69,9 +69,9 @@ slot1Text = ""
 slot2Text = ""
 slot3Text = ""
 
-slot1LangText = "continue_diving"//getText(slot1Text);
-slot2LangText = "continue_diving"//getText(slot2Text);
-slot3LangText = "continue_diving"//getText(slot3Text);
+slot1LangText = ""//getText(slot1Text);
+slot2LangText = ""//getText(slot2Text);
+slot3LangText = ""//getText(slot3Text);
 
 slotFade1  = 0;
 slotFade2  = 0;
@@ -176,8 +176,6 @@ lock_next_to_aquasuit = function() {
 		other.y = lerp(other.y, bbox_bottom + 8, 0.1);
 	}
 }
-
-//
 
 /// @function sprite_change(sprite)
 sprite_change = function(_sprite) {

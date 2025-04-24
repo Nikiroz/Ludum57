@@ -2,12 +2,12 @@ instance_destroy(o_button_credits);
 instance_destroy(o_button_start_game);
 
 with(instance_create_layer(0, 0, "UI", o_button_lang_next)){
-	_x			= gameWidth / 2 + 72;
+	_x			= gameWidth / 2 + 45;
 	_y			= gameHeight / 2 - 38;
 }
 
 with(instance_create_layer(0, 0, "UI", o_button_lang_prev)){
-	_x			= gameWidth / 2 - 100;
+	_x			= gameWidth / 2 - 60;
 	_y			= gameHeight / 2 - 38;
 }
 
@@ -23,7 +23,7 @@ with(instance_create_layer(0, 0, "UI", o_slider_musicVolume)){
 
 with(instance_create_layer(0, 0, "UI", o_label)){
 	_x			= gameWidth / 2;
-	_y			= gameHeight / 2 - 30;
+	_y			= gameHeight / 2 - 25;
 	text		= "lang";
 	scale		= 1;
 }
@@ -35,6 +35,7 @@ with(instance_create_layer(0, 0, "UI", o_label)){
 	isSmall		= true; 
 	
 }
+
 
 with(instance_create_layer(0, 0, "UI", o_button_back)){
 	_y = (gameHeight / 2) - (height / 2) + 60;
