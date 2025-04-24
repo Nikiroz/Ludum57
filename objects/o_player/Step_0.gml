@@ -24,7 +24,7 @@ if(climb_aboard_confirmation){
 	}
 	 
 	
-}
+} 
 
 if(showSlot1){
 	slotFade1+=0.1;

@@ -5,7 +5,6 @@ if(!o_player.climb_aboard_confirmation){
 		scr_interactible_set_text("drop");
 	} 
 	else{
-		o_player.showSlot1 = true;
 		o_player.slot1LangText = "carry";
 		scr_interactible_set_text("carry");
 	}

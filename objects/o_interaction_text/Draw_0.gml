@@ -36,7 +36,7 @@ with (o_player) {
 		
 		_text = $"[{actionKey}] {_target.interaction_text_hint}";
 		slot1Text = _target.interaction_text_hint;
-	}
+	} 
 	
 }
 
