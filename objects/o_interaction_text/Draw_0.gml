@@ -38,7 +38,6 @@ with (o_player) {
 		slot1Text = _target.interaction_text_hint;
 	}
 	
-	event_user(1);
 }
 
 if (instance_exists(_target) && _target.interaction2_active) {

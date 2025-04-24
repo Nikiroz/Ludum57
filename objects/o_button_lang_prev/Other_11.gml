@@ -18,3 +18,6 @@ with(o_slider){
 with(o_player){
 	event_user(1);	
 }
+with(o_credits){
+	event_user(0);	
+}

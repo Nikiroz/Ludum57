@@ -3,6 +3,10 @@ event_inherited();
 interaction_active = !o_player.aquasuit_equipped;
 interaction2_active = interaction_active;
 
+if(boatControl && !o_father.isEndDay){
+	o_player.showSlot1 = true;	
+}
+
 if(!isEndDay){
 	if (boatControl)
 	{

@@ -4,4 +4,4 @@ height		= 15;
 text		= "";
 scale		= 1;
 sprite		= s_button_prev;
-hasAnimate	= false
+hasAnimate	= false;

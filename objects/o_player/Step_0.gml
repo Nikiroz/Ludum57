@@ -4,27 +4,27 @@ if(climb_aboard_confirmation){
 	
 	canAboard =	x < o_father.x - 225 && x > o_father.x - 265;
 	showSlot2 = canAboard;
-	
+	showSlot1 = true;
+	slot1Text = "continue_diving"	
 	
 	if(keyboard_check_pressed(ord(actionKey))){
-		vsp += 3;
-		set_climb_confirmation_active(false);
+		vsp		 += 3;
 		showSlot1 = false;
 		showSlot2 = false;
 	}
 	
-	if(keyboard_check_pressed(ord(action2Key))&& canAboard){
+	if(keyboard_check_pressed(ord(action2Key)) && canAboard){
 		facing = facing_right;
 		anim_aquasuit_ascend = 0;
 		sprite_index = s_player_aquasuit_ascend;
 		image_index = 0;
-		set_climb_confirmation_active(false);
+		canWalk = false;
 		showSlot1 = false;
 		showSlot2 = false;
 	}
-	event_user(1);
+	 
+	
 }
-
 
 if(showSlot1){
 	slotFade1+=0.1;
@@ -85,7 +85,7 @@ else if (sprite_index == s_player_aquasuit_ascend) {
 	
 	with (carried_instance)
 		is_boated = other.is_boated;
-	
+	climb_aboard_confirmation = false
 	scr_levelobject_update_dive_splashes();
 	
 	exit;
@@ -176,36 +176,58 @@ if (input_enabled) {
 		_hmove = _right - _left;
 	}
 	
-	input_interact = keyboard_check_pressed(ord(actionKey));
-	input_interact2 = keyboard_check_pressed(ord(action2Key));
-	input_pull_up = keyboard_check(ord(upKey));
+	if(!climb_aboard_confirmation){
+
+		input_interact = keyboard_check_pressed(ord(actionKey));
+		input_interact2 = keyboard_check_pressed(ord(action2Key));
+		input_pull_up = keyboard_check(ord(upKey));
 	
-	if (input_interact && has_carried_item()) {
-		with(carried_instance) {
-			hsp += other.facing * 1;
-			vsp += 0.5;
-		}
+	
+	
+		if (input_interact && has_carried_item()) {
+			with(carried_instance) {
+				hsp += other.facing * 1;
+				vsp += 0.5;
+			}
 		
-		set_carried_item(noone);
-		input_interact = false;
+			set_carried_item(noone);
+			input_interact = false;
+		}
+	
 	}
+}
+
+if(climb_aboard_confirmation){
+		
+	if(keyboard_check_pressed(ord(actionKey))){
+		set_climb_confirmation_active(false);
+	}
+	
+	if(keyboard_check_pressed(ord(action2Key)) && canAboard){
+		set_climb_confirmation_active(false);
+	}
+	 
+	
 }
 
 //
 if (_hmove != 0) {
 	var _spd = movement_speed;
-	
-	if (abs(hsp) < _spd) {
-		hsp += _hmove * _spd;
+
+	if(canWalk){
+		if (abs(hsp) < _spd) {
+			hsp += _hmove * _spd;
 		
-		if (abs(hsp) > _spd) {
-			hsp = sign(hsp) * _spd;
+			if (abs(hsp) > _spd) {
+				hsp = sign(hsp) * _spd;
+			}
 		}
+	
+		walking = true;
 	}
 	
-	walking = true;
-	
 	facing = _hmove;
+
 }
 else {
 	walking = false;
@@ -213,7 +235,7 @@ else {
 
 event_inherited();
 
-if (climb_aboard_confirmation) {
+if (climb_aboard_confirmation && !is_boated) {
 	vsp = (mcr_waterline - bbox_top - 6) * 0.2;
 }
 
@@ -299,7 +321,7 @@ if (oxygen_refilling) {
 if (!climb_aboard_confirmation && is_submerged) {
 	if (!oxygen_meter_active) {
 		oxygen_meter_active = true;
-		oxygen = oxygen_capacity;
+		//oxygen = oxygen_capacity;
 	}
 	
 	if (oxygen > 0) {
@@ -333,4 +355,4 @@ scr_interaction_update();
 
 depthmeterY =  o_player.y - mcr_waterline;
     
-
+event_user(1);

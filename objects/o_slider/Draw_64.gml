@@ -15,7 +15,7 @@ var textX = _x + width / 2;
 var textY = _y + height / 2 - 5;
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(_x + width + 10, _y + 3, string(round(display_value)), 0.5,0.5, 0);
+draw_text_transformed(_x + width + 12, _y + 3, string(round(display_value)), 0.5,0.5, 0);
 draw_set_valign(fa_bottom);
 draw_text_transformed(textX, textY, langText, 0.5,0.5, 0);
 

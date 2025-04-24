@@ -1,1 +1,1 @@
-dbg_view_delete(_debugView);
+//dbg_view_delete(_debugView);

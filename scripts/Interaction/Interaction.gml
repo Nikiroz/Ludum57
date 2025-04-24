@@ -1,14 +1,16 @@
 function scr_interaction_update() {
+	
 	var _interact = input_interact,
 		_interacting = false,
 		_mode = -1;
-	
-	if (keyboard_check(ord(actionKey))) {
-		if (!interaction_release) {
-			_interacting = true;
+		
+
+		if (keyboard_check(ord(actionKey))) {
+			if (!interaction_release) {
+				_interacting = true;
+			}
 		}
-	}
-	else interaction_release = false;
+		else interaction_release = false;
 	
 	if (instance_exists(interaction_object) && interaction2_active && input_interact2) {
 		with (interaction_object) {

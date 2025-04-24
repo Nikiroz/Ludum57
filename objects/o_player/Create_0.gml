@@ -81,8 +81,10 @@ showSlot2  = false;
 showSlot3  = false;
 _money	   = global.money;
 canAboard  = false;
-font	   = fnt_main_small
+canWalk	   = true;
+font	   = fnt_main_small;
 
+/*
 _debugView = dbg_view("CustomDebugView", true);
 dbg_slider(ref_create(self, "oxygen"), 0, 6000, "oxygen", 100);
 dbg_slider(ref_create(self, "oxygenValue"), 0, 10, "oxygenValue", 0.5);
@@ -91,6 +93,7 @@ dbg_checkbox(ref_create(self, "showSlot2"), "showSlot2");
 dbg_checkbox(ref_create(self, "showSlot3"), "showSlot3");
 dbg_checkbox(ref_create(self, "canAboard"), "canAboard");
 dbg_slider(ref_create(self,"_money"), 0, 100, "money", 1);
+*/
 
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
@@ -151,6 +154,7 @@ set_aquasuit_state = function(_state) {
 	
 	if (!_state) {
 		oxygen_meter_active = false;
+		canWalk = true;
 	}
 }
 
@@ -175,6 +179,7 @@ lock_next_to_aquasuit = function() {
 		other.x = lerp(other.x, x + 7, 0.1);
 		other.y = lerp(other.y, bbox_bottom + 8, 0.1);
 	}
+	
 }
 
 /// @function sprite_change(sprite)
@@ -193,7 +198,11 @@ put_to_death = function() {
 	
 	is_dead = true;
 	original_y = y;
-	
+	with(o_loot){
+		if(is_carried){
+			interactor.set_carried_item(noone);
+		}
+	}
 	sprite_change(s_player_aquasuit_death);
 	
 	if(audio_is_playing(snd_low_oxygen_choking_d)){

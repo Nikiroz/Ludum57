@@ -1,9 +1,23 @@
+if(!o_player.climb_aboard_confirmation){
+	if (is_carried) {
+		o_player.showSlot1 = true;
+		o_player.slot1LangText = "drop";
+		scr_interactible_set_text("drop");
+	} 
+	else{
+		o_player.showSlot1 = true;
+		o_player.slot1LangText = "carry";
+		scr_interactible_set_text("carry");
+	}
+} else{
+	exit;	
+}
 if (is_carried) {
 	mask_index = msk_none;
 	interaction_visible = false;
 	exit;
 }
-else if (mask_index == msk_none) {
+else if (mask_index == msk_none && 	!o_player.is_dead) {
 	mask_index = object_get_mask(object_index);
 	interaction_visible = true;
 }

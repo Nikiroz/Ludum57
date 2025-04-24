@@ -5,6 +5,7 @@ event_user(5);
 
 musicAmbient = -1;
 musicFade	 = -1;
+stepSound	 = -1;
 
 audio_emitter_gain(global.soundEmitter, global.soundVolume);
 audio_emitter_gain(global.musicEmitter, global.musicVolume);

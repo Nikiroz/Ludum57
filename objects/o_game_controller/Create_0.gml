@@ -35,4 +35,3 @@ for (var i = 0; i < pt_bubbles_count; i ++) {
 }
 
 instance_create_layer(0, 0, "water_pre", o_underwater_dark)
-
