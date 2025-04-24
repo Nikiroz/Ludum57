@@ -9,6 +9,12 @@ if(!isEndDay){
 		var left = keyboard_check(ord(leftKey)),
 			right = keyboard_check(ord(rightKey));
 	
+		with (o_shipBG){
+			if (x >= (room_width - 330)) {
+				right = false;
+			}
+		}
+	
 		with (o_boatController)	{
 			boatSpeed = lerp(boatSpeed, (right - left), 0.1);
 		}

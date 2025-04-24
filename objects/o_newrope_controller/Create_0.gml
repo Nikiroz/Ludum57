@@ -11,6 +11,8 @@ tension_speed = 0
 
 normal_push = 0.3
 
+grav_update = true
+
 start_x = x
 start_y = y
 
