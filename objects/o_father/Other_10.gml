@@ -1,4 +1,5 @@
 /// @description Взаимодействие
+
 with (interactor)
 {
 	walking_enabled = !walking_enabled;

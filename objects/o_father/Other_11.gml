@@ -64,6 +64,6 @@ alarm[0] = 60;
 
 boatControl=true;
 isEndDay = true;
-o_camera.isFrize = true;
+o_camera.target = o_camera;
 
 instance_create_layer(0, 0, "UI", o_menu_statistics);

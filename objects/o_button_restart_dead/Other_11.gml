@@ -1,1 +1,1 @@
-restartGame();
+restartgame();

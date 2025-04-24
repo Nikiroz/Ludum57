@@ -157,5 +157,5 @@ function scr_interactible_set_text(_hint = "N/A", _progress = "N/A {0}%") {
 function scr_interactible_set_second_interaction(_active, _hint = "N/A", _progress = "N/A {0}%") {
 	interaction2_active = _active;
 	interaction2_text_hint = _hint;
-	interaction2_text_progress = _progress;
+	interaction2_text_progress = _progress;	
 }

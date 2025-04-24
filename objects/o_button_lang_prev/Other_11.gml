@@ -14,3 +14,7 @@ with(o_button){
 with(o_slider){
 	event_user(0);	
 }
+
+with(o_player){
+	event_user(1);	
+}

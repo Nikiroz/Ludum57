@@ -1,7 +1,3 @@
-if(target == self){
-	exit;
-}
-
 if(!view_enabled){
 	view_set_wport(0, gameWidth);
 	view_set_hport(0, gameHeight);
@@ -16,7 +12,7 @@ var localCameraOffsetX = 0;
 var localCameraOffsetY = 0;
 
 if(target == self){
-	localCameraOffsetY = 10;
+	localCameraOffsetY = 20;
 }
 
 if(target == o_player){

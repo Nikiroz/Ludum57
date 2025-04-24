@@ -1,3 +1,53 @@
+global.money=_money;//debug
+
+if(climb_aboard_confirmation){
+	
+	canAboard =	x < o_father.x - 225 && x > o_father.x - 265;
+	showSlot2 = canAboard;
+	
+	
+	if(keyboard_check_pressed(ord(actionKey))){
+		vsp += 3;
+		set_climb_confirmation_active(false);
+		showSlot1 = false;
+		showSlot2 = false;
+	}
+	
+	if(keyboard_check_pressed(ord(action2Key))&& canAboard){
+		facing = facing_right;
+		anim_aquasuit_ascend = 0;
+		sprite_index = s_player_aquasuit_ascend;
+		image_index = 0;
+		set_climb_confirmation_active(false);
+		showSlot1 = false;
+		showSlot2 = false;
+	}
+	event_user(1);
+}
+
+
+if(showSlot1){
+	slotFade1+=0.1;
+} else{
+	slotFade1-=0.1;
+}
+
+if(showSlot2){
+	slotFade2+=0.1;
+} else{
+	slotFade2-=0.1;
+}
+
+if(showSlot3){
+	slotFade3+=0.1;
+} else{
+	slotFade3-=0.1;
+}
+
+slotFade1 = clamp(slotFade1, 0, 1);
+slotFade2 = clamp(slotFade2, 0, 1);
+slotFade3 = clamp(slotFade3, 0, 1);
+
 if (is_dead) {
 	
 	if(image_index == image_number - 1){

@@ -22,6 +22,9 @@ else {
 
 scr_interactible_set_second_interaction(
 	is_equipped, "Unequip");
+	
+o_player.showSlot1 = false;
+o_player.showSlot2 = false;
 
 scr_interactible_delete_text(id);
 

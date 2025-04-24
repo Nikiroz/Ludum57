@@ -12,4 +12,9 @@ code,CODE,ПРОГРАММИРОВАНИЕ,ПРОГРАМУВАННЯ
 Sound,SOUND DESIGN,ЗВУКИ И МУЗЫКА,ЗВУК ТА МУЗИКА
 pause,PAUSE,ПАУЗА,ПАУЗА
 resume,RESUME,ПРОДОЛЖИТЬ,ПРОДОВЖИТИ
-backMainMenu,MAIN MENU,ГЛАВНОЕ МЕНЮ,ГОЛОВНЕ МЕНЮ
+back_to_main_menu,MAIN MENU,ГЛАВНОЕ МЕНЮ,ГОЛОВНЕ МЕНЮ
+nextday,Next day,Следующий день,
+restart_game,Restart Game,Перезапустить игру,
+continue_diving,Continue diving,Нырнуть,
+climb_aboard,Climb aboard,Подняться на борт,
+return_to_home,Return to home,Вернуться домой,

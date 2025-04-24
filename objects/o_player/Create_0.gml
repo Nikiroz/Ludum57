@@ -44,7 +44,7 @@ hp = max_hp;
 oxygenValue = 1;
 
 // ввод и прочее
-input_enabled	 = false;
+input_enabled	 = global.isMainMenu ? false : true;
 input_interact	 = false;
 input_interact2	 = false;
 input_pull_up	 = false;
@@ -65,8 +65,32 @@ carried_instance = noone;
 depthmeterY = 0;
 smoothDepthMeter = depthmeterY;
 
+slot1Text = ""
+slot2Text = ""
+slot3Text = ""
+
+slot1LangText = "continue_diving"//getText(slot1Text);
+slot2LangText = "continue_diving"//getText(slot2Text);
+slot3LangText = "continue_diving"//getText(slot3Text);
+
+slotFade1  = 0;
+slotFade2  = 0;
+slotFade3  = 0;
+showSlot1  = false;
+showSlot2  = false;
+showSlot3  = false;
+_money	   = global.money;
+canAboard  = false;
+font	   = fnt_main_small
+
+_debugView = dbg_view("CustomDebugView", true);
 dbg_slider(ref_create(self, "oxygen"), 0, 6000, "oxygen", 100);
 dbg_slider(ref_create(self, "oxygenValue"), 0, 10, "oxygenValue", 0.5);
+dbg_checkbox(ref_create(self, "showSlot1"), "showSlot1");
+dbg_checkbox(ref_create(self, "showSlot2"), "showSlot2");
+dbg_checkbox(ref_create(self, "showSlot3"), "showSlot3");
+dbg_checkbox(ref_create(self, "canAboard"), "canAboard");
+dbg_slider(ref_create(self,"_money"), 0, 100, "money", 1);
 
 ///@function has_carried_item([check_object=undefined])
 has_carried_item = function(_object = undefined) {
@@ -96,11 +120,15 @@ set_carried_item = function(_instance = noone) {
 /// @function set_climb_confirmation_active(active)
 set_climb_confirmation_active = function(_active) {
 	climb_aboard_confirmation = _active;
-	input_enabled = !_active;
+	slot1Text = "continue_diving";
+	slot2Text = "climb_aboard";
+	event_user(1);
+	showSlot1 = _active;
 }
 
 /// @function set_aquasuit_state(state)
 set_aquasuit_state = function(_state) {
+	
 	if (aquasuit_equipped == _state) exit;
 	
 	var _player = id;
