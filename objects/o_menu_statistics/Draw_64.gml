@@ -27,7 +27,7 @@ draw_set_alpha(fade);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
 
-var _y   = 39;
+var _y   = global.isLudumBuild ? 9 : 39;
 var _x   = gameWidth/2;
 var _gap = 15;
 var _tab = 80;
@@ -77,7 +77,7 @@ if(income<0){
 	draw_set_color(_red);
 }
 
-draw_text_transformed(_x + 100, _y + _gap * 8 + _tab, string(income) + "$",0.5,0.5,0);
+draw_text_transformed(_x + 100, _y + _gap * 8 + _tab, string(global.money) + "$",0.5,0.5,0);
 draw_set_color(c_white);
 
 draw_set_alpha(1);

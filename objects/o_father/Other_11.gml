@@ -62,8 +62,8 @@ if(!audio_is_playing(snd_boat_start2)){
 startEngine = true;
 alarm[0] = 60;	
 
-boatControl=true;
-isEndDay = true;
-o_camera.target = o_camera;
+boatControl     = true;
+isEndDay        = true;
+o_camera.target = noone;
 
 instance_create_layer(0, 0, "UI", o_menu_statistics);

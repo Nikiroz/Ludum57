@@ -1,5 +1,5 @@
 //window_set_cursor(cr_none);
-
+global.isLudumBuild		 = true;
 global.money			 = 0;
 global.dayNumbers		 = 1;
 global.screenshot_sprite = -1;

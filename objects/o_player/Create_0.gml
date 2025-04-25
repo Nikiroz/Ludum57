@@ -79,7 +79,7 @@ slotFade3  = 0;
 showSlot1  = false;
 showSlot2  = false;
 showSlot3  = false;
-_money	   = global.money;
+
 canAboard  = false;
 canWalk	   = true;
 font	   = fnt_main_small;

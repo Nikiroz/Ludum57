@@ -1,4 +1,4 @@
-global.money=_money;//debug
+
 
 if(climb_aboard_confirmation){
 	
