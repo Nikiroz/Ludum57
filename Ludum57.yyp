@@ -76,6 +76,8 @@
     {"id":{"name":"fnt_debug","path":"fonts/fnt_debug/fnt_debug.yy",},},
     {"id":{"name":"fnt_main_big_2_ru","path":"fonts/fnt_main_big_2_ru/fnt_main_big_2_ru.yy",},},
     {"id":{"name":"fnt_main_big_2","path":"fonts/fnt_main_big_2/fnt_main_big_2.yy",},},
+    {"id":{"name":"fnt_main_big_3_ru","path":"fonts/fnt_main_big_3_ru/fnt_main_big_3_ru.yy",},},
+    {"id":{"name":"fnt_main_big_3","path":"fonts/fnt_main_big_3/fnt_main_big_3.yy",},},
     {"id":{"name":"fnt_main_big_ru","path":"fonts/fnt_main_big_ru/fnt_main_big_ru.yy",},},
     {"id":{"name":"fnt_main_big","path":"fonts/fnt_main_big/fnt_main_big.yy",},},
     {"id":{"name":"fnt_main_ru","path":"fonts/fnt_main_ru/fnt_main_ru.yy",},},
