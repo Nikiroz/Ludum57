@@ -14,8 +14,11 @@ enum Locale{
 #macro jumpKey vk_space
 
 //Screen
-#macro gameWidth (global.isLudumBuild ? 474 : 640)
-#macro gameHeight (global.isLudumBuild ? 266 : 360)
+//#macro gameWidth 640 
+//#macro gameHeight 360 
+//ludum
+#macro gameWidth 474
+#macro gameHeight 266
 #macro gameZoom 2
 
 #macro gameSessionInMinute 2
