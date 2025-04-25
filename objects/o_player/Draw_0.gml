@@ -4,7 +4,7 @@ shader_set(shd_player)
 
 var _sprite = get_contextual_sprite(sprite_index);
 
-shader_set_uniform_f(u_waterline, mcr_waterline)
+shader_set_uniform_f(u_waterline, mcr_waterline + 12)
 shader_set_uniform_f_array(u_color, underwater_color)
 shader_set_uniform_f_array(u_lightcolor, lightcolor)
 shader_set_uniform_f_array(u_texel, [
