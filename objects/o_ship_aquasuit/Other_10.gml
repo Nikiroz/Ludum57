@@ -27,7 +27,7 @@ o_player.showSlot1 = false;
 o_player.showSlot2 = false;
 
 scr_interactible_delete_text(id);
-
+o_player.canWalk = true;
 interaction_visible = false;
 alarm[0] = 120;
 
