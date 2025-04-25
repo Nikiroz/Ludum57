@@ -18,6 +18,7 @@ font	    = fnt_main
 langText    = getText(text);
 alarm[0]    = 1;
 isSmall		= false;
+hasAnimate  = true;
 
 function getHover(){	
 	return point_in_rectangle(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), _x, _y, _x + width, _y + height);

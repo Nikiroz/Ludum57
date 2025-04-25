@@ -4,10 +4,14 @@ if(instance_exists(o_player)){
 	
 	underwater = (o_player.y > mcr_waterline);
 	
-	if(o_player.is_boated && o_player.walking){
+	if(o_player.sprite_index != s_player_aquasuit_enter && o_player.is_boated && o_player.walking){
 		if(isStepPlay(global.soundStepArray)){
-			audio_play_sound_on(global.soundEmitter, getRandomSound(global.soundStepArray), false, 100);
+			stepSound = audio_play_sound_on(global.soundEmitter, getRandomSound(global.soundStepArray), false, 100);
 		}	
+	} else {
+		if(audio_is_playing(stepSound)){
+			audio_stop_sound(stepSound);
+		}
 	}
 	
 	if(!o_father.isEndDay){
@@ -19,7 +23,6 @@ if(instance_exists(o_player)){
 		audio_emitter_position(global.musicEmitter, o_camera.cameraX + gameWidth/2, o_camera.cameraY + gameHeight/2, 0);
 		audio_emitter_position(global.soundEmitter, o_camera.cameraX + gameWidth/2, o_camera.cameraY + gameHeight/2, 0);
 	}
-	
 	
 	if(o_player.oxygen < (o_player.oxygen_capacity * 0.05)){
 		
@@ -51,7 +54,7 @@ if(instance_exists(o_player)){
 		
 	}
 	
-	if(!underwater){
+	if(!underwater || o_player.sprite_index != s_player_aquasuit_scavenge_loop){
 		if(audio_is_playing(snd_scrap_metal_dismantling_loop)){
 			audio_stop_sound(snd_scrap_metal_dismantling_loop);
 		}

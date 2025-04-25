@@ -31,6 +31,7 @@ if (sprite_index == s_player_aquasuit_ascend) {
 		
 		interaction_object = noone;
 		set_carried_item(noone);
+		o_player.showSlot1 = false
 	}
 	else {
 		//sprite_index = s_player_aquasuit_exit;
